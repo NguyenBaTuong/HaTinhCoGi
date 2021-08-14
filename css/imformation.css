@@ -1,0 +1,333 @@
+.imformation {
+    /* display: flex; */
+}
+
+.imformation__path {
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.imformation__path-block {
+    height: 30px;
+    background-color: var(--bgr-color);
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 10px 0;
+}
+
+.imformation__path-fa {
+    text-decoration: none;
+    padding-right: 10px;
+    color: #9B9B9B;
+}
+
+.imformation__path-details {
+    color: #8E8E8E;
+}
+
+.imformation__path-details-title {
+    font-weight: bold;
+    color: #000;
+}
+
+
+.imformation__details-block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imformation__details-exten {
+    border: 1px solid #F3F3F3;
+    border-radius: 4px;
+    background-color: var(--bgr-color);
+}
+
+.imformation__details-exten-i4 {
+    background-color: #FFEFEF;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.imformation__details-exten-i4-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.imformation__details-exten-i4-desc {
+    color: var(--text-pink-color);
+}
+
+.imformation__details-exten-i4-desc-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.imformation__details-exten-i4-desc-type {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.imformation__details-exten-list {
+    padding: 10px;
+}
+
+.imformation__details-exten-item {
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: var(--text-pink-color);
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.imformation__details-exten-item.active {
+    background-color: #FFEFEF;
+    border: 1px solid #FDD8E1;
+    color: var(--primary-color);
+}
+
+.imformation__details-content {
+
+}
+
+.imformation__details-content-panel {
+    display: none;
+}
+
+.imformation__details-content-panel.active {
+    display: block;
+}
+
+.imformation__account {
+    background-color: var(--bgr-color);
+    border-radius: 4px;
+    border: 1px solid #F3F3F3;
+    position: relative;
+}
+
+.imformation__account-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.imformation__account-header-i4 {
+    display: flex;
+    align-items: center;
+}
+
+.imformation__account-header-i4-avt {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.imformation__account-header-i4-desc {
+    color: var(--text-pink-color);
+}
+
+.imformation__account-header-i4-desc-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.imformation__account-header-i4-desc-type {
+    font-size: 1.5rem;
+    font-weight: 40;
+}
+
+/* .imformation__account-header-btn {
+
+} */
+
+.imformation__account-details-block {
+    padding: 0 20px;
+}
+
+.imformation__account-details {
+    color: var(--text-pink-color);
+}
+
+.imformation__account-details-item {
+    display: block;
+    font-size: 1.5rem;
+    padding: 14px 0;
+}
+
+.imformation__account-details-item-name {
+    font-weight: bold;
+    min-width: 96px;
+}
+
+.imformation__account-details-item-desc {
+    font-weight: 400;
+    padding: 0 20px;
+}
+
+.imformation__account-details-item-desc-btn {
+    font-size: 1.5rem;
+}
+
+.imformation__account-details-item-desc i{
+    font-size: 1rem;
+    color: #8B8B8B;
+}
+
+.imformation__account-btn {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+}
+
+.imformation__tabput:checked ~ .imformation__account-tabput1 {
+    display: none;
+}
+
+.imformation__account-tabput2 {
+    display: none;
+    padding: 10px 20px;
+}
+
+.imformation__tabput:checked ~ .imformation__account-tabput2 {
+    display: block;
+}
+
+.imformation__account-update {
+
+}
+
+.imformation__account-update-avt {
+    display: flex;
+    align-items: center;
+    width: 934px;
+}
+
+.imformation__account-update-avt-img {
+    height: 106px;
+    width: 106px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.imformation__account-update-avt-acti {
+    color: var(--text-pink-color);
+}
+
+.imformation__account-update-avt-acti-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.imformation__account-update-avt-acti-type {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.imformation__account-update-avt-acti-up {
+    font-size: 1.6rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    border: 1px solid #F3F3F3;
+    border-radius: 4px;
+    width: 400px;
+}
+
+.imformation__account-update-avt-acti-up-input {
+    outline: none;
+    border: none;
+    color: #B9B9B9;
+    padding: 5px 10px;
+    height: 40px;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    flex: 1;
+}
+
+.imformation__account-update-avt-acti-up-name {
+    color: #FFFFFF;
+    height: 40px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.imformation__account-update-form {
+    padding: 20px 0;
+}
+
+.imformation__account-update-form-item {
+    color: var(--text-pink-color);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.imformation__account-update-form-item-title {
+    min-width: 106px;
+    font-size: 1.5rem;
+    font-weight: 1.5rem;
+    margin-right: 8px;
+}
+
+.imformation__account-update-form-item-input {
+    font-size: 1.5rem; 
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #F3F3F3;
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 400px;
+}
+
+.imformation__account-update-form-btn {
+    color: var(--text-pink-color);
+}
+
+.imformation__account-update-form-item-hafl-block {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imformation__account-update-form-item-hafl-block-input {
+    font-size: 1.5rem; 
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #F3F3F3;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.imformation__account-update-form-item-hafl-block-input--small {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.imformation__account-update-form-item-hafl-block-input--full {
+    flex: 1;
+}
+
+.imformation__account-update-form-item-btn {
+    padding: 0 10px;
+    color: #CECECE;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.imformation__account-update-form-item-btn:hover {
+    color: var(--primary-color);
+}
