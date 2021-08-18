@@ -146,6 +146,7 @@
                         <!-- mobi imformation  -->
 
                         <div class="header__banel-find">
+                            <i class="header__banel-find-icon far fa-search"></i>
                             <input type="text" class="header__banel-find-input" placeholder="Bạn cần tìm gì ở Hà Tĩnh?">
                             <button class="header__banel-find-btn btn btn--primary">Tìm kiếm</button>
                             <div class="header__banel-wrap">
@@ -340,7 +341,7 @@
                             </a>
                         </li>
                         <li class="header__nav-content-item">
-                            <a href="components/shop.html" class="header__nav-content-item-link">
+                            <a href="../components/shop.html" class="header__nav-content-item-link">
                                 Target__shop
                             </a>
                             <!-- header__nav-son p  -->
@@ -374,7 +375,7 @@
                             </div>
                         </li>
                         <li class="header__nav-content-item">
-                            <a href="components/imformation.html" class="header__nav-content-item-link">
+                            <a href="../components/imformation.html" class="header__nav-content-item-link">
                                 Target__imformation
                             </a>
                             <div class="header__nav-son">
@@ -407,7 +408,7 @@
                             </div>
                         </li>
                         <li class="header__nav-content-item">
-                            <a href="components/search.html" class="header__nav-content-item-link">
+                            <a href="../components/search.html" class="header__nav-content-item-link">
                                 Target__search
                             </a>
                             <div class="header__nav-son header__nav-son--center">
@@ -440,8 +441,8 @@
                             </div>
                         </li>
                         <li class="header__nav-content-item">
-                            <a href="" class="header__nav-content-item-link">
-                                Địa điểm
+                            <a href="../components/loginAndres.html" class="header__nav-content-item-link">
+                                Target__login
                             </a>
                             <div class="header__nav-son header__nav-son--center">
                                 <ul class="row header__nav-son-list">
@@ -614,7 +615,7 @@
         <!-- search post  -->
         <div class="container shop">
             <div class="row shop__content">
-                <div class="col-8 shop__details">
+                <div class="col-8 shop__details">                    
                     <div class="shop__details-avt">
 
                         <input class="update__cover-img" hidden type="checkbox" name="" id="update__img">
@@ -645,31 +646,33 @@
                             <i class="fas fa-camera shop__details-avt-edit-icon"></i>Đổi ảnh bìa
                         </label>
                     </div>
+
                     <div class="shop__details-title">
-                        <!-- <div class="shop__details-title-trade"> -->
+                        <div class="shop__details-hove-block">
                             <h1 class="shop__details-title-name">Nhà hàng hải sản Hải Béo</h1>
                             <div class="shop__details-title-confirm">
                                 <i class="fas fa-check-circle shop__details-title-confirm-icon"></i> <p>Đã xác nhận</p>
                             </div>
-                            <button class="shop__details-title-update btn btn--green"> 
+                            <label class="shop__details-hove-block-update btn--green"> 
                                 <i class="fas fa-pencil-alt"></i> Sửa
-                            </button>
-                        <!-- </div> -->
+                            </label>
+                        </div>
                         <div class="shop__details-title-btn">
                             <label>
                                 <i class="fas fa-pen shop__details-title-btn-icon"></i> Sửa
                             </label>
-                            
                         </div>
                     </div>
                     <div class="shop__details-place">
-                        <span class="shop__details-place-desc">Số 02 ngõ 23 đường Lý Tự Trọng . Tp.Hà Tĩnh</span>
-                        <button class="shop__details-place-btn">
-                            <t class="fas fa-directions shop__details-place-btn-icon"></t> Chỉ đường
-                        </button>
-                        <button class="shop__details-place-update btn btn--green">
-                            <i class="fas fa-pencil-alt"></i> Sửa
-                        </button>
+                        <div class="shop__details-hove-block">
+                            <span class="shop__details-place-desc">Số 02 ngõ 23 đường Lý Tự Trọng . Tp.Hà Tĩnh</span>
+                            <button class="shop__details-place-btn">
+                                <t class="fas fa-directions shop__details-place-btn-icon"></t> Chỉ đường
+                            </button>
+                            <label class="shop__details-hove-block-update btn--green">
+                                <i class="fas fa-pencil-alt"></i> Sửa
+                            </label>
+                        </div>
                     </div>
                     <div class="shop__details-rate">
                         <div class="keyxprd-star shop__details-rate-star">
@@ -784,82 +787,86 @@
                         </div>
                     </div>
                     <div class="shop__details-time">
-                        <div class="shop__details-time-hover">
-                            <span class="shop__details-time-stt">
-                                <i class="fas fa-pause-circle shop__details-time-stt-icon"></i> Đang mở
-                            </span>
-                            <span class="shop__details-time-desc">8:00 Sáng - 5:00 Tối</span>
-                            <div class="shop__details-time-notifi">
-                                <i class="far fa-exclamation-circle shop__details-time-icon"></i>
-                            </div>
-                            <div class="shop__details-time-details">
-                                <div class="shop__details-time-details-item-left">
-                                    <h3 class="shop__details-time-details-item-title">Lịch mở cửa</h3>
-                                    <div class="shop__details-table">
-                                        <div class="shop__details-table-item">
-                                                <span class="shop__details-table-title">Thứ 2</span>
+                        <div class="shop__details-hove-block">
+                            <div class="shop__details-time-hover">
+                                <span class="shop__details-time-stt">
+                                    <i class="fas fa-pause-circle shop__details-time-stt-icon"></i> Đang mở
+                                </span>
+                                <span class="shop__details-time-desc">8:00 Sáng - 5:00 Tối</span>
+                                <div class="shop__details-time-notifi">
+                                    <i class="far fa-exclamation-circle shop__details-time-icon"></i>
+                                </div>
+                                <div class="shop__details-time-details">
+                                    <div class="shop__details-time-details-item-left">
+                                        <h3 class="shop__details-time-details-item-title">Lịch mở cửa</h3>
+                                        <div class="shop__details-table">
+                                            <div class="shop__details-table-item">
+                                                    <span class="shop__details-table-title">Thứ 2</span>
+                                                    <span class="shop__details-table-desc">8:00 Sáng - 10:00 Tối</span>
+                                            </div>
+                                            <div class="shop__details-table-item shop__details-table-item--active">
+                                                <span class="shop__details-table-title">Thứ 3</span>
                                                 <span class="shop__details-table-desc">8:00 Sáng - 10:00 Tối</span>
-                                        </div>
-                                        <div class="shop__details-table-item shop__details-table-item--active">
-                                            <span class="shop__details-table-title">Thứ 3</span>
-                                            <span class="shop__details-table-desc">8:00 Sáng - 10:00 Tối</span>
-                                        </div>
-                                        <div class="shop__details-table-item">
-                                            <span class="shop__details-table-title">Thứ 4</span>
-                                            <span class="shop__details-table-desc">8:00 Sáng - 10:00 Tối</span>
-                                        </div>
-                                        <div class="shop__details-table-item">
-                                            <span class="shop__details-table-title">Thứ 5</span>
-                                            <span class="shop__details-table-desc">8:00 Sáng - 10:00 Tối</span>
-                                        </div>
-                                        <div class="shop__details-table-item">
-                                            <span class="shop__details-table-title">Thứ 6</span>
-                                            <span class="shop__details-table-desc">8:00 Sáng - 10:00 Tối</span>
-                                        </div>
-                                        <div class="shop__details-table-item">
-                                            <span class="shop__details-table-title">Thứ 7</span>
-                                            <span class="shop__details-table-desc">8:00 Sáng - 10:00 Tối</span>
-                                        </div>
-                                        <div class="shop__details-table-item">
-                                            <span class="shop__details-table-title">Chủ nhật</span>
-                                            <span class="shop__details-table-desc">8:00 Sáng - 10:00 Tối</span>
+                                            </div>
+                                            <div class="shop__details-table-item">
+                                                <span class="shop__details-table-title">Thứ 4</span>
+                                                <span class="shop__details-table-desc">8:00 Sáng - 10:00 Tối</span>
+                                            </div>
+                                            <div class="shop__details-table-item">
+                                                <span class="shop__details-table-title">Thứ 5</span>
+                                                <span class="shop__details-table-desc">8:00 Sáng - 10:00 Tối</span>
+                                            </div>
+                                            <div class="shop__details-table-item">
+                                                <span class="shop__details-table-title">Thứ 6</span>
+                                                <span class="shop__details-table-desc">8:00 Sáng - 10:00 Tối</span>
+                                            </div>
+                                            <div class="shop__details-table-item">
+                                                <span class="shop__details-table-title">Thứ 7</span>
+                                                <span class="shop__details-table-desc">8:00 Sáng - 10:00 Tối</span>
+                                            </div>
+                                            <div class="shop__details-table-item">
+                                                <span class="shop__details-table-title">Chủ nhật</span>
+                                                <span class="shop__details-table-desc">8:00 Sáng - 10:00 Tối</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="shop__details-time-details-item-right">
-                                    <div class="shop__details-table-list-stt">
-                                        <div class="shop__details-table-stt">
-                                            <span class="shop__details-table-stt-title">Trạng thái</span>
-                                            <span class="shop__details-table-stt-desc shop__details-table-stt-desc--active">Hoạt động</span>
+                                    <div class="shop__details-time-details-item-right">
+                                        <div class="shop__details-table-list-stt">
+                                            <div class="shop__details-table-stt">
+                                                <span class="shop__details-table-stt-title">Trạng thái</span>
+                                                <span class="shop__details-table-stt-desc shop__details-table-stt-desc--active">Hoạt động</span>
+                                            </div>
+                                            <div class="shop__details-table-stt">
+                                                <span class="shop__details-table-stt-title">Tham gia web</span>
+                                                <span class="shop__details-table-stt-desc">12/2020</span>
+                                            </div>
+                                            <div class="shop__details-table-stt">
+                                                <span class="shop__details-table-stt-title">Khai trương</span>
+                                                <span class="shop__details-table-stt-desc">11/2012</span>
+                                            </div>
                                         </div>
-                                        <div class="shop__details-table-stt">
-                                            <span class="shop__details-table-stt-title">Tham gia web</span>
-                                            <span class="shop__details-table-stt-desc">12/2020</span>
-                                        </div>
-                                        <div class="shop__details-table-stt">
-                                            <span class="shop__details-table-stt-title">Khai trương</span>
-                                            <span class="shop__details-table-stt-desc">11/2012</span>
-                                        </div>
+                                        <a href="" class="shop__details-table-end">
+                                            Đóng góp thông tin thời gian
+                                        </a>
                                     </div>
-                                    <a href="" class="shop__details-table-end">
-                                        Đóng góp thông tin thời gian
-                                    </a>
                                 </div>
                             </div>
+                            <label class="shop__details-hove-block-update btn--green">
+                                <i class="fas fa-pencil-alt"></i> Sửa
+                            </label>
                         </div>
-                        <button class="shop__details-time-update btn btn--green">
-                            <i class="fas fa-pencil-alt"></i> Sửa
-                        </button>
-                        
                     </div>
                     <div class="shop__details-cate">
-                        <span class="shop__details-cate-title">Thể loại: </span>
-                        <span class="shop__details-cate-name">Địa điểm ăn uống</span>
-                        <span class="shop__details-cate-tab"> .#Ăn đêm, #Ăn sáng, #Ship đêm, #Cháo đêm, #Quán nhậu, #Mua mang về, #Nhiều món ngon, #Chủ quán nhiệt tình, #Khách sạn, #Nghỉ qua đêm</span>
-                        <button class="shop__details-cate-update btn btn--green">
-                            <i class="fas fa-pencil-alt"></i> Sửa
-                        </button>
+                        <div class="shop__details-hove-block shop__details-hove-block--no-flex">
+                            <span class="shop__details-cate-title">Thể loại: </span>
+                            <span class="shop__details-cate-name">Địa điểm ăn uống</span>
+                            <span class="shop__details-cate-tab"> .#Ăn đêm, #Ăn sáng, #Ship đêm, #Cháo đêm, #Quán nhậu, #Mua mang về, #Nhiều món ngon, #Chủ quán nhiệt tình, #Khách sạn, #Nghỉ qua đêm</span>
+                            <label class="shop__details-hove-block-update btn--green">
+                                <i class="fas fa-pencil-alt"></i> Sửa
+                            </label>
+                        </div>                       
                     </div>
+
                     <div class="shop__details-exten">
                         <button class="shop__details-exten-btn shop__details-exten-btn--active btn btn--primary">
                             <i class="far fa-star shop__details-exten-btn-icon"></i> Viết đánh giá
@@ -965,6 +972,9 @@
                                                 <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="shop__details-tab-intro-item-img">
                                                 <div class="shop__details-tab-intro-item-number">
                                                     <i class="fal fa-plus shop__details-tab-intro-item-number-icon"></i> 235
+                                                </div>
+                                                <div class="shop__details-tab-intro-item-blu">
+                                                    
                                                 </div>
                                             </label>
                                         </div>
@@ -1405,57 +1415,71 @@
                 <div class="col-4 shop__exten">
                     <div class="shop__exten-details">
                         <div class="shop__exten-details-item">
-                            <span class="shop__exten-details-item-title">Email: </span> haobeo@gmail.com
-                            <button class="shop__exten-details-item-update btn btn--green">
-                                <i class="fas fa-pencil-alt"></i> Sửa
-                            </button>
+                            <div class="shop__exten-details-item-block">
+                                <span class="shop__exten-details-item-title">Email: </span> haobeo@gmail.com
+                                <label class="shop__exten-details-item-block-update btn--green">
+                                    <i class="fas fa-pencil-alt"></i> Sửa
+                                </label>
+                            </div>
                         </div>
                         <div class="shop__exten-details-item">
-                            <span class="shop__exten-details-item-title">Website: </span> 
-                            <span class="shop__exten-details-item-desc">https://haibeo.com.vn</span>
-                            <button class="shop__exten-details-item-update btn btn--green">
-                                <i class="fas fa-pencil-alt"></i> Sửa
-                            </button>
+                            <div class="shop__exten-details-item-block">
+                                <span class="shop__exten-details-item-title">Website: </span> 
+                                <span class="shop__exten-details-item-desc">https://haibeo.com.vn</span>
+                                <label class="shop__exten-details-item-block-update btn--green">
+                                    <i class="fas fa-pencil-alt"></i> Sửa
+                                </label>
+                            </div>
+                            
                         </div>
                         <div class="shop__exten-details-item">
-                            <span class="shop__exten-details-item-title">Facobook: </span> 
-                            <span class="shop__exten-details-item-desc">fb.com/quanhaibeo</span>
-                            <button class="shop__exten-details-item-update btn btn--green">
-                                <i class="fas fa-pencil-alt"></i> Sửa
-                            </button>
+                            <div class="shop__exten-details-item-block">
+                                <span class="shop__exten-details-item-title">Facobook: </span> 
+                                <span class="shop__exten-details-item-desc">fb.com/quanhaibeo</span>
+                                <label class="shop__exten-details-item-block-update btn--green">
+                                    <i class="fas fa-pencil-alt"></i> Sửa
+                                </label>
+                            </div>
                         </div>
                         <div class="shop__exten-details-item">
-                            <span class="shop__exten-details-item-title">Địa chỉ cơ sở 2 </span> <br>
-                            Số 02 ngõ 23 đường Lý Tự Trọng . Tp.Hà Tĩnh
-                            <button class="shop__exten-details-item-btn shop__exten-details-item-btn--primary">
-                                <i class="fas fa-directions shop__exten-details-item-btn-icon"></i>Chỉ đường
-                            </button>
-                            <button class="shop__exten-details-item-update btn btn--green">
-                                <i class="fas fa-pencil-alt"></i> Sửa
-                            </button>
+                            <div class="shop__exten-details-item-block">
+                                <span class="shop__exten-details-item-title">Địa chỉ cơ sở 2 </span> <br>
+                                Số 02 ngõ 23 đường Lý Tự Trọng . Tp.Hà Tĩnh
+                                <button class="shop__exten-details-item-btn shop__exten-details-item-btn--primary">
+                                    <i class="fas fa-directions shop__exten-details-item-btn-icon"></i>Chỉ đường
+                                </button>
+                                <label class="shop__exten-details-item-block-update btn--green">
+                                    <i class="fas fa-pencil-alt"></i> Sửa
+                                </label>
+                            </div>
                         </div>
                         <div class="shop__exten-details-item">
-                            <button class="shop__exten-details-item-btn">
-                                <i class="fas fa-check shop__exten-details-item-btn-icon"> </i> Có ship
-                            </button>
-                            <button class="shop__exten-details-item-btn">
-                                <i class="fas fa-check shop__exten-details-item-btn-icon"> </i> Gói mang về
-                            </button>
-                            <button class="shop__exten-details-item-btn">
-                                <i class="fas fa-check shop__exten-details-item-btn-icon"> </i> Làm theo yêu cầu
-                            </button>
-                            <button class="shop__exten-details-item-update btn btn--green">
-                                <i class="fas fa-pencil-alt"></i> Sửa
-                            </button>
+                            <div class="shop__exten-details-item-block shop__exten-details-item-block--flex">
+                                <div class="shop__exten-details-item-btn">
+                                    <i class="fas fa-check shop__exten-details-item-btn-icon"> </i> Có ship
+                                </div>
+                                <div class="shop__exten-details-item-btn">
+                                    <i class="fas fa-check shop__exten-details-item-btn-icon"> </i> Gói mang về
+                                </div>
+                                <div class="shop__exten-details-item-btn">
+                                    <i class="fas fa-check shop__exten-details-item-btn-icon"> </i> Làm theo yêu cầu
+                                </div>
+                                <label class="shop__exten-details-item-block-update btn--green">
+                                    <i class="fas fa-pencil-alt"></i> Sửa
+                                </label>
+                            </div>                          
                         </div>
                         <input class="shop__details-title-btn--control" hidden type="checkbox" name="" id="update__shop">
                         <label for="update__shop" class="shop__exten-details-report">
                             <i class="fas fa-flag"></i>
+                            <div class="shop__exten-details-report-mess">
+                                Báo cáo
+                            </div>
                         </label>
                         <div class="modal">
                             <label for="update__shop" class="modal__overlay"></label>
-                            <div class="container modal__body">
-                                <div class="row shop__details-update">
+                            <div class="modal__body">
+                                <!-- <div class="row shop__details-update">
                                     <div class="shop__details-update-header">
                                         <h3 class="shop__details-update-header-title">
                                             <i class="fas fa-notes-medical"></i>
@@ -1529,7 +1553,60 @@
                                             </button>
                                         </div>
                                     </div>
-                                </div>                               
+                                </div>                                -->
+                                <!-- <div class="shop__details-report-block">
+                                   
+                                </div> -->
+                                <div class="shop__details-report">
+                                    <div class="shop__details-report-header">
+                                        <div class="shop__details-report-header-title">
+                                            <i class="fas fa-flag"></i> Báo cáo nội dung tới ban quản trị
+                                        </div>
+                                        <label for="update__shop" class="shop__details-report-header-btn">
+                                            <i class="fal fa-times"></i>
+                                        </label>
+                                    </div>
+                                    <div class="shop__details-report-content">
+                                        <div class="shop__details-report-name shop__details-report-content-item">
+                                            <i class="far fa-exclamation-circle"></i> Nhà hàng hải sản Hải Béo
+                                        </div>
+                                        <div class="custom-select shop__details-report-select shop__details-report-content-item">
+                                            <select>
+                                              <option value="0">Bạn muốn báo cáo về?</option>
+                                              <option value="1">Phục vụ kém</option>
+                                              <option value="2">Hình ảnh vi phạm</option>
+                                              <option value="3">Thông tin sai</option>
+                                              <option value="4">Tiêu đề sai quy định</option>
+                                              <option value="5">Đơn hàng lỗi</option>
+                                              <option value="6">Hình ảnh vi phạm</option>
+                                              <option value="7">Thông tin sai</option>
+                                              <option value="8">Tiêu đề sai quy định</option>
+                                              <option value="9">Đơn hàng lỗi</option>
+                                            </select>
+                                          </div>
+                                        <textarea placeholder="Nhập nội dung muốn báo cáo" name="" id="" cols="30" rows="10" class="shop__details-report-desc shop__details-report-content-item"></textarea>
+                                        <div class="shop__details-report-img shop__details-report-content-item">
+                                            <img src="https://massageishealthy.com/wp-content/uploads/2019/06/hinh-anh-do-an-hinh-anh-mon-an-thuc-an-ngon-dep-viet-nam-the-gioi-6.jpg" alt="" class="shop__details-report-img-item">
+                                            <input type="file" name="" hidden id="shop__report__img">
+                                            <label for="shop__report__img" class="shop__details-report-img-item--add shop__details-report-img-item">
+                                                <i class="fal fa-plus shop__details-report-img-item-icon"></i>
+                                            </label>
+                                        </div>
+                                        <div class="shop__details-report-confim shop__details-report-content-item">
+                                            <input class="shop__details-report-confim-check" type="checkbox" name="" id="">
+                                            <span class="shop__details-report-confim-desc">Tôi xác nhận nội dung báo cáo này hoàn toàn chính xác. </span>
+                                            <a href="" class="shop__details-report-confim-link">Xem điều khoản</a>
+                                        </div>
+                                        <div class="shop__details-report-ac shop__details-report-content-item">
+                                            <button class="shop__details-report-ac-btn shop__details-report-ac-btn--diss btn ">
+                                                <i class="far fa-undo-alt"></i> Làm lại
+                                            </button>
+                                            <button class="shop__details-report-ac-btn btn btn--primary">
+                                                <i class="fas fa-paper-plane"></i> Gửi báo cáo
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1597,10 +1674,10 @@
                             </div>
                         </div>
 
-                        <button class="shop__exten-contact-btn btn">
+                        <button class="shop__exten-contact-btn btn shop__exten-contact-btn--bgr">
                             <i class="fab fa-facebook-messenger shop__exten-contact-btn-icon"></i> Nhắn qua Facebook
                         </button>
-                        <button class="shop__exten-contact-btn btn">
+                        <button class="shop__exten-contact-btn btn shop__exten-contact-btn--bgr">
                             <i class="fab fa-facebook-messenger shop__exten-contact-btn-icon"></i> Nhắn qua Zalo
                         </button>
                     </div>
@@ -1630,11 +1707,14 @@
                             </a>
                         </div>
                         <div class="shop__exten-product-item">
-                            <a href="" class="shop__exten-product-item-link shop__exten-product-item-link--right">
-                                <button class="shop__exten-product-item-btn btn">
-                                    <i class="shop__exten-product-item-btn-icon fab fa-hotjar"></i> Xem thêm bài đăng
-                                </button>
-                            </a>
+                            <div class="shop__exten-product-item-link shop__exten-product-item-link--right">
+                                <a href="" class="shop__exten-product-item-btn btn">
+                                    <i class="shop__exten-product-item-btn-icon fab fa-hotjar"></i> 
+                                    <span class="shop__exten-product-item-btn-name">
+                                        Xem thêm bài đăng
+                                    </span>
+                                </a>
+                            </div>
                             
                         </div>
                     </div>
@@ -1644,9 +1724,11 @@
             <div class="suggest">
                 <div class="row suggest__header">
                     <h3 class="col-12 suggest__header-title">Địa điểm xung quanh</h3>
-                    <a href="#" class="col-12 suggest__header-link">
-                        <i class="fab fa-hotjar suggest__header-link-icon"></i> Xem thêm địa điểm
-                    </a>
+                    <div class="col-12 suggest__header-link-block">
+                        <a href="#" class="suggest__header-link">
+                            <i class="fab fa-hotjar suggest__header-link-icon"></i> Xem thêm địa điểm
+                        </a>
+                    </div>
                 </div>
                 <div class="row suggest__details">
                     <div class="col-lg-3 col-md-4 col-sm-6 suggest__details-item">
@@ -1654,8 +1736,11 @@
                             <div class="keyxprd-i4">
                                 <img src="https://th.bing.com/th/id/OIP.txO6sgnb4lLBCvPKSS9c8QHaF7?w=231&h=185&c=7&o=5&dpr=1.25&pid=1.7" class="keyxprd-i4__img" ></img> 
                                 <div class="keyxprd-i4__love">
-                                    Lưu yêu thích
-                                    <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                    <span class="keyxprd-i4__love-desc">
+                                        Lưu yêu thích
+                                        <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                        <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
+                                    </span>
                                 </div>
                             </div>
                             <div class="keyxprd-desc">
@@ -1695,8 +1780,11 @@
                             <div class="keyxprd-i4">
                                 <img src="https://th.bing.com/th/id/OIP.txO6sgnb4lLBCvPKSS9c8QHaF7?w=231&h=185&c=7&o=5&dpr=1.25&pid=1.7" class="keyxprd-i4__img" ></img> 
                                 <div class="keyxprd-i4__love">
-                                    Lưu yêu thích
-                                    <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                    <span class="keyxprd-i4__love-desc">
+                                        Lưu yêu thích
+                                        <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                        <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
+                                    </span>
                                 </div>
                             </div>
                             <div class="keyxprd-desc">
@@ -1736,8 +1824,11 @@
                             <div class="keyxprd-i4">
                                 <img src="https://th.bing.com/th/id/OIP.txO6sgnb4lLBCvPKSS9c8QHaF7?w=231&h=185&c=7&o=5&dpr=1.25&pid=1.7" class="keyxprd-i4__img" ></img> 
                                 <div class="keyxprd-i4__love">
-                                    Lưu yêu thích
-                                    <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                    <span class="keyxprd-i4__love-desc">
+                                        Lưu yêu thích
+                                        <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                        <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
+                                    </span>
                                 </div>
                             </div>
                             <div class="keyxprd-desc">
@@ -1777,8 +1868,11 @@
                             <div class="keyxprd-i4">
                                 <img src="https://th.bing.com/th/id/OIP.txO6sgnb4lLBCvPKSS9c8QHaF7?w=231&h=185&c=7&o=5&dpr=1.25&pid=1.7" class="keyxprd-i4__img" ></img> 
                                 <div class="keyxprd-i4__love">
-                                    Lưu yêu thích
-                                    <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                    <span class="keyxprd-i4__love-desc">
+                                        Lưu yêu thích
+                                        <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                        <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
+                                    </span>
                                 </div>
                             </div>
                             <div class="keyxprd-desc">

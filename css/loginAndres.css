@@ -1,0 +1,169 @@
+
+.loginxres {
+    min-height: 600px;
+    background-color: #F0F4F5;
+    padding: 40px;
+}
+
+.loginxres__banel {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://arasari.studio/wp-content/projects/forny/templates/img/bg-06.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.loginxres__content-nav {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.loginxres__content-nav-item {
+    background-color: #F0F4F5;
+}
+
+.loginxres__content-nav-item-name {
+    color: #49474F;
+    font-size: 2.9rem;
+    font-weight: bold;
+}
+
+.loginxres__content-panel-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 30px 0 30px 0;
+}
+
+.loginxres__content-panel-form-group {
+    margin-bottom: 30px;
+}
+
+.loginxres__content-panel-form-input-block {
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.loginxres__content-panel-form-input-left {
+    height: 100%;
+}
+
+.loginxres__content-panel-form-input-both {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    background-color: var(--bgr-color);
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.loginxres__content-panel-form-input-both i {
+    font-size: 2.5rem;
+    margin: auto;
+    color: #949494;
+}
+
+.loginxres__content-panel-form-input-both--eye i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.loginxres__content-panel-form-input-both--eye:hover i{
+    color: black;
+}
+
+.loginxres__content-panel-form-input {
+    width: 100%;
+    outline: none;
+    /* background: #F7F7F7; */
+    background-color: var(--bgr-color);
+    border-radius: 4px;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: var(--text-pink-color);
+    border: none;
+}
+
+.loginxres__content-panel-form-input:focus {
+    box-shadow: none;
+    /* background: #F7F7F7; */
+    background-color: var(--bgr-color);
+}
+
+.loginxres__content-panel-form-input::placeholder {
+    color: #949494;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.loginxres__content-panel-form-input-mess {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.loginxres__content-panel-form-acti {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.loginxres__content-panel-form-acti-btn--full {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.loginxres__content-panel-form-acti-desc {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.loginxres__content-panel-form-acti-desc:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.loginxres__content-panel-mxh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginxres__content-panel-mxh-desc {
+    color: #c1c1c1;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.loginxres__content-panel-mxh-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.loginxres__content-panel-mxh-item {
+    font-size: 2.4rem;
+    margin-right: 10px;
+}
+
+.loginxres__content-panel-mxh-item-link:hover {
+    opacity: 0.8;
+}
+
+.loginxres__content-panel-mxh-item-icon--fb {
+    color: #254b9c;
+}
+
+.loginxres__content-panel-mxh-item-icon-gg {
+    color: #00c2ff;
+}
+
+.loginxres__content-panel-mxh-item-icon--pr {
+    color: #f10e3d;
+}

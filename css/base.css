@@ -201,6 +201,20 @@ body {
         transform: translateX(0);
     }
 }
+
+@keyframes transRight {
+    from {
+        /* opacity: 0; */
+        transform: translateX(100%);
+        z-index: -1;
+    }
+
+    to {
+        /* opacity: 1; */
+        transform: translateX(0);
+        z-index: 1;
+    }
+}
 /* chung  */
 
 
@@ -214,16 +228,19 @@ body {
     overflow: hidden;
     position: relative;
     background-color: var(--bgr-color);
+    transition: 0.2s ease-in;
 }
 
 .keyxprd-link:hover {
     box-shadow: 0px 20px 25px #00000029;
+    transition: 0.2s ease-in;
 }
 
 .keyxprd-i4 {
     position: relative;
-    height: 18em;
+    height: 200px;
     width: 100%;
+    overflow: hidden;
 }
 
 .keyxprd-i4__img {
@@ -235,21 +252,27 @@ body {
 }
 
 .keyxprd-view {
-    background-color: var(--primary-color);
-    border-radius: 50px;
+    background-color: rgb(43, 39, 60, 0.8);
+    /* border-radius: 4px; */
     position: absolute;
-    z-index: 1;
-    top: 80px;
+    z-index: 2;
+    width: 100%;
+    height: 200px;
+    /* top: 80px;
     right: 50%;
-    transform: translateX(50%);
+    transform: translateX(50%); */
     padding: 10px 20px;
-    display: none;
+    opacity: 0;
+    display: flex;
     font-size: 1.3rem;
     font-weight: 400;
+    transition: 0.5s;
 }
 
 .keyxprd-view-icon {
     color: var(--bgr-color);
+    margin: auto;
+    font-size: 3.8rem;
 }
 
 .keyxprd-view-name {
@@ -258,7 +281,8 @@ body {
 }
 
 .keyxprd-link:hover .keyxprd-view {
-    display: block;
+    opacity: 1;
+    animation: nextTop linear 0.2s;
 }
 
 .keyxprd-stt {
@@ -301,16 +325,29 @@ body {
 }
 
 .keyxprd-link:hover .keyxprd-i4__love {
-    animation: keyxlove ease-in 0.3s;
+    animation: keyxlove ease-in 0.2s;
     z-index: 1;
 }
 
-.keyxprd-i4:hover .keyxprd-i4__img {
-    transform: scale(1.05);
+.keyxprd-i4__love__icon--love {
+    color: black;
+    display: none;
 }
 
-.keyxprd-i4:hover .keyxprd-i4__love {
-    bottom: -6px;
+.keyxprd-i4__love-desc {
+    padding: 5px 0;
+}
+
+.keyxprd-i4__love-desc:hover .keyxprd-i4__love__icon {
+    display: none;
+}
+
+.keyxprd-i4__love-desc:hover .keyxprd-i4__love__icon--love {
+    display: unset;
+}
+
+.keyxprd-link:hover .keyxprd-i4__img {
+    transform: scale(1.05);
 }
 
 .keyxprd-desc {
@@ -393,6 +430,10 @@ body {
     color: var(--primary-color);
 }
 
+.keyxprd-link:hover .keyxprd-title {
+    text-decoration: underline;
+}
+
 .keyxprd-shop {
     font-size: 1.5rem;
 }
@@ -410,7 +451,7 @@ body {
     padding: 0 5px 5px 0;
 }
 
-.keyxprd-shop-i4-name:hover {
+.keyxprd-link:hover .keyxprd-shop-i4-name {
     color: black;
 }
 
@@ -536,16 +577,25 @@ body {
     font-size: 2.4rem;
     font-weight: bold;
     color: #000000;
-    padding: 20px 0 10px 0;
+    padding: 20px 0 10px 10px;
+}
+
+.suggest__header-link-block {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .suggest__header-link {
-    display: block;
     text-decoration: none;
     color: #000000;
     font-size: 1.3rem;
     text-align: right;
     padding-bottom: 5px;
+}
+
+.suggest__header-link:hover {
+    text-decoration: underline;
+    color: #000000;
 }
 
 
@@ -719,6 +769,10 @@ body {
     padding: 30px 0;
 }
 
+.header__banel-logo-link {
+    text-decoration: none;
+}
+
 .header__banel-find {
     background-color: var(--primary-color);
     height: 36px;
@@ -752,9 +806,9 @@ body {
     color: #FC0D46;
     position: absolute;
     z-index: 1;
-    top: 8px;
+    top: 10px;
     left: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /* history */
@@ -922,12 +976,11 @@ body {
 }
 
 .header__banel-btn-icon {
-    display: block;
-    margin-right: 5px;
+    padding-right: 5px;
 }
 
 .header__banel-btn-name {
-    font-weight: 400;
+    margin-bottom: 2px;
 }
 
 /* header nav  */
@@ -1017,6 +1070,7 @@ body {
     padding: 10px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+    border: 1px solid #F3F3F3;
     display: none;
 }
 
@@ -1175,6 +1229,7 @@ body {
     width: 300px;
     display: none;
     padding: 0 20px;
+    animation: transRight ease-in 0.5s;
     background-color: var(--bgr-color);
 }
 
@@ -1184,8 +1239,8 @@ body {
     right: 10px;
 }
 
-.header__nav__son__id:checked ~ .header__nav__son-control {
-    display: none;
+.header__nav__son__id:checked ~ .header__nav-m-son-list {
+    display: block;
 }
 
 .header__nav-m-son-item {
@@ -1226,10 +1281,6 @@ body {
 
 .header__nav-m-son-link:hover {
     color: var(--primary-color);
-}
-
-.header__nav-m-content-item:hover .header__nav-m-son-list {
-    display: block;
 }
 
 .header__nav-m-check:checked ~ .modal {
@@ -1304,6 +1355,7 @@ body {
 .footer__top-item-link:hover {
     opacity: 0.8;
     color: #6B6B6B;
+    text-decoration: underline;
 }
 
 /* footer details  */
@@ -1351,6 +1403,12 @@ body {
     padding: 5px 0;
 }
 
+.footer__details-li-link:hover {
+    color: #6B6B6B;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
 /* footer end  */
 .footer__end {
     padding: 10px 0;
@@ -1375,4 +1433,79 @@ body {
     color: var(--primary-color);
 }
 
+.active__tab-title {
+    text-align: center;
+    color: var(--text-pink-color);
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+.active__tab-title-hot {
+    color: #FC0D46;
+    font-size: 2.4rem;
+}
+.active__tab-nav {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.active__tab-nav .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease;
+}
+.active__tab-item {
+    padding: 12px 20px 12px 20px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--text-pink-color);
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.active__tab-icon {
+    font-size: 2.4rem;
+    width: 32px;
+    position: relative;
+    top: 2px;
+}
+
+.active__tab-item:hover {
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.05);
+    border-color: rgba(194, 53, 100, 0.1);
+}
+.active__tab-item.active {
+    opacity: 1;
+}
+
+.active__tab-content {
+    padding: 0;
+}
+
+.active__tab-pane {
+    color: #333;
+    display: none;
+}
+
+.active__tab-pane.active {
+    display: block;
+}
+
+.active__tab-pane h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
 

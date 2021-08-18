@@ -38,6 +38,10 @@
         padding: 0;
         margin-left: 2px;
     }
+
+    .header__banel {
+        padding: 20px 0;
+    }
 }
 
 /* mobile  & tablet*/
@@ -45,6 +49,7 @@
     .hide-on-m-t {
         display: none;
     }
+    
     
 }
 
@@ -54,8 +59,9 @@
         display: none;
     }
 
+    
     .header__banel {
-        /* padding: 10px 0; */
+        padding: 20px 0;
     }
 
     .header__banel-find {
@@ -121,6 +127,10 @@
     /* header  */
     .header__exten {
         display: none;
+    }
+
+    .header__banel {
+        padding: 10px 0;
     }
 
     .header__banel-logo {
