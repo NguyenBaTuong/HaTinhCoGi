@@ -1,0 +1,143 @@
+
+/* .place__block {
+    background-color: #F2F2F2;
+} */
+
+.place__header-name {
+    color: #000000;
+    font-size: 2.1rem;
+    font-weight: bold;
+    padding: 30px 0;
+}
+
+.place__content {
+    color: var(--text-pink-color);
+}
+
+.place__content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.place__content-header-list {
+    display: flex;
+    align-items: center;
+}
+
+.place__content-header-list-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.place__content-header-list-details {
+    width: 200px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 4px;
+}
+
+.place__content-header-acti-item {
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.place__content-header-acti-item.active {
+   background-color: black;
+}
+
+.place__content-header-acti-item:hover {
+    background-color: rgba(194, 53, 100, 0.05);
+}
+
+.place__content-header-acti-item.active {
+    background-color: black;
+    opacity: 0.8;
+ }
+
+.place__content-header-acti-item-icon {
+    font-size: 2rem;
+}
+
+.place__content-header-acti-item.active  .place__content-header-acti-item-icon{
+    color: #FFFFFF;
+ }
+
+.place__content-body {
+
+}
+
+.place__content-body-pane {
+    display: none;
+}
+
+.place__content-body-pane.active {
+    display: block;
+}
+
+.place__content-grid-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.place__content-grid-item {
+    flex-basis: 32%;
+    margin-bottom: 20px;
+}
+
+.place__content-full-list {
+
+}
+
+.place__content-full-item {
+    margin-bottom: 30px;
+}
+
+.place__filter {
+    color: var(--text-pink-color);
+    padding: 0 10px;
+}
+
+.palce__filter-title {
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.palce__filter-title-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 4rem;
+}
+
+.palce__filter-form {
+
+}
+
+.palce__filter-form-group {
+    margin-bottom: 20px;
+}
+
+.palce__filter-form-label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.palce__filter-form-input {
+    outline: none;
+    border: 1px solid #F3F3F3;
+    background-color: #f7f7f7;
+    height: 40px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 0 20px;
+    font-size: 1.4rem;
+}
+
+.palce__filter-form-input::placeholder {
+    color: #9D9D9D;
+}
+

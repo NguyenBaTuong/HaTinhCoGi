@@ -25,6 +25,8 @@ loginRess__tabs.forEach((loginRess__tab, loginRess__index) => {
   };
 });
 
+
+// show pass 
 const togglePassword = document.querySelector('#togglePassword');
 const password = document.querySelector('#id_password');
 

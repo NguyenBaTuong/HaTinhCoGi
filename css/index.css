@@ -1,8 +1,5 @@
 
-/* home  */
-
 /* home slide  */
-
 .home__slide {
     margin-bottom: 15px;
 }
@@ -47,12 +44,6 @@
 }
 
 /* Tab Links */
-.home__tab-eat-item-link, 
-.home__tab-rest-item-link,
-.home__tab-post-item-link {
-    text-decoration: none;
-}
-
 .home__tab-eat-item-link:hover, 
 .home__tab-rest-item-link:hover,
 .home__tab-post-item-link:hover {
@@ -65,12 +56,9 @@
 }
 
 /* top eat  */
-.home__eat {
-
-}
-.active__eat-item {
+.home__eat-item {
     position: relative;
-    margin-top: 15px;
+    margin-bottom: 15px;
     border-radius: 2px;
 }
 

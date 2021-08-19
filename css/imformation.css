@@ -16,7 +16,6 @@
 }
 
 .imformation__path-fa {
-    text-decoration: none;
     padding-right: 10px;
     color: #9B9B9B;
 }
@@ -81,7 +80,6 @@
     padding: 10px 20px;
     border-radius: 4px;
     color: var(--text-pink-color);
-    list-style: none;
     font-size: 1.5rem;
     font-weight: 400;
     cursor: pointer;
