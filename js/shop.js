@@ -60,4 +60,12 @@ imgWrap__next.addEventListener('click', function(){
     document.getElementById('imgWrap__img').scrollLeft += 180
 })
 
-// star hover 
+// copy link
+function myFunction() {
+  var copyText = document.getElementById("copy__link");
+  copyText.select();
+  document.execCommand("copy");
+}
+
+
+// modal? ?
