@@ -24,10 +24,20 @@ tab__shops.forEach((tab__shop, index__tab__shop) => {
 const add__img__cover = document.getElementById('add__img__cover');
 const cancel__img__cover = document.getElementById('cancel__img__cover')
 
+
 add__img__cover.onchange = evt => {
   const [file] = add__img__cover.files
   if (file) {
     shop__img__cover__show.src = URL.createObjectURL(file)
+    shop__img__cover__show.style.display = "block"
+  } 
+}
+
+cancel__img__cover.onclick = evt => {
+  const [file] = add__img__cover.files
+  if (file) {
+    shop__img__cover__show.src = ""
+    shop__img__cover__show.style.display = "none"
   }
 }
 
@@ -68,4 +78,4 @@ function myFunction() {
 }
 
 
-// modal? ?
+// delete img banel 

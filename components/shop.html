@@ -11,7 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.5/css/lightgallery.min.css" integrity="sha512-LeCCaxc1iF2UArsp3NWiOAz1mSLXFXmuiOm2n8gxOSnCXIltE27/NV9yGshWgHSCKNigfDiJUskpRiithdGc3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../libs/font-awesome/all.css">
-    <link rel="stylesheet" href="../libs/font-awesome/webfonts">
     <link rel="stylesheet" href="../css/style.css">
     
 </head>
@@ -626,7 +625,8 @@
                         <div class="shop__details-avt-update">
                             <div class="shop__details-avt-update-add-block">
                                 <input id="add__img__cover" class="shop__details-avt-update-add-block-input" type="file" name="">
-                                <img id="shop__img__cover__show" class="shop__img-cover-show" src="" alt="">
+                                <img id="shop__img__cover__show" class="shop__img-cover-show" src="" onerror="this.style.display ='none'">
+                               
                                 <label for="add__img__cover" class="shop__details-avt-update-add">
                                     <p class="shop__details-avt-update-add-icon">
                                         <i class="far fa-plus"></i>
@@ -636,7 +636,7 @@
                                     </label>
                                 </label>
                                 <div class="shop__details-avt-update-acti">
-                                    <label id="cancel__img__cover" class="shop__details-avt-update-acti-btn shop__details-avt-update-acti-btn--diss btn btn--normal" onclick="oke()" >
+                                    <label  id="cancel__img__cover" class="shop__details-avt-update-acti-btn shop__details-avt-update-acti-btn--diss btn btn--normal" >
                                         <i class="fas fa-ban"></i> Hủy
                                     </label>
                                     <label class="shop__details-avt-update-acti-btn btn btn--primary" for="update__img">
@@ -1302,7 +1302,6 @@
                                 </div>
                             </div>
                         </div>
-                      
                     </div>
                     <div class="shop__details-vote">
                         <h3 class="shop__details-vote-title">
@@ -1375,6 +1374,8 @@
                                         </div>
                                         <div class="rating__desc">Đánh giá</div>
                                     </div>                                   
+                                    
+                                    
                                     <input type="text" class="shop__details-vote-active-input" placeholder="Bình luận không đánh giá">
                                  </div>
                              </div>
@@ -1600,10 +1601,13 @@
                                         </label>
                                     </div>
                                     <div class="shop__details-report-content">
-                                        <div class="shop__details-report-name shop__details-report-content-item">
-                                            <i class="far fa-exclamation-circle"></i> Nhà hàng hải sản Hải Béo
+                                        <div class="shop__details-report-content-item shop__details-report-content-item--hover">
+                                            <div class="shop__details-report-name ">
+                                                <i class="far fa-exclamation-circle"></i> Nhà hàng hải sản Hải Béo
+                                            </div>
                                         </div>
-                                        <div class="custom-select shop__details-report-select shop__details-report-content-item">
+                                        
+                                        <div class="custom-select shop__details-report-select shop__details-report-content-item shop__details-report-content-item--hover">
                                             <select>
                                               <option value="0">Bạn muốn báo cáo về?</option>
                                               <option value="1">Phục vụ kém</option>
@@ -1617,17 +1621,15 @@
                                               <option value="9">Đơn hàng lỗi</option>
                                             </select>
                                         </div>
-                                        <textarea placeholder="Nhập nội dung muốn báo cáo" name="" id="" cols="30" rows="10" class="shop__details-report-desc shop__details-report-content-item"></textarea>
+                                        <textarea placeholder="Nhập nội dung muốn báo cáo" name="" id="" cols="30" rows="10" class="shop__details-report-desc shop__details-report-content-item shop__details-report-content-item--hover"></textarea>
                                         <div class="shop__details-report-img shop__details-report-content-item">
-                                            <img src="https://massageishealthy.com/wp-content/uploads/2019/06/hinh-anh-do-an-hinh-anh-mon-an-thuc-an-ngon-dep-viet-nam-the-gioi-6.jpg" alt="" class="shop__details-report-img-item">
-                                            <input type="file" name="" hidden id="shop__report__img">
-                                            <label for="shop__report__img" class="shop__details-report-img-item--add shop__details-report-img-item">
-                                                <i class="fal fa-plus shop__details-report-img-item-icon"></i>
-                                            </label>
+                                            <span id="previewImg"></span> 
+                                            <input class="shop__details-report-img-item shop__details-report-img-item--add" type="image" src="https://nhatkiemphithien.vn/wp-content/uploads/2020/03/add-la-gi.png" width="100px"/>
+                                            <input style="display: none" type='file' id="shop__report__img" name="image" multiple="multiple" />
                                         </div>
                                         <div class="shop__details-report-confim shop__details-report-content-item">
-                                            <input class="shop__details-report-confim-check" type="checkbox" name="" id="">
-                                            <span class="shop__details-report-confim-desc">Tôi xác nhận nội dung báo cáo này hoàn toàn chính xác. </span>
+                                            <input class="shop__details-report-confim-check" type="checkbox" name="" id="check__report">
+                                            <label for="check__report" class="shop__details-report-confim-desc">Tôi xác nhận nội dung báo cáo này hoàn toàn chính xác. </label>
                                             <a href="" class="shop__details-report-confim-link">Xem điều khoản</a>
                                         </div>
                                         <div class="shop__details-report-ac shop__details-report-content-item">
@@ -2361,9 +2363,44 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 <script src="../js/base.js"></script>
 <script src="../js/shop.js"></script>     
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("input[type='image']").click(function() {
+    $("input[id='shop__report__img']").click();
+    });
+    });
+</script>
+<script type="text/javascript" >
+    function handleFileSelect(evt) {
+        var files = evt.target.files; 
+        
+        for (var i = 0, f; f = files[i]; i++) {
 
+            if (!f.type.match('image.*')) {
+            continue;
+            }
+            var reader = new FileReader(); 
 
+            reader.onload = (function (theFile) {
+                return function (e) {
+                    var span = document.createElement('span');
 
-
+                    span.innerHTML = ['<img class="shop__details-report-img-item" src="', e.target.result,'" title="', escape(theFile.name), '"/>' ,'<i class="fa fa-times shop__details-report-img-item-icon " ></i>'].join('');
+                    document.getElementById('previewImg').insertBefore(span, null); 
+                };
+            })
+            (f);
+            reader.readAsDataURL(f);
+        }
+   }
+   document.getElementById('shop__report__img').addEventListener('change', handleFileSelect, false);
+    </script>
+   <script type="text/javascript">
+        $(document).on('click',".shop__details-report-img-item-icon" ,function() {
+            $(this).closest("span" ).fadeOut();
+            $("#shop__report__img").val(null);
+        });
+    </script>
 
 </html>

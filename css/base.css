@@ -280,8 +280,22 @@ body {
     border-radius: 4px
 }
 
+.keyxprd__overlay {
+    background-color: rgb(43, 39, 60, 0.5);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 200px;
+    display: none;
+}
+
+.keyxprd-link:hover .keyxprd__overlay {
+    display: block;
+    animation: fadeIn linear 0.5s;
+}
+
 .keyxprd-view {
-    background-color: rgb(43, 39, 60, 0.8);
+    background-color: rgb(0, 0, 0, 0);
     position: absolute;
     z-index: 2;
     width: 100%;
@@ -391,7 +405,7 @@ body {
 
 .keyxprd-star-bgr {
     background-color: var(--primary-color);
-    border-radius: 8px;
+    border-radius: 6px;
     margin-right: 4px;
     margin-top: 4px;
     padding: 5px 5px;
@@ -903,6 +917,10 @@ body {
     color: #979797;
 }
 
+
+.header__exten-frame-item-link:hover .header__exten-frame-item-name {
+    text-decoration: underline;
+}
 /* header  */
 
 /* header banel  */
@@ -1167,6 +1185,10 @@ body {
     background-color: #E60138;
     color: white;
     text-decoration: underline;
+}
+
+.header__nav-content-item:hover .header__nav-content-item-link--no {
+    text-decoration: none;
 }
 
 .header__nav-content-item:hover .header__nav-content-item-link::after {
@@ -1692,7 +1714,6 @@ body {
 }
 #half-stars-example .rating__label {
     cursor: pointer;
-   /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
     padding: 0 0.1em;
     font-size: 2rem;
 }
@@ -1713,10 +1734,12 @@ body {
 #half-stars-example .rating__input:checked ~ .rating__label .rating__icon--star {
     color: #ddd;
 }
-#half-stars-example .rating-group:hover .rating__label .rating__icon--star, #half-stars-example .rating-group:hover .rating__label--half .rating__icon--star {
+#half-stars-example .rating-group:hover .rating__label .rating__icon--star, 
+#half-stars-example .rating-group:hover .rating__label--half .rating__icon--star {
     color: var(--primary-color);
 }
-#half-stars-example .rating__input:hover ~ .rating__label .rating__icon--star, #half-stars-example .rating__input:hover ~ .rating__label--half .rating__icon--star {
+#half-stars-example .rating__input:hover ~ .rating__label .rating__icon--star, 
+#half-stars-example .rating__input:hover ~ .rating__label--half .rating__icon--star {
     color: #ddd;
 }
 #half-stars-example .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {

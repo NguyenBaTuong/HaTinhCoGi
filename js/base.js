@@ -271,3 +271,4 @@ palaces__tabs.forEach((palaces__tab, palaces__index) => {
     palaces__panel.classList.add("active");
   };
 });
+
