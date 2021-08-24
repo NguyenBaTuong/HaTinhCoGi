@@ -98,10 +98,10 @@
     font-weight: 400;
 }
 
-.loginxres__content-panel-form-input-mess {
+/* .loginxres__content-panel-form-input-mess {
     color: var(--primary-color);
     font-size: 1.2rem;
-}
+} */
 
 .loginxres__content-panel-form-acti {
     display: flex;

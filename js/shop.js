@@ -77,5 +77,10 @@ function myFunction() {
   document.execCommand("copy");
 }
 
+function myFunction2() {
+  var copyText = document.getElementById("phone__copy");
+  copyText.select();
+  document.execCommand("copy");
+}
 
-// delete img banel 
+

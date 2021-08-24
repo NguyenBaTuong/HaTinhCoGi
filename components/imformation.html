@@ -726,37 +726,72 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="imformation__account-update-form">
-                                                <div class="imformation__account-update-form-item">
+                                            <form id="update__imformation" class="imformation__account-update-form">
+                                                <div class="form-group imformation__account-update-form-item">
                                                     <label class="imformation__account-update-form-item-title">Tài khoản</label>
-                                                    <input placeholder="08541515345" disabled type="text" class="imformation__account-update-form-item-input">
+                                                    <input placeholder="08541515345" disabled type="text" class="form-control imformation__account-update-form-item-input">
                                                 </div>
-                                                <div class="imformation__account-update-form-item">
+                                                <div class="form-group imformation__account-update-form-item">
                                                     <label class="imformation__account-update-form-item-title">Họ và tên</label>
                                                     <div class="imformation__account-update-form-item-hafl-block">
-                                                        <input placeholder="Họ" type="text" class="imformation__account-update-form-item-hafl-block-input imformation__account-update-form-item-hafl-block-input--small">
-                                                        <input placeholder="Tên" type="text" class="imformation__account-update-form-item-hafl-block-input imformation__account-update-form-item-hafl-block-input--full">
+                                                        <input placeholder="Họ" type="text" class="imformation__account-update-form-item-hafl-block-input imformation__account-update-form-item-hafl-block-input--small form-control">
+                                                        <input placeholder="Tên" type="text" class="imformation__account-update-form-item-hafl-block-input imformation__account-update-form-item-hafl-block-input--full form-control">
                                                     </div>
                                                 </div>
-                                                <div class="imformation__account-update-form-item">
+                                                <input type="checkbox" name="" id="add__email" hidden class="add__email">
+                                                <div class="form-group imformation__account-update-form-item">
                                                     <label class="imformation__account-update-form-item-title">Địa chỉ email</label>
-                                                    <input placeholder="khoa32265@gmail.com" type="text" class="imformation__account-update-form-item-input">
+                                                    <input placeholder="khoa32265@gmail.com" type="text" class="imformation__account-update-form-item-input form-control">
+                                                    <label for="add__email" class="imformation__account-update-form-item-btn">
+                                                        <i class="imformation__account-update-form-item-btn--add far fa-plus-circle"></i>
+                                                        <i class="imformation__account-update-form-item-btn--min far fa-minus-circle"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="form-group imformation__account-update-form-item form-group imformation__account-update-form-item--email">
+                                                    <label class="imformation__account-update-form-item-title">Địa chỉ email 2</label>
+                                                    <input placeholder="khoa32265@gmail.com" type="text" class="imformation__account-update-form-item-input form-control">
+                                                </div>
+                                                
+                                                <div class="form-group imformation__account-update-form-item">
+                                                    <label class="imformation__account-update-form-item-title">Số điện thoại</label>
+                                                    <div class="imformation__account-update-form-item-half">
+                                                        <div class="custom-select imformation__account-update-form-item-input--half imformation__account-update-form-item-input--mr">
+                                                            <select>
+                                                              <option value="0">Chọn kiểu mã vùng!</option>
+                                                              <option value="1">(+84) Việt Nam</option>
+                                                              <option value="2">(+56) Lào</option>
+                                                              <option value="3">(+698) Campuchia</option>
+                                                              <option value="4">(+99) Indonesia</option>
+                                                            </select>
+                                                        </div>
+                                                        <input type="text" class="imformation__account-update-form-item-input imformation__account-update-form-item-input--half form-control">
+                                                    </div>
+                                                    <button class="imformation__account-update-form-item-btn imformation__account-update-form-item-btn--green btn">Gửi mã xác nhận</button>
+                                                </div>
+                                                <div class="form-group imformation__account-update-form-item">
+                                                    <label class="imformation__account-update-form-item-title">Số điện thoại 2</label>
+                                                    <div class="imformation__account-update-form-item-half">
+                                                        <div class="custom-select imformation__account-update-form-item-input--half imformation__account-update-form-item-input--mr">
+                                                            <select>
+                                                              <option value="0">Chọn kiểu mã vùng!</option>
+                                                              <option value="1">(+84) Việt Nam</option>
+                                                              <option value="2">(+56) Lào</option>
+                                                              <option value="3">(+698) Campuchia</option>
+                                                              <option value="4">(+99) Indonesia</option>
+                                                            </select>
+                                                        </div>
+                                                        <input type="text" class="imformation__account-update-form-item-input imformation__account-update-form-item-input--half form-control">
+                                                    </div>
                                                     <label for="" class="imformation__account-update-form-item-btn">
                                                         <i class="far fa-plus-circle"></i>
                                                     </label>
                                                 </div>
-                                                <div class="imformation__account-update-form-item">
-                                                    <label class="imformation__account-update-form-item-title">Số điện thoại</label>
-                                                    <input type="text" class="imformation__account-update-form-item-input">
+                                                <div class="imformation__account-update-form-btn-block">
+                                                    <btn class="imformation__account-update-form-btn btn btn--normal">
+                                                        <i class="fal fa-lock-alt"></i> Đổi mật khấu mới
+                                                    </btn>
                                                 </div>
-                                                <div class="imformation__account-update-form-item">
-                                                    <label class="imformation__account-update-form-item-title">Tài khoản</label>
-                                                    <input type="text" class="imformation__account-update-form-item-input">
-                                                </div>
-                                                <div class="imformation__account-update-form-btn btn btn--normal">
-                                                    <i class="fal fa-lock-alt"></i> Đổi mật khấu mới
-                                                </div>
-                                            </div>
+                                            </form>
 
 
                                         </div>
@@ -983,4 +1018,5 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 <script src="../js/imformation.js"></script>
+<script src="../js/base.js"></script>
 </html>

@@ -1,0 +1,334 @@
+/* mobile  & tablet*/
+@media (max-width: 63.9375em) {
+    .hidden__on__txm {
+        display: none;
+    }
+    
+}
+
+/* tablet  */
+@media (min-width: 46.1875em) and (max-width: 63.9375em) {
+    .hidden__on__tablet {
+        display: none;
+    }
+
+    .shop__details-rate-star {
+        margin-right: 10px;
+        color: rgb(246, 246, 246);
+    }
+
+    .shop__details-avt-edit.btn{
+        height: 30px;
+        padding: 0px 8px;
+        font-size: 1.4rem;
+    }
+
+    .shop__details-avt-update-acti-btn {
+        height: 30px;
+        font-size: 1.4rem;
+    }
+
+    .shop__details-title-name {
+        font-size: 2.4rem;
+    }
+
+    .shop__details-title-confirm,
+    .shop__details-title-confirm-icon {
+        font-size: 1.2rem;
+    }
+
+    /* .shop__details-title-btn {
+        font-size: 1.2rem;
+        display: none;
+    } */
+
+    .shop__details-place-desc,
+    .shop__details-place-btn {
+        font-size: 1.4rem;
+    }
+
+    .shop__details-cate {
+        font-size: 1.3rem;
+    }
+
+    .shop__details-vote-notifi-desc {
+        font-size: 1.2rem;
+    }
+
+    .shop__details-vote-bgr {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .shop__details-vote-active-input {
+        margin: 0 ;
+    }
+
+    .shop__details-tab-nav-item {
+        font-size: 1.6rem;
+    }
+
+    .shop__details-exten-btn {
+        font-size: 1.4rem;
+    }
+
+    .shop__vote-i4-avt-star-block {
+        padding: 2px 3px;
+    }
+
+    .shop__vote-acti-fell-number {
+        padding: 2px 5px;
+    }
+
+    .shop__vote-acti-fell-btn-icon {
+        padding-right: 5px;
+    }
+    
+    .shop__vote-acti-fell-btn {
+        font-size: 1.2rem;
+        padding: 0px 10px;
+    }
+
+    /* .shop__vote-acti-btn--up {
+        display: none;
+    } */
+
+    .shop__exten-details-report {
+        font-size: 1rem;
+    }
+
+    .shop__exten-product {
+        padding: 20px 10px 0px 10px;
+    }
+
+    .shop__exten-product {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+
+    .shop__exten-product-item {
+        margin-bottom: 10px;
+        border: 1px solid #F6F6F6;
+        border-radius: 4px;
+        flex-basis: 32%;
+    }
+
+    /* .shop__exten-product-item--no {
+        border: none;
+    } */
+
+    .shop__exten-product-item-link {
+        flex-wrap: wrap;
+    }
+
+    .shop__exten-product-item-img {
+        width: 100%;
+    }
+
+    .shop__exten-product-item-desc {
+        font-size: 1.3rem;
+        padding-top: 10px;
+    }
+
+    .shop__details-tab-menu-notifi-icon {
+        font-size: 3rem;
+    }
+
+    .shop__details-tab-menu-notifi-desc {
+        font-size: 1.2rem;
+        padding: 0 5px;
+    }
+
+    .shop__details-tab-menu-notifi-btn {
+        display: block;
+        text-align: center;
+        height: 30px;
+        font-size: 1rem;
+        padding: 5px 5px;
+        width: 200px;
+    }
+    
+    .shop__details-tab-menu-prd-item-desc {
+        padding: 10px;
+    }
+
+    .shop__details-tab-menu-prd-item-img {
+        /* height: 100%;
+        display: block; */
+    }
+
+    .shop__details-tab-menu-prd-item-desc-vote-text {
+        display: none;
+    }
+
+    .shop__details-tab-menu-prd-item-desc-vote-number {
+        font-size: 1.4rem;
+    }
+
+    .shop__details-tab-menu-prd-item-desc-vote {
+        flex-wrap: wrap;
+    }
+
+    .shop__details-tab-menu-prd-item-desc-title {
+        margin-top: 5px;
+        font-size: 1.2rem;
+        list-style: 1.2rem;
+        height: 3.6rem;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .shop__details-tab-lib-stt {
+        width: 164px;
+        font-size: 1.3rem;
+    }
+
+    .shop__details-tab-intro-item-block {
+        height: 200px;
+    }
+
+    .suggest {
+        padding-top: 0;
+    }
+
+    .suggest__header-title {
+        padding-top: 0;
+    }
+
+}
+/* mobi  */
+@media (max-width: 46.1875em) {
+
+    .hidden__on__mb {
+        display: none;
+    }
+
+    /* slide  */
+    .home__slide-content-item-img {
+        height: 200px;
+    }
+
+    /* tab control  */
+    .active__tab-title {
+        font-size: 2rem;
+    }
+
+    .active__tab-item {
+        min-width: unset;
+        padding: 5px 5px;
+        font-size: 1.4rem;
+    }
+
+    .active__tab-icon {
+        width: unset;
+        font-size: 1.8rem;
+        padding-right: 5px;
+    }
+
+    .shop__details-title-name {
+        font-size: 2rem;
+    }
+
+    .shop__details-title-confirm {
+        font-size: 1.2rem;
+    }
+
+    .shop__details-place-desc,
+    .shop__details-place-btn {
+        font-size: 1.4rem;
+    }
+
+    .shop__details-rate-star {
+        margin-right: 10px;
+    }
+
+    .shop__details-cate {
+        font-size: 1.3rem;
+    }
+
+    .shop__details-exten-btn {
+        font-size: 1.0rem;
+    }
+
+    .shop__details-tab-nav-item {
+        font-size: 1.6rem;
+    }
+
+    .shop__details-tab-intro-desc {
+        font-size: 1.4rem;
+    }
+
+    .suggest {
+        padding-top: 0;
+    }
+
+    .suggest__header-title {
+        padding-top: 0px;
+    }
+
+    .suggest__details-item {
+        padding: 0 20px;
+    }
+
+    .shop__details-avt-edit,
+    .shop__details-avt-update-acti-btn {
+        font-size: 1.2rem;
+    }
+
+    .shop__exten {
+        padding-top: 35px;
+    }
+
+    .shop__exten-details-report {
+        top: 40px;
+    }
+
+    .shop__details-time-details {
+        width: 380px;
+    }
+
+    .shop__details-time-details-item-title {
+        font-size: 1.6rem;
+    }
+
+    .shop__details-table-item {
+        font-size: 1.2rem;
+    }
+
+    .shop__details-table-stt {
+        font-size: 1.3rem;
+    }
+
+    .shop__details-exten-share {
+        right: 0;
+        left: unset;
+    }
+
+    .shop__details-report {
+        width: 360px;
+    }
+
+    .shop__details-report-header-title {
+        font-size: 1.6rem;
+    }
+
+    .shop__details-report-desc {
+        height: 100px;
+    }
+
+    .shop__details-report-img-item {
+        height: 90px;
+        width: 90px;
+    }
+
+    .shop__details-report-confim-desc {
+        font-size: 1.1rem;
+    }
+
+   .shop__details-report-confim-link {
+       display: none;
+   }
+}

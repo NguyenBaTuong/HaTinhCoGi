@@ -67,7 +67,7 @@ function closeAllSelect(elmnt) {
 
 document.addEventListener("click", closeAllSelect);
 
-// validate 
+// Đối tượng `Validator`
 function Validator(options) {
     function getParent(element, selector) {
         while (element.parentElement) {
@@ -80,6 +80,7 @@ function Validator(options) {
 
     var selectorRules = {};
 
+    // Hàm thực hiện validate
     function validate(inputElement, rule) {
         var errorElement = getParent(inputElement, options.formGroupSelector).querySelector(options.errorSelector);
         var errorMessage;
@@ -173,7 +174,6 @@ function Validator(options) {
             var inputElements = formElement.querySelectorAll(rule.selector);
 
             Array.from(inputElements).forEach(function (inputElement) {
-
                 inputElement.onblur = function () {
                     validate(inputElement, rule);
                 }
@@ -188,12 +188,21 @@ function Validator(options) {
     }
 
 }
-
 Validator.isRequired = function (selector, message) {
     return {
         selector: selector,
         test: function (value) {
             return value ? undefined :  message || 'Vui lòng nhập trường này'
+        }
+    };
+}
+
+Validator.isSelect = function (selector, message) {
+    return {
+        selector: selector,
+        test: function (value) {
+            var regex = /[0-9]|\./;
+            return regex.test(value) ? undefined :  message || 'Trường háhdvjsal';
         }
     };
 }
@@ -212,7 +221,7 @@ Validator.isPhone = function (selector, message) {
     return {
         selector: selector,
         test: function (value) {
-            var regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+            var regex = /((0)+([0-9]{9})\b)/g;
             return regex.test(value) ? undefined :  message || 'Vui lòng nhập số điện thoại hợp lệ';
         }
     };
@@ -224,7 +233,7 @@ Validator.isUsername = function (selector, message) {
         test: function (value) {
             var regex = /((0)+([0-9]{9})\b)/g;
             var regex1 = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-            if (regex.test(value) === true || regex1.test(value) === true) {
+            if (regex.test(value) === true && regex1.test(value) === true) {
                 return message = '';
             } else {
                 return message = 'Số điện thoại hoặc email không hợp lệ!';
