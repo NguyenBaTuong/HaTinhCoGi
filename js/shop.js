@@ -83,4 +83,125 @@ function myFunction2() {
   document.execCommand("copy");
 }
 
+// out form cmt
 
+
+
+
+
+// document.addEventListener("click", function(evt) {
+//   var label__id = document.getElementById('label__id');
+//   var cmt =  document.getElementById('form__cmt');
+//   var name = document.getElementById('form__name');
+//   var email = document.getElementById('form__email');
+//   var shop__vote__star = document.getElementById('shop__vote__star');
+//   var active = document.getElementById('koko');
+//   var control__cancel = document.getElementById('control__cancel');
+//       targetElement = evt.target;  
+
+//   do {
+//       if (targetElement == active || cmt.value !== '' || name.value !== '' || email.value !== '') {
+//         shop__vote__star.style.display = 'block';
+//         // if(shop__vote__star.style.display === 'block') {
+//         //   label__id.style.display = 'none';
+//         // } else {
+//         //   label__id.style.display = 'block';
+//         // }
+//         // alert('trong')
+//           return;
+//       }
+//       targetElement = targetElement.parentNode;
+//   } while (targetElement);
+
+//   shop__vote__star.style.display = 'none';
+//   label__id.style.display = 'block';
+
+//   // alert('ngoai')
+// });
+
+document.addEventListener("click", function(evt) {
+  var label__id = document.getElementById('label__id');
+  var cmt =  document.getElementById('form__cmt');
+  var name = document.getElementById('form__name');
+  var email = document.getElementById('form__email');
+  var shop__vote__star = document.getElementById('shop__vote__star');
+  var active = document.getElementById('koko');
+  var control__cancel = document.getElementById('control__cancel');
+      targetElement = evt.target;  
+
+  do {
+      if (targetElement == active || cmt.value !== '' || name.value !== '' || email.value !== '') {
+        shop__vote__star.style.display = 'block';
+        label__id.style.display = 'none';
+        // if(shop__vote__star.style.display === 'block') {
+        //   label__id.style.display = 'none';
+        // } else {
+        //   label__id.style.display = 'block';
+        // }
+        return;
+      }
+      
+      targetElement = targetElement.parentNode;
+  } while (targetElement);
+  
+  shop__vote__star.style.display = 'none';
+  label__id.style.display = 'block';
+  
+  // alert('ngoai')
+});
+
+control__cancel.onclick = function () {
+          
+  if(shop__vote__star.style.display === 'block') {
+    alert('ẩn')
+    shop__vote__star.style.display = 'none';
+    label__id.style.display = 'block';
+    label__id.style.background = 'red';
+  } 
+}
+
+
+function show__form() {
+  var label__id = document.getElementById('label__id');
+  var shop__vote__star = document.getElementById('shop__vote__star');
+
+  if(shop__vote__star.style.display === 'block') {
+    shop__vote__star.style.display = 'none';
+    label__id.style.display = 'block';
+  } else {
+    shop__vote__star.style.display = 'block';
+    label__id.style.display = 'none';
+  }
+}
+
+function show__form2() {
+  var label__id = document.getElementById('label__id');
+  var shop__vote__star = document.getElementById('shop__vote__star');
+  alert('oke')
+  if(shop__vote__star.style.display === 'block') {
+    shop__vote__star.style.display = 'none';
+    label__id.style.display = 'block';
+  } else {
+    shop__vote__star.style.display = 'block';
+    label__id.style.display = 'none';
+  }
+}
+
+function show__help() {
+  var label__id = document.getElementById('label__id');
+  var shop__vote__star = document.getElementById('shop__vote__star');
+  var cmt =  document.getElementById('form__cmt');
+  var name = document.getElementById('form__name');
+  var email = document.getElementById('form__email');
+
+  if(cmt.value === '' && name.value === '' && email.value === '') {
+    shop__vote__star.style.display = 'none';
+    label__id.style.display = 'block';
+  };
+
+  if(cmt.value !== '' || name.value !== '' || email.value !== '') {
+    shop__vote__star.style.display = 'block';
+    label__id.style.display = 'none';
+  };
+
+}

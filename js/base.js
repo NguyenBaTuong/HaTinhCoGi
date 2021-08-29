@@ -233,7 +233,7 @@ Validator.isUsername = function (selector, message) {
         test: function (value) {
             var regex = /((0)+([0-9]{9})\b)/g;
             var regex1 = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-            if (regex.test(value) === true && regex1.test(value) === true) {
+            if (regex.test(value) === true || regex1.test(value) === true) {
                 return message = '';
             } else {
                 return message = 'Số điện thoại hoặc email không hợp lệ!';

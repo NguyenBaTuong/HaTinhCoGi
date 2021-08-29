@@ -331,4 +331,12 @@
    .shop__details-report-confim-link {
        display: none;
    }
+
+   .shop__details-tab-lib-end {
+       flex-direction: column-reverse;
+   }
+
+   .pagination {
+       margin-bottom: 20px;
+   }
 }
