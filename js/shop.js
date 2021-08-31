@@ -151,12 +151,17 @@ document.addEventListener("click", function(evt) {
 });
 
 control__cancel.onclick = function () {
-          
+  var label__id = document.getElementById('label__id');
+  var cmt =  document.getElementById('form__cmt');
+  var name = document.getElementById('form__name');
+  var email = document.getElementById('form__email');
+  var shop__vote__star = document.getElementById('shop__vote__star');     
   if(shop__vote__star.style.display === 'block') {
-    alert('ẩn')
-    shop__vote__star.style.display = 'none';
-    label__id.style.display = 'block';
-    label__id.style.background = 'red';
+    cmt.value = '';
+    name.value = '';
+    email.value = '';
+    // shop__vote__star.style.display = 'none';
+    // label__id.style.display = 'block';
   } 
 }
 

@@ -612,12 +612,38 @@
         
         <div class="container info">
             <div class="row info__i4">
-                <div class="col-7 info__i4-main">
+                <div class="col-lg-7 col-md-12 col-sm-12 col-12 info__i4-main">
                     <div class="info__i4-main-avt">
-                        <img src="https://icdn.dantri.com.vn/thumb_w/640/2020/11/21/tu-20-1605924750889.jpg" alt="" class="info__i4-main-avt-img">
-                        <button class="info__i4-main-avt-btn">
+                        <input type="checkbox" name="" id="update__avt" class="update__avt" hidden>
+                        <label id="avt__block" for="update__avt" class="info__i4-main-avt-block">
+                            <img src="https://icdn.dantri.com.vn/thumb_w/640/2020/11/21/tu-20-1605924750889.jpg" alt="" class="info__i4-main-avt-img" id="avt__origin">
+                            <div class="info__i4-main-avt-overlay">
+                                <i class="fal fa-camera info__i4-main-avt-overlay-icon"></i>
+                            </div>
+                        </label>
+                        <div class="modal">
+                            <label for="update__avt" class="modal__overlay"></label>
+                            <div class="container modal__body">
+                                <div class="info__i4-main-avt-update">
+                                    <div class="info__i4-main-avt-update-box">
+                                        <input class="info__i4-main-avt-update-file" type="file" name="" id="avt__up" accept="image/*">
+                                        <img src="https://anhdep123.com/wp-content/uploads/2021/05/avatar-trang-dep.jpg" alt="" class="info__i4-main-avt-update-img" id="avt__other">
+                                        <span class="info__i4-main-avt-update-text"> Click để thay ảnh</span>
+                                    </div>
+                                    <div class="info__i4-main-avt-update-ac">
+                                        <label id="cancel__avt" for="update__avt" class="info__i4-main-avt-update-ac-btn btn btn--disable">Hủy bỏ</label>
+                                        <button id="avt__save" class="info__i4-main-avt-update-ac-btn btn btn--primary">Cập nhật</button>
+                                    </div>
+                                    <label for="update__avt" class="info__i4-main-avt-update-close">
+                                        <i class="fal fa-times"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="checkbox" name="" id="btn__love" class="btn__love" hidden>
+                        <label for="btn__love" class="info__i4-main-avt-btn">
                             <i class="fas fa-heart info__i4-main-avt-btn-icon"></i> Yêu thích
-                        </button>
+                        </label>
                     </div>
                     
                     <div class="info__i4-main-desc">
@@ -652,7 +678,7 @@
                         
                     </div>
                 </div>
-                <div class="col-5 info__i4-desc">
+                <div class="col-lg-5 col-md-12 col-sm-12 col-12 info__i4-desc">
                     <table class="info__i4-desc-table">
                         <tbody>
                             <tr class="info__i4-desc-table-tr">
@@ -661,7 +687,7 @@
                             </tr>
                             <tr class="info__i4-desc-table-tr">
                                 <th class="info__i4-desc-table-th">Số điện thoại</th>
-                                <td class="info__i4-desc-table-td">0854220400</td>
+                                <td class="info__i4-desc-table-td">&#10022;&#10022;&#10022;&#10022;&#10022;</td>
                             </tr>
                             <tr class="info__i4-desc-table-tr">
                                 <th class="info__i4-desc-table-th">Ngày Sinh</th>
@@ -697,10 +723,10 @@
                     <div class="active__tab-item info__nav-list-item">
                         Bài viết
                     </div>
-                    <div class="active__tab-item info__nav-list-item">
+                    <div class="active__tab-item info__nav-list-item active">
                         Giới thiệu
                     </div>
-                    <div class="active__tab-item info__nav-list-item active">
+                    <div class="active__tab-item info__nav-list-item">
                         Hoạt động
                     </div>
                     <div class="active__tab-item info__nav-list-item">
@@ -876,41 +902,312 @@
                             </div>
                         </div>
                     </div>
-                    <div class="active__tab-pane info__nav-pane">
-                        <table class="info__nav-pane-table">
-                            <tbody>
-                                <tr class="info__nav-pane-table-tr">
-                                    <th class="info__nav-pane-table-th">ID tài khoản:</th>
-                                    <td class="info__nav-pane-table-td">19001009</td>
-                                </tr>
-                                <tr class="info__nav-pane-table-tr">
-                                    <th class="info__nav-pane-table-th">Họ và Tên:</th>
-                                    <td class="info__nav-pane-table-td">Bá Tương</td>
-                                </tr>
-                                <tr class="info__nav-pane-table-tr">
-                                    <th class="info__nav-pane-table-th">Loại tài khoản:</th>
-                                    <td class="info__nav-pane-table-td">Cá Nhân</td>
-                                </tr>
-                                <tr class="info__nav-pane-table-tr">
-                                    <th class="info__nav-pane-table-th">Ngày sinh:</th>
-                                    <td class="info__nav-pane-table-td">22/04/2000</td>
-                                </tr>
-                                <tr class="info__nav-pane-table-tr">
-                                    <th class="info__nav-pane-table-th">Số điện thoại:</th>
-                                    <td class="info__nav-pane-table-td">0854220400</td>
-                                </tr>
-                                <tr class="info__nav-pane-table-tr">
-                                    <th class="info__nav-pane-table-th">Địa chỉ:</th>
-                                    <td class="info__nav-pane-table-td">Thạch Mỹ, Lộc Hà, Hà Tĩnh</td>
-                                </tr>
-                                <tr class="info__nav-pane-table-tr">
-                                    <th class="info__nav-pane-table-th">Ngày tham gia:</th>
-                                    <td class="info__nav-pane-table-td">07/07/2017</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
                     <div class="active__tab-pane info__nav-pane active">
+                    <!-- //kem  -->
+                    <div class="container imformation__details-block">
+                        <div class="row imformation__details">
+                            <div class="col-lg-3 imformation__details-exten-block">
+                                <div class="imformation__details-exten">
+                                    <div class="imformation__details-exten-i4">
+                                        <img src="https://i.pinimg.com/originals/42/b8/61/42b861529a3aba4b8610309a25b205db.png" alt="" class="imformation__details-exten-i4-img">
+                                        <div class="imformation__details-exten-i4-desc">
+                                            <h3 class="imformation__details-exten-i4-desc-name">Nguyễn Duy Khoa</h3>
+                                            <h4 class="imformation__details-exten-i4-desc-type">Thành viên</h4>
+                                        </div>
+                                    </div>
+        
+                                    <ul class="imformation__details-exten-list">
+                                        <li class="imformation__details-exten-item">
+                                            <i class="fal fa-heart"></i> Thông tin tài khoản
+                                        </li>
+                                        <li class="imformation__details-exten-item active">
+                                            <i class="far fa-history"></i> Đổi mật khẩu
+                                        </li>                                     
+                                    </ul>
+        
+                                </div>
+                            </div>
+                            <div class="col-lg-9 imformation__details-content-block">
+                                <div class="imformation__details-content">
+                                    <div class="imformation__details-content-panel">
+                                        <div class="imformation__account">
+                                            <input class="imformation__tabput" hidden type="checkbox" name="" id="imformation__tabput">
+                                            <div class="imformation__account-tabput1">
+                                                <div class="imformation__account-header">
+                                                    <div class="imformation__account-header-i4">
+                                                        <img src="https://icdn.dantri.com.vn/thumb_w/640/2020/11/21/tu-20-1605924750889.jpg" alt="" class="imformation__account-header-i4-avt">
+                                                        <div class="imformation__account-header-i4-desc">
+                                                            <h3 class="imformation__account-header-i4-desc-name">Nguyễn Duy Khoa</h3>
+                                                            <h4 class="imformation__account-header-i4-desc-type">Thành viên</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="imformation__account-details-block">
+                                                    <table id="table" class="imformation__account-details">
+                                                        <tr class="imformation__account-details-item">
+                                                            <th class="imformation__account-details-item-name">Tài khoản</th>
+                                                            <td id="td1" class="imformation__account-details-item-desc">
+                                                                Thành viên       
+                                                            </td>    
+                                                            <!-- <td class="imformation__account-details-item-update">
+                                                                <label onclick="return okb(this)" id="btn__td1" class="imformation__account-details-item-update-btn btn--green">
+                                                                    <i class="imformation__account-details-item-update-btn-icon fas fa-pencil-alt"></i> Sửa
+                                                                </label>      
+                                                            </td>     -->
+                                                                                                                  
+                                                        </tr>
+                                                        
+                                                        <tr class="imformation__account-details-item">
+                                                            <th class="imformation__account-details-item-name">Họ và tên</th>
+                                                            <td id="td2" class="imformation__account-details-item-desc">
+                                                                Nguyễn Duy Khoa       
+                                                            </td>    
+                                                            <td class="imformation__account-details-item-update">
+                                                                <label onclick="return okb(this)" id="btn__td2" class="imformation__account-details-item-update-btn btn--green">
+                                                                    <i class="imformation__account-details-item-update-btn-icon fas fa-pencil-alt"></i> Sửa
+                                                                </label>      
+                                                            </td>    
+                                                                                                                 
+                                                        </tr>
+
+                                                        <tr class="imformation__account-details-item">
+                                                            <th class="imformation__account-details-item-name">Địa chỉ Email</th>
+                                                            <td id="td3" class="imformation__account-details-item-desc">
+                                                                khoa1242@gmail.com      
+                                                            </td>    
+                                                            <td class="imformation__account-details-item-update">
+                                                                <label onclick="return okb(this)" id="btn__td3" class="imformation__account-details-item-update-btn btn--green">
+                                                                    <i class="imformation__account-details-item-update-btn-icon fas fa-pencil-alt"></i> Sửa
+                                                                </label>      
+                                                            </td>    
+                                                                                                                 
+                                                        </tr>
+                                                        <tr class="imformation__account-details-item">
+                                                            <th class="imformation__account-details-item-name">Ngày sinh</th>
+                                                            <td id="td4" class="imformation__account-details-item-desc">
+                                                                22/04/2000    
+                                                            </td>    
+                                                            <td class="imformation__account-details-item-update">
+                                                                <label onclick="return okb(this)" id="btn__td4" class="imformation__account-details-item-update-btn btn--green">
+                                                                    <i class="imformation__account-details-item-update-btn-icon fas fa-pencil-alt"></i> Sửa
+                                                                </label>      
+                                                            </td>    
+                                                                                                                 
+                                                        </tr>
+                                                        <tr class="imformation__account-details-item">
+                                                            <th class="imformation__account-details-item-name">Ngày tham gia</th>
+                                                            <td id="td5" class="imformation__account-details-item-desc">
+                                                                08/08/2018    
+                                                            </td>    
+                                                            <td class="imformation__account-details-item-update">
+                                                                <label onclick="return okb(this)" id="btn__td5" class="imformation__account-details-item-update-btn btn--green">
+                                                                    <i class="imformation__account-details-item-update-btn-icon fas fa-pencil-alt"></i> Sửa
+                                                                </label>      
+                                                            </td>    
+                                                                                                                 
+                                                        </tr>
+                                                        <tr class="imformation__account-details-item">
+                                                            <th class="imformation__account-details-item-name">Địa chỉ</th>
+                                                            <td id="td6" class="imformation__account-details-item-desc">
+                                                                Thạch Mỹ, Lộc Hà, Hà Tĩnh   
+                                                            </td>    
+                                                            <td class="imformation__account-details-item-update">
+                                                                <label onclick="return okb(this)" id="btn__td6" class="imformation__account-details-item-update-btn btn--green">
+                                                                    <i class="imformation__account-details-item-update-btn-icon fas fa-pencil-alt"></i> Sửa
+                                                                </label>      
+                                                            </td>    
+                                                                                                                 
+                                                        </tr>
+                                                        <tr class="imformation__account-details-item">
+                                                            <th class="imformation__account-details-item-name">Số điện thoại</th>
+                                                            <td id="td7" class="imformation__account-details-item-desc">
+                                                                +84.555.666.7777  
+                                                            </td>    
+                                                            <td class="imformation__account-details-item-update">
+                                                                <label onclick="return okb(this)" id="btn__td7" class="imformation__account-details-item-update-btn btn--green">
+                                                                    <i class="imformation__account-details-item-update-btn-icon fas fa-pencil-alt"></i> Sửa
+                                                                </label>      
+                                                            </td>    
+                                                                                                                 
+                                                        </tr>
+                                                        
+                                                     
+                                                    
+                                                        <!-- <tr class="imformation__account-details-item">
+                                                            <th class="imformation__account-details-item-name"></th>
+                                                            <td class="imformation__account-details-item-desc">
+                                                                 
+                                                                <button class="imformation__account-details-item-desc-btn btn btn--green">
+                                                                    Gửi mã xác nhận
+                                                                </button>
+                                                            </td>
+                                                        </tr> -->
+                                                        <!-- <tr class="imformation__account-details-item">
+                                                            <th class="imformation__account-details-item-name">Mật khấu</th>
+                                                            <td class="imformation__account-details-item-desc">
+                                                                <i class="fas fa-circle"></i>
+                                                                <i class="fas fa-circle"></i>
+                                                                <i class="fas fa-circle"></i>
+                                                                <i class="fas fa-circle"></i>
+                                                                <i class="fas fa-circle"></i>
+                                                                <i class="fas fa-circle"></i>
+                                                            </td>
+                                                        </tr> -->
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="imformation__account-tabput2">
+                                                <div class="imformation__account-update">
+                                                    <div class="imformation__account-update-avt">
+                                                        <img src="https://mucwomen.com/wp-content/uploads/2021/04/trieu-lo-tu.jpg" alt="" class="imformation__account-update-avt-img">
+                                                        <div class="imformation__account-update-avt-acti">
+                                                            <h4 class="imformation__account-update-avt-acti-title">Nguyễn Duy Khoa</h4>
+                                                            <h5 class="imformation__account-update-avt-acti-type">Thành viên</h5>
+                                                            <label class="imformation__account-update-avt-acti-up">
+                                                                <input placeholder="Tải ảnh lên" class="imformation__account-update-avt-acti-up-input" type="text" name="" id="" disabled>
+                                                                <label for="upload__img" class="imformation__account-update-avt-acti-up-name btn btn--primary" >Upload</label>
+                                                                <input type="file" name="" hidden id="upload__img">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <form id="update__imformation" class="imformation__account-update-form">
+                                                        <div class="form-group imformation__account-update-form-item">
+                                                            <label class="imformation__account-update-form-item-title">Tài khoản</label>
+                                                            <input placeholder="Thành viên" disabled type="text" class="form-control imformation__account-update-form-item-input">
+                                                        </div>
+                                                        <div class="form-group imformation__account-update-form-item">
+                                                            <label class="imformation__account-update-form-item-title">Họ và tên</label>
+                                                            <div class="imformation__account-update-form-item-hafl-block">
+                                                                <input placeholder="Họ" type="text" class="imformation__account-update-form-item-hafl-block-input imformation__account-update-form-item-hafl-block-input--small form-control">
+                                                                <input placeholder="Tên" type="text" class="imformation__account-update-form-item-hafl-block-input imformation__account-update-form-item-hafl-block-input--full form-control">
+                                                            </div>
+                                                        </div>
+                                                        <input type="checkbox" name="" id="add__email" hidden class="add__email">
+                                                        <div class="form-group imformation__account-update-form-item">
+                                                            <label class="imformation__account-update-form-item-title">Địa chỉ email</label>
+                                                            <input placeholder="khoa32265@gmail.com" type="text" class="imformation__account-update-form-item-input form-control">
+                                                            <label for="add__email" class="imformation__account-update-form-item-btn">
+                                                                <i class="imformation__account-update-form-item-btn--add far fa-plus-circle"></i>
+                                                                <i class="imformation__account-update-form-item-btn--min far fa-minus-circle"></i>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-group imformation__account-update-form-item form-group imformation__account-update-form-item--email">
+                                                            <label class="imformation__account-update-form-item-title">Địa chỉ email 2</label>
+                                                            <input placeholder="khoa32265@gmail.com" type="text" class="imformation__account-update-form-item-input form-control">
+                                                        </div>
+                                                        <div class="form-group imformation__account-update-form-item">
+                                                            <label class="imformation__account-update-form-item-title">Ngày sinh</label>
+                                                            <input placeholder="Ngày sinh" type="date" class="form-control imformation__account-update-form-item-input">
+                                                        </div>
+                                                        <div class="form-group imformation__account-update-form-item">
+                                                            <label class="imformation__account-update-form-item-title">Địa chỉ</label>
+                                                            <input placeholder="Địa chỉ" type="text" class="form-control imformation__account-update-form-item-input">
+                                                        </div>
+                                                        <input type="checkbox" name="" id="add__phone" hidden class="add__phone">
+                                                        <div class="form-group imformation__account-update-form-item">
+                                                            <label class="imformation__account-update-form-item-title">Số điện thoại</label>
+                                                            <div class="imformation__account-update-form-item-half">
+                                                                <div class="custom-select imformation__account-update-form-item-input--half imformation__account-update-form-item-input--mr">
+                                                                    <select>
+                                                                      <option value="0">Chọn kiểu mã vùng!</option>
+                                                                      <option value="1">(+84) Việt Nam</option>
+                                                                      <option value="2">(+56) Lào</option>
+                                                                      <option value="3">(+698) Campuchia</option>
+                                                                      <option value="4">(+99) Indonesia</option>
+                                                                    </select>
+                                                                </div>
+                                                                <input type="text" class="imformation__account-update-form-item-input imformation__account-update-form-item-input--half form-control">
+                                                            </div>
+                                                            <button class="imformation__account-update-form-item-btn imformation__account-update-form-item-btn--green btn">Gửi mã xác nhận</button>
+                                                            <label for="add__phone" class="imformation__account-update-form-item-btn">
+                                                                <i class="imformation__account-update-form-item-btn--add far fa-plus-circle"></i>
+                                                                <i class="imformation__account-update-form-item-btn--min far fa-minus-circle"></i>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-group imformation__account-update-form-item imformation__account-update-form-item--phone">
+                                                            <label class="imformation__account-update-form-item-title">Số điện thoại 2</label>
+                                                            <div class="imformation__account-update-form-item-half">
+                                                                <div class="custom-select imformation__account-update-form-item-input--half imformation__account-update-form-item-input--mr">
+                                                                    <select>
+                                                                      <option value="0">Chọn kiểu mã vùng!</option>
+                                                                      <option value="1">(+84) Việt Nam</option>
+                                                                      <option value="2">(+56) Lào</option>
+                                                                      <option value="3">(+698) Campuchia</option>
+                                                                      <option value="4">(+99) Indonesia</option>
+                                                                    </select>
+                                                                </div>
+                                                                <input type="text" class="imformation__account-update-form-item-input imformation__account-update-form-item-input--half form-control">
+                                                            </div>
+                                                            <button class="imformation__account-update-form-item-btn imformation__account-update-form-item-btn--green btn">Gửi mã xác nhận</button>
+                                                        </div>
+                                                        <div class="imformation__account-update-form-btn-block">
+                                                            <btn class="imformation__account-update-form-btn btn btn--primary">
+                                                                <i class="imformation__account-update-form-btn-icon fal fa-lock-alt"></i> Đổi mật khấu mới
+                                                            </btn>
+                                                        </div>
+                                                    </form>
+        
+        
+                                                </div>
+                                            </div>
+                                            <label for="imformation__tabput" class="imformation__account-btn btn btn--red">
+                                                <i class="fas fa-edit"></i> Sửa thông tin
+                                            </label>
+                                            <label for="imformation__tabput" class="imformation__account-btn imformation__account-btn--close btn btn--red">
+                                                <i class="fas fa-edit"></i> Đóng
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="imformation__details-content-panel active">
+                                        <div class="imformation__account">
+                                            <div class="imformation__account-pass">
+                                                <h2 class="imformation__account-pass-title">Đổi mật khẩu</h2>
+                                                <form id="up__passs" action="" class="imformation__account-pass-form">
+                                                    <div class="imformation__account-pass-form-group form-group">
+                                                        <div class="input-group imformation__account-pass-form-group-box">
+                                                            <input id="up__passs__old" type="password" class="imformation__account-pass-form-input form-control" placeholder="Mật khẩu cũ">
+                                                            <div class="input-group-append imformation__account-pass-form-show">
+                                                                <i class="fal fa-eye" id="togglePassword1"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-message"></div>
+                                                    </div>
+                                                    <div class="imformation__account-pass-form-group form-group">
+                                                        <div class="input-group imformation__account-pass-form-group-box">
+                                                            <input id="up__passs__new" type="password" class="imformation__account-pass-form-input form-control" placeholder="Mật khẩu mới">
+                                                            <div class="input-group-append imformation__account-pass-form-show">
+                                                                <i class="fal fa-eye" id="togglePassword2"></i>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="form-message"></div>
+                                                    </div>
+                                                    <div class="imformation__account-pass-form-group form-group">
+                                                        <div class="input-group imformation__account-pass-form-group-box">
+                                                            <input id="up__passs__repeat" type="password" class="imformation__account-pass-form-input form-control" placeholder="Nhập lại mật khẩu mới">
+                                                            <div class="input-group-append imformation__account-pass-form-show">
+                                                                <i class="fal fa-eye" id="togglePassword3"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-message"></div>
+                                                    </div>
+                                                    <div class="imformation__account-pass-form-acti">
+                                                        <button class="imformation__account-pass-form-acti-btn btn btn--disable">Hủy</button>
+                                                        <button class="imformation__account-pass-form-acti-btn btn btn--primary">Cập nhật</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //kem  -->
+
+
+                    </div>
+                    <div class="active__tab-pane info__nav-pane">
                         <div class="info__nav-pane-active">
                             <div class="info__nav-pane-active-title">
                                 <h2 class="info__nav-pane-active-title-name">Lịch sử hoạt động</h2>
@@ -919,17 +1216,24 @@
                             <div class="info__nav-pane-active-list">
                                 <h2 class="info__nav-pane-active-list-title">Tháng 8</h2>
                                 <div class="info__nav-pane-active-item">
-                                    <img src="https://afamilycdn.com/150157425591193600/2021/6/9/19429092812847336352750682843831351936870049n-16232104243461355903940.jpeg" alt="" class="info__nav-pane-active-item-avt">
-                                    <div class="info__nav-pane-active-item-desc">
-                                        <p class="info__nav-pane-active-item-desc-title">
-                                            <span class="info__nav-pane-active-item-desc-title-hot">Nguyễn Bá Tương </span>
-                                            đã thích bài viết của 
-                                            <span class="info__nav-pane-active-item-desc-title-hot"> Thịt chó 7 món</span>
-                                        </p>
-                                        <p class="info__nav-pane-active-item-desc-name">
-                                            Thịt chó 7 món thơm ngon bổ dưỡng
-                                        </p>
+                                    <div class="info__nav-pane-active-item-box">
+                                        <img src="https://afamilycdn.com/150157425591193600/2021/6/9/19429092812847336352750682843831351936870049n-16232104243461355903940.jpeg" alt="" class="info__nav-pane-active-item-avt">
+                                        <div class="info__nav-pane-active-item-desc">
+                                            <div class="info__nav-pane-active-item-desc-box">
+                                                <p class="info__nav-pane-active-item-desc-title">
+                                                    <a href="" class="info__nav-pane-active-item-desc-title-hot">Nguyễn Bá Tương</a>
+                                                     đã thích <a href="" class="info__nav-pane-active-item-desc-title-hot info__nav-pane-active-item-desc-title-hot--full">bài viết</a> của 
+                                                    <a href="" class="info__nav-pane-active-item-desc-title-hot">Thịt chó 7 món</a>
+                                                </p>
+                                                <p class="info__nav-pane-active-item-desc-name">
+                                                    Thịt chó 7 món thơm ngon bổ dưỡng
+                                                </p>
+                                                
+                                            </div>
+                                            <div class="info__nav-pane-active-item-desc-time">09:48</div>
+                                        </div>
                                     </div>
+                                    
                                     <button id="active" class="btn info__nav-pane-active-item-btn">
                                         <i class="fas fa-ellipsis-h"></i>
                                         <div id="active__content" class="info__nav-pane-active-item-btn-mess">
@@ -938,17 +1242,24 @@
                                     </button>
                                 </div>
                                 <div class="info__nav-pane-active-item">
-                                    <img src="https://afamilycdn.com/150157425591193600/2021/6/9/19429092812847336352750682843831351936870049n-16232104243461355903940.jpeg" alt="" class="info__nav-pane-active-item-avt">
-                                    <div class="info__nav-pane-active-item-desc">
-                                        <p class="info__nav-pane-active-item-desc-title">
-                                            <span class="info__nav-pane-active-item-desc-title-hot">Nguyễn Bá Tương </span>
-                                            đã thích bài viết của 
-                                            <span class="info__nav-pane-active-item-desc-title-hot"> Thịt chó 7 món</span>
-                                        </p>
-                                        <p class="info__nav-pane-active-item-desc-name">
-                                            Thịt chó 7 món thơm ngon bổ dưỡng
-                                        </p>
+                                    <div class="info__nav-pane-active-item-box">
+                                        <img src="https://afamilycdn.com/150157425591193600/2021/6/9/19429092812847336352750682843831351936870049n-16232104243461355903940.jpeg" alt="" class="info__nav-pane-active-item-avt">
+                                        <div class="info__nav-pane-active-item-desc">
+                                            <div class="info__nav-pane-active-item-desc-box">
+                                                <p class="info__nav-pane-active-item-desc-title">
+                                                    <a href="" class="info__nav-pane-active-item-desc-title-hot">Nguyễn Bá Tương</a>
+                                                     đã thích <a href="" class="info__nav-pane-active-item-desc-title-hot">bài viết</a> của 
+                                                    <a href="" class="info__nav-pane-active-item-desc-title-hot">Thịt chó 7 món</a>
+                                                </p>
+                                                <p class="info__nav-pane-active-item-desc-name">
+                                                    Thịt chó 7 món thơm ngon bổ dưỡng
+                                                </p>
+                                                
+                                            </div>
+                                            <div class="info__nav-pane-active-item-desc-time">09:48</div>
+                                        </div>
                                     </div>
+                                    
                                     <button id="active" class="btn info__nav-pane-active-item-btn">
                                         <i class="fas fa-ellipsis-h"></i>
                                         <div id="active__content" class="info__nav-pane-active-item-btn-mess">
@@ -956,22 +1267,28 @@
                                         </div>
                                     </button>
                                 </div>
-                                
                             </div>
                             <div class="info__nav-pane-active-list">
                                 <h2 class="info__nav-pane-active-list-title">Tháng 8</h2>
                                 <div class="info__nav-pane-active-item">
-                                    <img src="https://afamilycdn.com/150157425591193600/2021/6/9/19429092812847336352750682843831351936870049n-16232104243461355903940.jpeg" alt="" class="info__nav-pane-active-item-avt">
-                                    <div class="info__nav-pane-active-item-desc">
-                                        <p class="info__nav-pane-active-item-desc-title">
-                                            <span class="info__nav-pane-active-item-desc-title-hot">Nguyễn Bá Tương </span>
-                                            đã thích bài viết của 
-                                            <span class="info__nav-pane-active-item-desc-title-hot"> Thịt chó 7 món</span>
-                                        </p>
-                                        <p class="info__nav-pane-active-item-desc-name">
-                                            Thịt chó 7 món thơm ngon bổ dưỡng
-                                        </p>
+                                    <div class="info__nav-pane-active-item-box">
+                                        <img src="https://afamilycdn.com/150157425591193600/2021/6/9/19429092812847336352750682843831351936870049n-16232104243461355903940.jpeg" alt="" class="info__nav-pane-active-item-avt">
+                                        <div class="info__nav-pane-active-item-desc">
+                                            <div class="info__nav-pane-active-item-desc-box">
+                                                <p class="info__nav-pane-active-item-desc-title">
+                                                    <a href="" class="info__nav-pane-active-item-desc-title-hot">Nguyễn Bá Tương</a>
+                                                     đã thích <a href="" class="info__nav-pane-active-item-desc-title-hot">bài viết</a> của 
+                                                    <a href="" class="info__nav-pane-active-item-desc-title-hot">Thịt chó 7 món</a>
+                                                </p>
+                                                <p class="info__nav-pane-active-item-desc-name">
+                                                    Thịt chó 7 món thơm ngon bổ dưỡng
+                                                </p>
+                                                
+                                            </div>
+                                            <div class="info__nav-pane-active-item-desc-time">09:48</div>
+                                        </div>
                                     </div>
+                                    
                                     <button id="active" class="btn info__nav-pane-active-item-btn">
                                         <i class="fas fa-ellipsis-h"></i>
                                         <div id="active__content" class="info__nav-pane-active-item-btn-mess">
@@ -980,17 +1297,24 @@
                                     </button>
                                 </div>
                                 <div class="info__nav-pane-active-item">
-                                    <img src="https://afamilycdn.com/150157425591193600/2021/6/9/19429092812847336352750682843831351936870049n-16232104243461355903940.jpeg" alt="" class="info__nav-pane-active-item-avt">
-                                    <div class="info__nav-pane-active-item-desc">
-                                        <p class="info__nav-pane-active-item-desc-title">
-                                            <span class="info__nav-pane-active-item-desc-title-hot">Nguyễn Bá Tương </span>
-                                            đã thích bài viết của 
-                                            <span class="info__nav-pane-active-item-desc-title-hot"> Thịt chó 7 món</span>
-                                        </p>
-                                        <p class="info__nav-pane-active-item-desc-name">
-                                            Thịt chó 7 món thơm ngon bổ dưỡng
-                                        </p>
+                                    <div class="info__nav-pane-active-item-box">
+                                        <img src="https://afamilycdn.com/150157425591193600/2021/6/9/19429092812847336352750682843831351936870049n-16232104243461355903940.jpeg" alt="" class="info__nav-pane-active-item-avt">
+                                        <div class="info__nav-pane-active-item-desc">
+                                            <div class="info__nav-pane-active-item-desc-box">
+                                                <p class="info__nav-pane-active-item-desc-title">
+                                                    <a href="" class="info__nav-pane-active-item-desc-title-hot">Nguyễn Bá Tương</a>
+                                                     đã thích <a href="" class="info__nav-pane-active-item-desc-title-hot">bài viết</a> của 
+                                                    <a href="" class="info__nav-pane-active-item-desc-title-hot">Thịt chó 7 món</a>
+                                                </p>
+                                                <p class="info__nav-pane-active-item-desc-name">
+                                                    Thịt chó 7 món thơm ngon bổ dưỡng
+                                                </p>
+                                                
+                                            </div>
+                                            <div class="info__nav-pane-active-item-desc-time">09:48</div>
+                                        </div>
                                     </div>
+                                    
                                     <button id="active" class="btn info__nav-pane-active-item-btn">
                                         <i class="fas fa-ellipsis-h"></i>
                                         <div id="active__content" class="info__nav-pane-active-item-btn-mess">
@@ -998,22 +1322,28 @@
                                         </div>
                                     </button>
                                 </div>
-                                
                             </div>
                             <div class="info__nav-pane-active-list">
                                 <h2 class="info__nav-pane-active-list-title">Tháng 8</h2>
                                 <div class="info__nav-pane-active-item">
-                                    <img src="https://afamilycdn.com/150157425591193600/2021/6/9/19429092812847336352750682843831351936870049n-16232104243461355903940.jpeg" alt="" class="info__nav-pane-active-item-avt">
-                                    <div class="info__nav-pane-active-item-desc">
-                                        <p class="info__nav-pane-active-item-desc-title">
-                                            <span class="info__nav-pane-active-item-desc-title-hot">Nguyễn Bá Tương </span>
-                                            đã thích bài viết của 
-                                            <span class="info__nav-pane-active-item-desc-title-hot"> Thịt chó 7 món</span>
-                                        </p>
-                                        <p class="info__nav-pane-active-item-desc-name">
-                                            Thịt chó 7 món thơm ngon bổ dưỡng
-                                        </p>
+                                    <div class="info__nav-pane-active-item-box">
+                                        <img src="https://afamilycdn.com/150157425591193600/2021/6/9/19429092812847336352750682843831351936870049n-16232104243461355903940.jpeg" alt="" class="info__nav-pane-active-item-avt">
+                                        <div class="info__nav-pane-active-item-desc">
+                                            <div class="info__nav-pane-active-item-desc-box">
+                                                <p class="info__nav-pane-active-item-desc-title">
+                                                    <a href="" class="info__nav-pane-active-item-desc-title-hot">Nguyễn Bá Tương</a>
+                                                     đã thích <a href="" class="info__nav-pane-active-item-desc-title-hot">bài viết</a> của 
+                                                    <a href="" class="info__nav-pane-active-item-desc-title-hot">Thịt chó 7 món</a>
+                                                </p>
+                                                <p class="info__nav-pane-active-item-desc-name">
+                                                    Thịt chó 7 món thơm ngon bổ dưỡng
+                                                </p>
+                                                
+                                            </div>
+                                            <div class="info__nav-pane-active-item-desc-time">09:48</div>
+                                        </div>
                                     </div>
+                                    
                                     <button id="active" class="btn info__nav-pane-active-item-btn">
                                         <i class="fas fa-ellipsis-h"></i>
                                         <div id="active__content" class="info__nav-pane-active-item-btn-mess">
@@ -1022,17 +1352,24 @@
                                     </button>
                                 </div>
                                 <div class="info__nav-pane-active-item">
-                                    <img src="https://afamilycdn.com/150157425591193600/2021/6/9/19429092812847336352750682843831351936870049n-16232104243461355903940.jpeg" alt="" class="info__nav-pane-active-item-avt">
-                                    <div class="info__nav-pane-active-item-desc">
-                                        <p class="info__nav-pane-active-item-desc-title">
-                                            <span class="info__nav-pane-active-item-desc-title-hot">Nguyễn Bá Tương </span>
-                                            đã thích bài viết của 
-                                            <span class="info__nav-pane-active-item-desc-title-hot"> Thịt chó 7 món</span>
-                                        </p>
-                                        <p class="info__nav-pane-active-item-desc-name">
-                                            Thịt chó 7 món thơm ngon bổ dưỡng
-                                        </p>
+                                    <div class="info__nav-pane-active-item-box">
+                                        <img src="https://afamilycdn.com/150157425591193600/2021/6/9/19429092812847336352750682843831351936870049n-16232104243461355903940.jpeg" alt="" class="info__nav-pane-active-item-avt">
+                                        <div class="info__nav-pane-active-item-desc">
+                                            <div class="info__nav-pane-active-item-desc-box">
+                                                <p class="info__nav-pane-active-item-desc-title">
+                                                    <a href="" class="info__nav-pane-active-item-desc-title-hot">Nguyễn Bá Tương</a>
+                                                     đã thích <a href="" class="info__nav-pane-active-item-desc-title-hot">bài viết</a> của 
+                                                    <a href="" class="info__nav-pane-active-item-desc-title-hot">Thịt chó 7 món</a>
+                                                </p>
+                                                <p class="info__nav-pane-active-item-desc-name">
+                                                    Thịt chó 7 món thơm ngon bổ dưỡng
+                                                </p>
+                                                
+                                            </div>
+                                            <div class="info__nav-pane-active-item-desc-time">09:48</div>
+                                        </div>
                                     </div>
+                                    
                                     <button id="active" class="btn info__nav-pane-active-item-btn">
                                         <i class="fas fa-ellipsis-h"></i>
                                         <div id="active__content" class="info__nav-pane-active-item-btn-mess">
@@ -1040,7 +1377,6 @@
                                         </div>
                                     </button>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -1248,6 +1584,7 @@
                          <p>Được làm bằng cả <i class="fas fa-heart footer__end-love-icon"></i></p>
                      </div>
                  </div>
+                 <input type="text" id="test" value="okmen">
              </div>
         </div>
     </div>
@@ -1255,9 +1592,31 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="../js/base.js"></script>
 <script src="../js/infoUser.js"></script>
 <script>
-  
+    Validator({
+        form: '#up__passs',
+        formGroupSelector: '.form-group',
+        errorSelector: '.form-message',
+        rules: [
+            Validator.isRequired('#up__passs__old'),
+            Validator.isRequired('#up__passs__new'),
+            Validator.isRequired('#up__passs__repeat'),
+            Validator.minLength('#up__passs__old', 6),
+            Validator.minLength('#up__passs__new', 6),
+            // Validator.minLength('#up__passs__repeat', 8),
+            Validator.isConfirmed('#up__passs__repeat', function () {
+                return document.querySelector('#up__passs #up__passs__new').value;
+            }, 'Mật khẩu nhập lại không chính xác')
+                    
+        ],
+        onSubmit: function (data) {
+            console.log(data);
+        }
+    });
 </script>
+
+
 </html>

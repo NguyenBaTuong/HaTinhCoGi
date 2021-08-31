@@ -129,6 +129,7 @@ body {
 
 .btn--green i {
     padding-right: 5px;
+    color: #1EC434 !important;
 }
 
 .btn--green:hover {

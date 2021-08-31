@@ -188,6 +188,14 @@ function Validator(options) {
     }
 
 }
+Validator.isValue = function (selector, message) {
+    return {
+        selector: selector,
+        test: function (value) {
+            return value;
+        }
+    };
+}
 Validator.isRequired = function (selector, message) {
     return {
         selector: selector,

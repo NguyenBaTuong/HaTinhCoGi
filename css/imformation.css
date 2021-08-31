@@ -142,11 +142,8 @@
 .imformation__account-header-i4-desc-type {
     font-size: 1.5rem;
     font-weight: 40;
+    margin-top: 5px;
 }
-
-/* .imformation__account-header-btn {
-
-} */
 
 .imformation__account-details-block {
     padding: 0 20px;
@@ -164,12 +161,16 @@
 
 .imformation__account-details-item-name {
     font-weight: bold;
-    min-width: 96px;
+    min-width: 104px;
 }
 
 .imformation__account-details-item-desc {
     font-weight: 400;
     padding: 0 20px;
+}
+
+[contenteditable]:focus {
+    outline: 0px solid transparent;
 }
 
 .imformation__account-details-item-desc-btn {
@@ -181,11 +182,34 @@
     color: #8B8B8B;
 }
 
+.imformation__account-details-item-update {
+
+}
+
+.imformation__account-details-item-update-btn {
+    font-weight: 400;
+    cursor: pointer;
+    display: none;
+}
+
+.imformation__account-details-item:hover .imformation__account-details-item-update-btn {
+    display: block;
+}
+
+.imformation__account-details-item-update-btn-icon {
+
+}
+
+
 .imformation__account-btn {
     position: absolute;
     z-index: 1;
     top: 10px;
     right: 10px;
+}
+
+.imformation__account-btn.imformation__account-btn--close {
+    display: none;
 }
 
 .imformation__tabput:checked ~ .imformation__account-tabput1 {
@@ -198,6 +222,14 @@
 }
 
 .imformation__tabput:checked ~ .imformation__account-tabput2 {
+    display: block;
+}
+
+.imformation__tabput:checked ~ .imformation__account-btn {
+    display: none;
+}
+
+.imformation__tabput:checked ~ .imformation__account-btn.imformation__account-btn--close {
     display: block;
 }
 
@@ -278,12 +310,36 @@
     display: none;
 }
 
+.imformation__account-update-form-item-btn--min {
+    display: none;
+}
+
 .add__email:checked ~ .imformation__account-update-form-item--email {
     display: flex;
 }
 
-.add__email:checked ~ .imformation__account-update-form-item-btn--add {
+.add__email:checked ~ .imformation__account-update-form-item .imformation__account-update-form-item-btn i.imformation__account-update-form-item-btn--add {
     display: none;
+}
+
+.add__email:checked ~ .imformation__account-update-form-item .imformation__account-update-form-item-btn i.imformation__account-update-form-item-btn--min {
+    display: block;
+}
+
+.imformation__account-update-form-item--phone {
+    display: none;
+}
+
+.add__phone:checked ~ .imformation__account-update-form-item--phone {
+    display: flex;
+}
+
+.add__phone:checked ~ .imformation__account-update-form-item .imformation__account-update-form-item-btn i.imformation__account-update-form-item-btn--add {
+    display: none;
+}
+
+.add__phone:checked ~ .imformation__account-update-form-item .imformation__account-update-form-item-btn i.imformation__account-update-form-item-btn--min {
+    display: block;
 }
 
 .imformation__account-update-form-item-half {
@@ -327,6 +383,10 @@
     color: var(--text-pink-color);
     box-shadow: 0px 1px 1px #00000029;
     border: 1px solid #F3F3F3;
+}
+
+.imformation__account-update-form-btn-icon {
+    margin-right: 5px;
 }
 
 .imformation__account-update-form-item-hafl-block {
@@ -382,4 +442,67 @@
 
 .imformation__account-update-form-item-btn:hover {
     color: var(--primary-color);
+}
+
+.imformation__account-pass {
+    padding: 20px;
+}
+
+h2.imformation__account-pass-title {
+    color: var(--text-pink-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.imformation__account-pass-form {
+    width: 500px;
+}
+
+.input-group.imformation__account-pass-form-group-box {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    padding-right: 5px;
+    border-radius: 4px;
+    height: 40px;
+}
+
+/* .input-group.imformation__account-pass-form-group-box {
+    border: 1px solid red;
+} */
+
+.imformation__account-pass-form-input.form-control {
+    border: none;
+}
+
+.imformation__account-pass-form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.imformation__account-pass-form-input {
+    color: var(--text-pink-color);
+    font-size: 1.6rem;
+    margin-right: 5px;
+    height: 100%;
+}
+
+.imformation__account-pass-form-show {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #949494;
+    margin-left: 5px;
+    line-height: 40px;
+}
+
+.imformation__account-pass-form-show:hover {
+    color: var(--text-pink-color);
+}
+
+.imformation__account-pass-form-acti {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imformation__account-pass-form-acti-btn {
+    margin-left: 10px;
 }
