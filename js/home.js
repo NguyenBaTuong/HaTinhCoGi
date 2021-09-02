@@ -1,4 +1,4 @@
-console.log("Hello world!");
+
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 

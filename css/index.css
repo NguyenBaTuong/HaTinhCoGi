@@ -125,6 +125,10 @@
     padding-right: 10px;
 }
 
+.keyxprd-star__item--no-mr {
+    margin-left: 0; 
+    margin-right: 0;
+}
 
 /* mobile  & tablet*/
 @media (max-width: 63.9375em) {

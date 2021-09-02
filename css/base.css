@@ -57,6 +57,10 @@ input {
 input:focus {
     box-shadow: none;
 }
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
 
 html {
     font-size: 62.5%;
@@ -405,7 +409,7 @@ body {
 }
 
 .keyxprd-desc {
-    padding: 15px 10px;
+    padding: 16px;
     min-height: 115px;
     display: flex;
     flex-direction: column;
@@ -423,7 +427,13 @@ body {
     border-radius: 6px;
     margin-right: 4px;
     margin-top: 4px;
-    padding: 5px 5px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+}
+
+.keyxprd-star__item {
+    margin: auto;
 }
 
 .keyxprd-star-bgr--diss {
@@ -453,6 +463,7 @@ body {
     margin: 0;
     color: #6E6E6E;
     font-size: 1.8rem;
+    line-height: 3.2rem;
     font-weight: bold;
 }
 
@@ -463,19 +474,26 @@ body {
     font-weight: lighter;
 }
 
+.keyxprd-star-title {
+    font-size: 1.4rem;
+}
+
 .keyxprd-star-desc--bgr {
     margin-left: 10px;
 }
 
 .keyxprd-desc__content {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     color: #404040;
     font-weight: 600;
+    line-height: 2.4rem;
+    margin-bottom: 10px;
 }
 
-.keyxprd-title {
-    color: #1D1D1D;
-    font-size: 1.8rem;
+h3.keyxprd-title {
+    /* color: #1D1D1D; */
+    color: #bdbdb2;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 

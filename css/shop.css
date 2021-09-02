@@ -250,6 +250,16 @@
     line-height: 2.8rem;
 }
 
+.shop__details-rate .keyxprd-star-bgr {
+    height: 30px;
+    width: 30px;
+}
+
+.home__eat-item .keyxprd-star-bgr{
+    height: 25px;
+    width: 25px;
+}
+
 /* details vote star on shop  */
 
 .shop__deails-star-block {
