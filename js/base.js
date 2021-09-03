@@ -289,3 +289,13 @@ palaces__tabs.forEach((palaces__tab, palaces__index) => {
   };
 });
 
+
+// stt love
+
+
+function stt__love() {
+    alert('nhận')
+    const keyxprd__stt = document.getElementsByClassName('keyxprd-stt');
+    // const background = document.querySelector('.keyxprd-stt');
+    keyxprd__stt.style.backgroundColor = "red";
+}
