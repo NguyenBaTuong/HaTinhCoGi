@@ -291,11 +291,16 @@ palaces__tabs.forEach((palaces__tab, palaces__index) => {
 
 
 // stt love
-
-
-function stt__love() {
-    alert('nhận')
-    const keyxprd__stt = document.getElementsByClassName('keyxprd-stt');
-    // const background = document.querySelector('.keyxprd-stt');
-    keyxprd__stt.style.backgroundColor = "red";
+function stt__love(e) {
+    var id = e.id;
+    var bgr = document.getElementById(id);
+    var idtd = id.split('__');
+    var element = document.getElementById(idtd[1])
+    if (element.checked == 0) {
+        bgr.style.color = 'var(--primary-color)';
+    } else {
+        bgr.style.color = 'rgb(255, 216, 64, 0.95)';
+    }
 }
+
+

@@ -122,7 +122,9 @@ tab__ifmtos.forEach((tab__ifmto, index__tab__ifmto) => {
 function okb(e){
   var id = e.id;
   var idtd = id.split('__');
+  console.log('idtd', idtd)
   var element = document.getElementById(idtd[1])
+  console.log('elemaent', element)
   var OriginalContent = element.innerHTML.trim();
 
   element.innerHTML= '<input class="input__mt" type="text" value="'+OriginalContent+'"/>';
@@ -142,6 +144,7 @@ function okb(e){
   }                       
 }
 
+//show pass
 const togglePassword1 = document.querySelector('#togglePassword1');
 const password1 = document.querySelector('#up__passs__old');
 
