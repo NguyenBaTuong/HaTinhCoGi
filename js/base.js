@@ -295,7 +295,9 @@ function stt__love(e) {
     var id = e.id;
     var bgr = document.getElementById(id);
     var idtd = id.split('__');
+    console.log(idtd)
     var element = document.getElementById(idtd[1])
+    console.log(element)
     if (element.checked == 0) {
         bgr.style.color = 'var(--primary-color)';
     } else {
