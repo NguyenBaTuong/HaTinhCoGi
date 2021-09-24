@@ -615,7 +615,7 @@
         <div class="postxlist-block--bgr">
             <div class="container postxlist-block">
                 <div class="row postxlist">
-                    <div class="postxlist__content col-lg-9 col-md-8 col-sm-12 col-12">
+                    <div class="postxlist__content col-lg-8 col-md-12 col-sm-12 col-12">
                         <div id="test" class="postxlist__content-list">
                             <div class="postxlist__content-list-item">
                                 <div class="postxlist__content-list-item-link">
@@ -694,43 +694,49 @@
                             </div>
                         </div>
                     </div>
-                    <div class="postxlist__aside-block col-lg-3 col-md-4 col-sm-12 col-12">
+                    <div class="postxlist__aside-block col-lg-4 col-md-12 col-sm-12 col-12">
                         <div class="postxlist__aside">
-                            <!-- <h2 class="postxlist__aside-title">Nhập từ khóa tìm kiếm</h2> -->
-                            <div class="postxlist__aside-search">
-                                <input type="text" class="postxlist__aside-search-input" placeholder="Từ khóa">
-                                <i class="postxlist__aside-search-icon far fa-search"></i>
-                            </div>
-                            <!-- <div class="postxlist__aside-cate">
-                                <h3 class="postxlist__aside-cate-title">Danh mục</h3>
+                            <form id="post__search" action="">
+                                <div class="postxlist__aside-search form-group">
+                                    <div class="postxlist__aside-search-content">
+                                        <input id="post__search__input" type="text" class="postxlist__aside-search-input form-class" placeholder="Từ khóa">
+                                        <div class="postxlist__aside-search-icon-block">
+                                            <i class="postxlist__aside-search-icon far fa-search"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-message"></div>
+                                </div>
+                            </form>
+                            <div class="postxlist__aside-cate">
+                                <h3 class="postxlist__aside-near-title">Danh mục</h3>
                                 <ul class="postxlist__aside-cate-list">
                                     <li class="postxlist__aside-cate-item">
                                         <a href="" class="postxlist__aside-cate-item-link">
-                                            Cửa hàng
+                                            <i class="far fa-chevron-right"></i> <span>Cửa hàng</span>
                                         </a>
                                     </li>
                                     <li class="postxlist__aside-cate-item">
                                         <a href="" class="postxlist__aside-cate-item-link">
-                                            Quán cắt tóc
+                                            <i class="far fa-chevron-right"></i> <span>Quán cắt tóc</span>
                                         </a>
                                     </li>
                                     <li class="postxlist__aside-cate-item">
                                         <a href="" class="postxlist__aside-cate-item-link">
-                                            Quán cà phê
+                                            <i class="far fa-chevron-right"></i> <span>Quán cà phê</span>
                                         </a>
                                     </li>
                                     <li class="postxlist__aside-cate-item">
                                         <a href="" class="postxlist__aside-cate-item-link">
-                                            Quán nhậu
+                                            <i class="far fa-chevron-right"></i> <span>Quán nhậu</span>
                                         </a>
                                     </li>
                                     <li class="postxlist__aside-cate-item">
                                         <a href="" class="postxlist__aside-cate-item-link">
-                                            Quán karaoke
+                                            <i class="far fa-chevron-right"></i> <span>Quán karaoke</span>
                                         </a>
                                     </li>
                                 </ul>
-                            </div> -->
+                            </div>
                             <div class="postxlist__aside-near">
                                 <h3 class="postxlist__aside-near-title">Bài viết gần đây</h3>
                                 <div class="postxlist__aside-near-list">
@@ -771,23 +777,23 @@
                             </div>
                             <div class="postxlist__aside-lib">
                                 <h3 class="postxlist__aside-near-title">Bộ sưu tập</h3>
-                                <div class="postxlist__aside-lib-list row">
-                                    <div class="postxlist__aside-lib-list-item col-4">
+                                <div class="postxlist__aside-lib-list">
+                                    <div class="postxlist__aside-lib-list-item">
                                         <img src="https://static2.yan.vn/YanNews/2167221/202102/trieu-lo-tu-hoc-cuc-tinh-y-dung-8-chiec-o-che-mat-tai-phim-truong-70661270.jpg" alt="" class="postxlist__aside-lib-list-item-img">
                                     </div>
-                                    <div class="postxlist__aside-lib-list-item col-4">
+                                    <div class="postxlist__aside-lib-list-item">
                                         <img src="https://image.thanhnien.vn/1024/uploaded/ngocthanh/2020_06_09/trieu-lo-tu-gia-san-giau-co1_sxjg.jpg" alt="" class="postxlist__aside-lib-list-item-img">
                                     </div>
-                                    <div class="postxlist__aside-lib-list-item col-4">
+                                    <div class="postxlist__aside-lib-list-item">
                                         <img src="https://mucwomen.com/wp-content/uploads/2021/04/trieu-lo-tu.jpg" alt="" class="postxlist__aside-lib-list-item-img">
                                     </div>
-                                    <div class="postxlist__aside-lib-list-item col-4">
+                                    <div class="postxlist__aside-lib-list-item">
                                         <img src="http://media.doisongphapluat.com/493/2020/11/5/Trieu-Lo-Tu-lien-tuc-ke-fame-dong-nghiep-mat-hinh-tuong-thien-kim-tieu-thu-dspl%20(1).jpg" alt="" class="postxlist__aside-lib-list-item-img">
                                     </div>
-                                    <div class="postxlist__aside-lib-list-item col-4">
+                                    <div class="postxlist__aside-lib-list-item">
                                         <img src="https://cprofiles.info/wp-content/uploads/2021/03/trieu-lo-tu-profile-1.jpg" alt="" class="postxlist__aside-lib-list-item-img">
                                     </div>
-                                    <div class="postxlist__aside-lib-list-item col-4">
+                                    <div class="postxlist__aside-lib-list-item">
                                         <img src="https://i.pinimg.com/originals/a4/24/c1/a424c1d0c52ea9bbb8d2ea4190ed993a.jpg" alt="" class="postxlist__aside-lib-list-item-img">
                                     </div>
                                 </div>
@@ -1014,4 +1020,17 @@
 <script src="../js/postList.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script> 
+    Validator({
+        form: '#post__search',
+        formGroupSelector: '.form-group',
+        errorSelector: '.form-message',
+        rules: [
+            Validator.isRequired('#post__search__input'),
+        ],
+        onSubmit: function (data) {
+            console.log(data);
+        }
+    })
+</script>
 </html>
