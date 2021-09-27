@@ -339,4 +339,10 @@
    .pagination {
        margin-bottom: 20px;
    }
+
+   .adUser__form.adUser__form--bgr {
+    padding: 20px 10px;
+    margin: 40px 10px;
+   }
+
 }

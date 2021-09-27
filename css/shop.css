@@ -2482,6 +2482,30 @@
     animation: fadeIn ease-in 0.3s;
 }
 
+.modal__shop:checked ~ .modal {
+    display: flex;
+}
+
+.modal__shop:checked ~ .modal .modal__overlay {
+    display: block;
+}
+
+.modal__shop:checked ~ .modal .modal__lib {
+    display: flex;
+}
+
+.modal__shop:checked ~ .modal, 
+.modal__shop:checked ~ .modal .modal__overlay, 
+.modal__shop:checked ~ .modal .adUser__form {
+    animation: fadeIn ease-in 0.3s;
+}
+
+.adUser__form.adUser__form--bgr {
+    background-color: var(--bgr-color);
+    padding: 40px;
+    margin: 40px 0;
+    border-radius: 8px;
+}
 
 /* modal up details shop  */
 .shop__details-update {
@@ -2834,6 +2858,27 @@
 .shop__details-report-ac-btn i{
     padding-right: 10px;
 }
+
+.adUser__form-close {
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+    top: 10px;
+    right: 10px;
+}
+
+.adUser__form-close:hover {
+    background-color: var(--primary-color);
+}
+
+.adUser__form-close-icon {
+    font-size: 2rem;
+    margin: auto;
+}
+
 
 /* // slide img lib modal  */
 

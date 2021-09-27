@@ -210,3 +210,28 @@ function show__help() {
   };
 
 }
+
+function srcoll__control(e) {
+  var id = e.id;
+  var id__sp = id.split('__');
+  var input = `${id__sp[0]}__${id__sp[1]}`;
+  var input__get = document.getElementById(input);
+
+  var modal__shop = document.getElementById('modal__shop');
+  modal__shop.checked = true;
+
+  input__get.focus();
+}
+
+function close__modal__update() {
+  var close__modal__update = document.getElementById('close__modal__update');
+  close__modal__update.onclick = function() {
+    var modal__shop = document.getElementById('modal__shop');
+    modal__shop.checked = false;
+  }
+}
+close__modal__update();
+
+// function check__select() {
+//   var 
+// }
