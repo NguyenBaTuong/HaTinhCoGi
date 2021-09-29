@@ -624,275 +624,601 @@
                     </div>
                 </div>
             </div>
+            
             <div class="container search__title">
+                <div class="search__tab">
+                    <div class="search__tab-title">Có phải bạn đang tìm kiếm: </div>
+                    <div class="search__tab-box">
+                        <div class="search__tab-box-item">iphone 14</div>
+                        <div class="search__tab-box-item">Nokia 1280</div>
+                        <div class="search__tab-box-item">SamSung galaxy S21</div>
+                        <div class="search__tab-box-item">SamSum GTA 4s</div>
+                        <div class="search__tab-box-item">iphone 14</div>
+                        <div class="search__tab-box-item">Nokia 1280</div>
+                        <div class="search__tab-box-item">SamSung galaxy S21</div>
+                        <div class="search__tab-box-item">SamSum GTA 4s</div>
+                        <div class="search__tab-box-item">iphone 14</div>
+                        <div class="search__tab-box-item">Nokia 1280</div>
+                    </div>
+                </div>
+                <div class="search__fillter">     
+                    <div class="search__fillter-box">
+                        <div class="search__fillter-left">
+                            <div class="search__fillter-cate">
+                                <div class="search__fillter-cate-item active">Tất cả</div>
+                                <div class="search__fillter-cate-item">Địa điểm</div>
+                                <div class="search__fillter-cate-item">Sản phẩm</div>
+                                <!-- <div class="search__fillter-cate-item">Bài viết</div> -->
+                            </div>
+                            <div class="search__fillter-select">
+                                <div class="custom-select">
+                                    <select>
+                                      <option value="0">Lựa chọn bảng giá</option>
+                                      <option value="1">Giá từ cao đến thấp</option>
+                                      <option value="2">Giá từ thấp đến cao</option>
+                                      <option value="3">Tổng giá từ cao đến thấp</option>
+                                      <option value="4">Tổng giá từ thấp đến cao</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="search__fillter-collect">
+                                <div class="search__fillter-collect-input-block">
+                                    <input onblur="out__input()" onkeyup="focus__input()" id="search__fillter__input1" type="text" class="search__fillter-collect-input" placeholder="$">
+                                    <span>-</span>
+                                    <input onblur="out__input()"  onkeyup="focus__input()" id="search__fillter__input2" type="text" class="search__fillter-collect-input" placeholder="$">
+                                    <button id="search__fillter__btn" class="search__fillter-collect-input-btn btn btn--primary">Tìm</button>
+                                </div>
+                                <div class="search__fillter-collect-chart">
+                                    <div onmousemove="return search__chart__on(this)" onmouseout="return search__chart__off(this)" id="search__fillter__chart1" class="search__fillter-collect-chart-item-block">
+                                        <div id="search__fillter__50" class="search__fillter-collect-chart-item h50pt"></div>
+                                        <div class="search__fillter-collect-chart-noti">
+                                            50% người dùng thích giá
+                                        </div>
+                                    </div>
+                                    <div onmousemove="return search__chart__on(this)" onmouseout="return search__chart__off(this)" id="search__fillter__chart2" class="search__fillter-collect-chart-item-block">
+                                        <div class="search__fillter-collect-chart-item h15pt"></div>
+                                        <div class="search__fillter-collect-chart-noti">
+                                            15% người dùng thích giá
+                                        </div>
+                                    </div>
+                                    <div onmousemove="return search__chart__on(this)" onmouseout="return search__chart__off(this)" id="search__fillter__chart3" class="search__fillter-collect-chart-item-block">
+                                        <div class="search__fillter-collect-chart-item h75pt"></div>
+                                        <div class="search__fillter-collect-chart-noti">
+                                            75% người dùng thích giá
+                                        </div>
+                                    </div>
+                                    <div onmousemove="return search__chart__on(this)" onmouseout="return search__chart__off(this)" id="search__fillter__chart4" class="search__fillter-collect-chart-item-block">
+                                        <div class="search__fillter-collect-chart-item h30pt"></div>
+                                        <div class="search__fillter-collect-chart-noti">
+                                            30% người dùng thích giá
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search__fillter-right">
+                            <div class="search__fillter-select">
+                                <div class="custom-select">
+                                    <select>
+                                      <option value="0">Nơi giao hàng</option>
+                                      <option value="1">Thành Phố</option>
+                                      <option value="2">Nhà Quê</option>
+                                      <option value="3">Ngoài Thành Phố</option>
+                                      <option value="4">Ngoài Nhà Quê</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="search__fillter-grid">
+                                <div class="search__fillter-grid-item active"> <i class="fa fa-th"></i> </div>
+                                <div class="search__fillter-grid-item"> <i class="fa fa-th-list"></i> </div>
+                            </div>
+                            <div class="search__fillter-page">
+                                <div class="search__fillter-page-btn diss"><i class="fas fa-chevron-left"></i></div>
+                                <div class="search__fillter-page-number">
+                                    <span class="search__fillter-page-number-hot">1</span>/40
+                                </div>
+                                <div class="search__fillter-page-btn active"><i class="fas fa-chevron-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search__fillter-check-block--bgr">
+                        <div class="search__fillter-check-block">
+                            <div class="search__fillter-check">
+                                <div class="search__fillter-check-all">
+                                    Xem thêm!
+                                </div>
+                                <div id="check__fillter__1" class="search__fillter-check-item">
+                                    <input id="fillter__1" type="checkbox" class="search__fillter-check-item-input">
+                                    <label for="fillter__1">Miễn Phí vận chuyển</label>
+                                </div>
+                                <div class="search__fillter-check-item">
+                                    <input id="fillter__2" type="checkbox" class="search__fillter-check-item-input">
+                                    <label for="fillter__2">Miễn Phí vận chuyển</label>
+                                </div>
+                                <div class="search__fillter-check-item">
+                                    <input id="fillter__3" type="checkbox" class="search__fillter-check-item-input">
+                                    <label for="fillte3">Miễn Phí</label>
+                                </div>
+                                <div class="search__fillter-check-item">
+                                    <input id="fillter__4" type="checkbox" class="search__fillter-check-item-input">
+                                    <label for="fillte4">Miễn Phí</label>
+                                </div>
+                                <div class="search__fillter-check-item">
+                                    <input id="fillter__5" type="checkbox" class="search__fillter-check-item-input">
+                                    <label for="fillter__5">Miễn Phí</label>
+                                </div>
+                                <div class="search__fillter-check-item">
+                                    <input id="fillter__6" type="checkbox" class="search__fillter-check-item-input">
+                                    <label for="fillter__6">Miễn Phí</label>
+                                </div>
+                                <div class="search__fillter-check-item">
+                                    <input id="fillter__7" type="checkbox" class="search__fillter-check-item-input">
+                                    <label for="fillter__7">Miễn Phí vận chuyển</label>
+                                </div>
+                                <div class="search__fillter-check-item">
+                                    <input id="fillter__8" type="checkbox" class="search__fillter-check-item-input">
+                                    <label for="fillter__8">Miễn Phí vận chuyển</label>
+                                </div>
+                                <div class="search__fillter-check-item">
+                                    <input id="fillter__9" type="checkbox" class="search__fillter-check-item-input">
+                                    <label for="fillter__9">Miễn Phí vận chuyển</label>
+                                </div>
+                                <div class="search__fillter-check-item">
+                                    <input id="fillter__10" type="checkbox" class="search__fillter-check-item-input">
+                                    <label for="fillter__10">Miễn Phí vận chuyển</label>
+                                </div>
+                                <div class="search__fillter-check-item">
+                                    <input id="fillter__11" type="checkbox" class="search__fillter-check-item-input">
+                                    <label for="fillter__11">Miễn Phí vận chuyển</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <h1 class="search__title-name"><span>Kết quả tìm kiếm cho: </span> "đường Xuân Diệu"</h1>
             </div>
             <div class="container search__details">
-                <div class="row search__details-list">
-                    <div class="col-3 search__details-item">
-                        <a href="" class="keyxprd-link">
-                            <div class="keyxprd-i4">
-                                <img src="https://channel.mediacdn.vn/thumb_w/640/2019/11/14/photo-1-15737325683221621163088.jpg" class="keyxprd-i4__img" ></img> 
-                                <div class="keyxprd-i4__love">
-                                    <span class="keyxprd-i4__love-desc">
-                                        Lưu yêu thích
-                                        <i class="keyxprd-i4__love__icon far fa-heart"></i>
-                                        <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
-                                    </span>
+                <div class="search__details-pannel active">
+                    <div class="row search__details-list">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 search__details-item">
+                            <a href="" class="keyxprd-link">
+                                <div class="keyxprd-i4">
+                                    <img src="https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="keyxprd-i4__img" ></img> 
+                                    <div class="keyxprd-i4__love">
+                                        <span class="keyxprd-i4__love-desc">
+                                            Lưu yêu thích
+                                            <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                            <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="keyxprd-desc">
-                                <div class="keyxprd-star">
-                                    <i class="fas fa-star keyxprd-star__icon keyxprd-star__item"></i>
-                                    <p class="keyxprd-star-number keyxprd-star__item">5.0 </p>
-                                    <p class="keyxprd-star-desc keyxprd-star__item">(123 đánh giá)</p>
-                                </div>  
-                                <h3 class="keyxprd-title">Lợn lòi lăn nhiều món</h3>      
-                                <div class="keyxprd-shop">
-                                    <div class="keyxprd-shop-i4">
-                                        <span class="keyxprd-shop-i4-name">Quán Hải Béo</span>
-                                        <i class="fas fa-circle keyxprd-shop-i4-icon"></i>
+                                <div class="keyxprd-desc">
+                                    <div class="keyxprd-star">
+                                        <i class="fas fa-star keyxprd-star__icon keyxprd-star__item keyxprd-star__icon keyxprd-star__item--no-mr"></i>
+                                        <p class="keyxprd-star-number keyxprd-star__item">5.0 </p>
+                                        <p class="keyxprd-star-desc keyxprd-star__item">(123 đánh giá)</p>
+                                    </div>  
+                                    <h3 class="keyxprd-title keyxprd-title--prd">Lợn lòi lăn nhiều món</h3>      
+                                    <div class="keyxprd-shop">
+                                        <div class="keyxprd-shop-i4">
+                                            <span class="keyxprd-shop-i4-name">Quán Hải Béo</span>
+                                            <i class="fas fa-circle keyxprd-shop-i4-icon"></i>
+                                        </div>
+                                        <div class="keyxprd-shop-i4-place">
+                                            Số 2 đường 26/3 .  Tp Hà Tĩnh
+                                        </div>
+                                    </div>  
+                                </div>                                  
+                            </a>
+                        </div>     
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 search__details-item">
+                            <a href="" class="keyxprd-link">
+                                <div class="keyxprd-i4">
+                                    <img src="https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="keyxprd-i4__img" ></img> 
+                                    <div class="keyxprd-i4__love">
+                                        <span class="keyxprd-i4__love-desc">
+                                            Lưu yêu thích
+                                            <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                            <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
+                                        </span>
                                     </div>
-                                    <div class="keyxprd-shop-i4-place">
-                                        Số 2 đường 26/3 .  Tp Hà Tĩnh
-                                    </div>
-                                </div>  
-                            </div>                                  
-                        </a>
-                    </div>     
-                    <div class="col-3 search__details-item">
-                        <a href="" class="keyxprd-link">
-                            <div class="keyxprd-i4">
-                                <img src="https://th.bing.com/th/id/OIP.txO6sgnb4lLBCvPKSS9c8QHaF7?w=231&h=185&c=7&o=5&dpr=1.25&pid=1.7" class="keyxprd-i4__img" ></img> 
-                                <div class="keyxprd-i4__love">
-                                    <span class="keyxprd-i4__love-desc">
-                                        Lưu yêu thích
-                                        <i class="keyxprd-i4__love__icon far fa-heart"></i>
-                                        <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
-                                    </span>
                                 </div>
-                            </div>
-                            <div class="keyxprd-desc">
-                                <div class="keyxprd-star">
-                                    <i class="fas fa-star keyxprd-star__icon keyxprd-star__item"></i>
-                                    <p class="keyxprd-star-number keyxprd-star__item">5.0 </p>
-                                    <p class="keyxprd-star-desc keyxprd-star__item">(123 đánh giá)</p>
-                                </div>  
-                                <h3 class="keyxprd-title">Lợn lòi lăn nhiều món</h3>      
-                                <div class="keyxprd-shop">
-                                    <div class="keyxprd-shop-i4">
-                                        <span class="keyxprd-shop-i4-name">Quán Hải Béo</span>
-                                        <i class="fas fa-circle keyxprd-shop-i4-icon"></i>
+                                <div class="keyxprd-desc">
+                                    <div class="keyxprd-star">
+                                        <i class="fas fa-star keyxprd-star__icon keyxprd-star__item keyxprd-star__icon keyxprd-star__item--no-mr"></i>
+                                        <p class="keyxprd-star-number keyxprd-star__item">5.0 </p>
+                                        <p class="keyxprd-star-desc keyxprd-star__item">(123 đánh giá)</p>
+                                    </div>  
+                                    <h3 class="keyxprd-title keyxprd-title--prd">Lợn lòi lăn nhiều món</h3>      
+                                    <div class="keyxprd-shop">
+                                        <div class="keyxprd-shop-i4">
+                                            <span class="keyxprd-shop-i4-name">Quán Hải Béo</span>
+                                            <i class="fas fa-circle keyxprd-shop-i4-icon"></i>
+                                        </div>
+                                        <div class="keyxprd-shop-i4-place">
+                                            Số 2 đường 26/3 .  Tp Hà Tĩnh
+                                        </div>
+                                    </div>  
+                                </div>                                  
+                            </a>
+                        </div> 
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 search__details-item">
+                            <a href="" class="keyxprd-link">
+                                <div class="keyxprd-i4">
+                                    <img src="https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="keyxprd-i4__img" ></img> 
+                                    <div class="keyxprd-i4__love">
+                                        <span class="keyxprd-i4__love-desc">
+                                            Lưu yêu thích
+                                            <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                            <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
+                                        </span>
                                     </div>
-                                    <div class="keyxprd-shop-i4-place">
-                                        Số 2 đường 26/3 .  Tp Hà Tĩnh
+                                </div>
+                                <div class="keyxprd-desc">
+                                    <div class="keyxprd-star">
+                                        <i class="fas fa-star keyxprd-star__icon keyxprd-star__item keyxprd-star__icon keyxprd-star__item--no-mr"></i>
+                                        <p class="keyxprd-star-number keyxprd-star__item">5.0 </p>
+                                        <p class="keyxprd-star-desc keyxprd-star__item">(123 đánh giá)</p>
+                                    </div>  
+                                    <h3 class="keyxprd-title keyxprd-title--prd">Lợn lòi lăn nhiều món</h3>      
+                                    <div class="keyxprd-shop">
+                                        <div class="keyxprd-shop-i4">
+                                            <span class="keyxprd-shop-i4-name">Quán Hải Béo</span>
+                                            <i class="fas fa-circle keyxprd-shop-i4-icon"></i>
+                                        </div>
+                                        <div class="keyxprd-shop-i4-place">
+                                            Số 2 đường 26/3 .  Tp Hà Tĩnh
+                                        </div>
+                                    </div>  
+                                </div>                                  
+                            </a>
+                        </div> 
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 search__details-item">
+                            <a href="" class="keyxprd-link">
+                                <div class="keyxprd-i4">
+                                    <img src="https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="keyxprd-i4__img" ></img> 
+                                    <div class="keyxprd-i4__love">
+                                        <span class="keyxprd-i4__love-desc">
+                                            Lưu yêu thích
+                                            <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                            <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
+                                        </span>
                                     </div>
-                                </div>  
-                            </div>                                  
-                        </a>
+                                </div>
+                                <div class="keyxprd-desc">
+                                    <div class="keyxprd-star">
+                                        <i class="fas fa-star keyxprd-star__icon keyxprd-star__item keyxprd-star__icon keyxprd-star__item--no-mr"></i>
+                                        <p class="keyxprd-star-number keyxprd-star__item">5.0 </p>
+                                        <p class="keyxprd-star-desc keyxprd-star__item">(123 đánh giá)</p>
+                                    </div>  
+                                    <h3 class="keyxprd-title keyxprd-title--prd">Lợn lòi lăn nhiều món</h3>      
+                                    <div class="keyxprd-shop">
+                                        <div class="keyxprd-shop-i4">
+                                            <span class="keyxprd-shop-i4-name">Quán Hải Béo</span>
+                                            <i class="fas fa-circle keyxprd-shop-i4-icon"></i>
+                                        </div>
+                                        <div class="keyxprd-shop-i4-place">
+                                            Số 2 đường 26/3 .  Tp Hà Tĩnh
+                                        </div>
+                                    </div>  
+                                </div>                                  
+                            </a>
+                        </div>  
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 search__details-item">
+                            <a href="" class="keyxprd-link">
+                                <div class="keyxprd-i4">
+                                    <img src="https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="keyxprd-i4__img" ></img> 
+                                    <div class="keyxprd-i4__love">
+                                        <span class="keyxprd-i4__love-desc">
+                                            Lưu yêu thích
+                                            <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                            <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="keyxprd-desc">
+                                    <div class="keyxprd-star">
+                                        <i class="fas fa-star keyxprd-star__icon keyxprd-star__item keyxprd-star__icon keyxprd-star__item--no-mr"></i>
+                                        <p class="keyxprd-star-number keyxprd-star__item">5.0 </p>
+                                        <p class="keyxprd-star-desc keyxprd-star__item">(123 đánh giá)</p>
+                                    </div>  
+                                    <h3 class="keyxprd-title keyxprd-title--prd">Lợn lòi lăn nhiều món</h3>      
+                                    <div class="keyxprd-shop">
+                                        <div class="keyxprd-shop-i4">
+                                            <span class="keyxprd-shop-i4-name">Quán Hải Béo</span>
+                                            <i class="fas fa-circle keyxprd-shop-i4-icon"></i>
+                                        </div>
+                                        <div class="keyxprd-shop-i4-place">
+                                            Số 2 đường 26/3 .  Tp Hà Tĩnh
+                                        </div>
+                                    </div>  
+                                </div>                                  
+                            </a>
+                        </div>     
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 search__details-item">
+                            <a href="" class="keyxprd-link">
+                                <div class="keyxprd-i4">
+                                    <img src="https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="keyxprd-i4__img" ></img> 
+                                    <div class="keyxprd-i4__love">
+                                        <span class="keyxprd-i4__love-desc">
+                                            Lưu yêu thích
+                                            <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                            <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="keyxprd-desc">
+                                    <div class="keyxprd-star">
+                                        <i class="fas fa-star keyxprd-star__icon keyxprd-star__item keyxprd-star__icon keyxprd-star__item--no-mr"></i>
+                                        <p class="keyxprd-star-number keyxprd-star__item">5.0 </p>
+                                        <p class="keyxprd-star-desc keyxprd-star__item">(123 đánh giá)</p>
+                                    </div>  
+                                    <h3 class="keyxprd-title keyxprd-title--prd">Lợn lòi lăn nhiều món</h3>      
+                                    <div class="keyxprd-shop">
+                                        <div class="keyxprd-shop-i4">
+                                            <span class="keyxprd-shop-i4-name">Quán Hải Béo</span>
+                                            <i class="fas fa-circle keyxprd-shop-i4-icon"></i>
+                                        </div>
+                                        <div class="keyxprd-shop-i4-place">
+                                            Số 2 đường 26/3 .  Tp Hà Tĩnh
+                                        </div>
+                                    </div>  
+                                </div>                                  
+                            </a>
+                        </div> 
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 search__details-item">
+                            <a href="" class="keyxprd-link">
+                                <div class="keyxprd-i4">
+                                    <img src="https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="keyxprd-i4__img" ></img> 
+                                    <div class="keyxprd-i4__love">
+                                        <span class="keyxprd-i4__love-desc">
+                                            Lưu yêu thích
+                                            <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                            <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="keyxprd-desc">
+                                    <div class="keyxprd-star">
+                                        <i class="fas fa-star keyxprd-star__icon keyxprd-star__item keyxprd-star__icon keyxprd-star__item--no-mr"></i>
+                                        <p class="keyxprd-star-number keyxprd-star__item">5.0 </p>
+                                        <p class="keyxprd-star-desc keyxprd-star__item">(123 đánh giá)</p>
+                                    </div>  
+                                    <h3 class="keyxprd-title keyxprd-title--prd">Lợn lòi lăn nhiều món</h3>      
+                                    <div class="keyxprd-shop">
+                                        <div class="keyxprd-shop-i4">
+                                            <span class="keyxprd-shop-i4-name">Quán Hải Béo</span>
+                                            <i class="fas fa-circle keyxprd-shop-i4-icon"></i>
+                                        </div>
+                                        <div class="keyxprd-shop-i4-place">
+                                            Số 2 đường 26/3 .  Tp Hà Tĩnh
+                                        </div>
+                                    </div>  
+                                </div>                                  
+                            </a>
+                        </div> 
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 search__details-item">
+                            <a href="" class="keyxprd-link">
+                                <div class="keyxprd-i4">
+                                    <img src="https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="keyxprd-i4__img" ></img> 
+                                    <div class="keyxprd-i4__love">
+                                        <span class="keyxprd-i4__love-desc">
+                                            Lưu yêu thích
+                                            <i class="keyxprd-i4__love__icon far fa-heart"></i>
+                                            <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="keyxprd-desc">
+                                    <div class="keyxprd-star">
+                                        <i class="fas fa-star keyxprd-star__icon keyxprd-star__item keyxprd-star__icon keyxprd-star__item--no-mr"></i>
+                                        <p class="keyxprd-star-number keyxprd-star__item">5.0 </p>
+                                        <p class="keyxprd-star-desc keyxprd-star__item">(123 đánh giá)</p>
+                                    </div>  
+                                    <h3 class="keyxprd-title keyxprd-title--prd">Lợn lòi lăn nhiều món</h3>      
+                                    <div class="keyxprd-shop">
+                                        <div class="keyxprd-shop-i4">
+                                            <span class="keyxprd-shop-i4-name">Quán Hải Béo</span>
+                                            <i class="fas fa-circle keyxprd-shop-i4-icon"></i>
+                                        </div>
+                                        <div class="keyxprd-shop-i4-place">
+                                            Số 2 đường 26/3 .  Tp Hà Tĩnh
+                                        </div>
+                                    </div>  
+                                </div>                                  
+                            </a>
+                        </div>                                                          
                     </div>
-                    <div class="col-3 search__details-item">
-                        <a href="" class="keyxprd-link">
-                            <div class="keyxprd-i4">
-                                <img src="https://th.bing.com/th/id/OIP.txO6sgnb4lLBCvPKSS9c8QHaF7?w=231&h=185&c=7&o=5&dpr=1.25&pid=1.7" class="keyxprd-i4__img" ></img> 
-                                <div class="keyxprd-i4__love">
-                                    <span class="keyxprd-i4__love-desc">
-                                        Lưu yêu thích
-                                        <i class="keyxprd-i4__love__icon far fa-heart"></i>
-                                        <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
-                                    </span>
-                                </div>
+                    <div class="search__details-page">
+                        <div class="pagination">
+                            <div class="pagination__list">
+                                <a href="#" class="pagination__item pagination__item--disable">
+                                    <i class="far fa-chevron-left pagination__item-icon"></i> Trang trước
+                                </a>
+                                <a href="#" class="pagination__item pagination__item--active none-tb">
+                                    1
+                                </a>
+                                <a href="#" class="pagination__item none-tb">
+                                    2
+                                </a>
+                                <a href="#" class="pagination__item none-tb">
+                                    3
+                                </a>
+                                <a href="javascript:void(0)" class="pagination__item none-tb pagination__item--disable-hover">
+                                    ...
+                                </a>
+                                <a href="#" class="pagination__item none-tb">
+                                    10
+                                </a>
+                                <a href="#" class="pagination__item">
+                                     Trang sau <i class="pagination__item-icon far fa-chevron-right"></i>
+                                </a>
                             </div>
-                            <div class="keyxprd-desc">
-                                <div class="keyxprd-star">
-                                    <i class="fas fa-star keyxprd-star__icon keyxprd-star__item"></i>
-                                    <p class="keyxprd-star-number keyxprd-star__item">5.0 </p>
-                                    <p class="keyxprd-star-desc keyxprd-star__item">(123 đánh giá)</p>
-                                </div>  
-                                <h3 class="keyxprd-title">Lợn lòi lăn nhiều món</h3>      
-                                <div class="keyxprd-shop">
-                                    <div class="keyxprd-shop-i4">
-                                        <span class="keyxprd-shop-i4-name">Quán Hải Béo</span>
-                                        <i class="fas fa-circle keyxprd-shop-i4-icon"></i>
-                                    </div>
-                                    <div class="keyxprd-shop-i4-place">
-                                        Số 2 đường 26/3 .  Tp Hà Tĩnh
-                                    </div>
-                                </div>  
-                            </div>                                  
-                        </a>
-                    </div>
-                    <div class="col-3 search__details-item">
-                        <a href="" class="keyxprd-link">
-                            <div class="keyxprd-view">
-                                <i class="keyxprd-view-icon fas fa-eye"></i>
-                                <span class="keyxprd-view-name">Xem bài viết</span>
-                            </div>
-                            <div class="keyxprd-stt">
-                                <span class="keyxprd-stt__desc">07/07/7777</span>
-                                <!-- <i class="keyxprd-stt__desc"></i> -->
-                            </div>
-                            <div class="keyxprd-i4">
-                                <img src="https://th.bing.com/th/id/OIP.txO6sgnb4lLBCvPKSS9c8QHaF7?w=231&h=185&c=7&o=5&dpr=1.25&pid=1.7" class="keyxprd-i4__img" ></img> 
-                            </div>
-                            <div class="keyxprd-desc">
-                                <p class="keyxprd-desc__content">
-                                    Bún chả nướng tại Hà Tĩnh, quán mới mở đông khách nhất Miền Trung là đây
-                                </p>
-                                <h3 class="keyxprd-title keyxprd-title--primary">Lợn lòi lăn nhiều món</h3>      
-                            </div>                                  
-                        </a>
-                    </div> 
-                    <div class="col-3 search__details-item">
-                        <a href="" class="keyxprd-link">
-                            <div class="keyxprd-i4">
-                                <img src="https://th.bing.com/th/id/OIP.txO6sgnb4lLBCvPKSS9c8QHaF7?w=231&h=185&c=7&o=5&dpr=1.25&pid=1.7" class="keyxprd-i4__img" ></img> 
-                                <div class="keyxprd-i4__love">
-                                    <span class="keyxprd-i4__love-desc">
-                                        Lưu yêu thích
-                                        <i class="keyxprd-i4__love__icon far fa-heart"></i>
-                                        <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="keyxprd-desc">
-                                <div class="keyxprd-star">
-                                    <i class="fas fa-star keyxprd-star__icon keyxprd-star__item"></i>
-                                    <p class="keyxprd-star-number keyxprd-star__item">5.0 </p>
-                                    <p class="keyxprd-star-desc keyxprd-star__item">(123 đánh giá)</p>
-                                </div>  
-                                <h3 class="keyxprd-title">Lợn lòi lăn nhiều món</h3>      
-                                <div class="keyxprd-shop">
-                                    <div class="keyxprd-shop-i4">
-                                        <span class="keyxprd-shop-i4-name">Quán Hải Béo</span>
-                                        <i class="fas fa-circle keyxprd-shop-i4-icon"></i>
-                                    </div>
-                                    <div class="keyxprd-shop-i4-place">
-                                        Số 2 đường 26/3 .  Tp Hà Tĩnh
-                                    </div>
-                                </div>  
-                            </div>                                  
-                        </a>
-                    </div>     
-                    <div class="col-3 search__details-item">
-                        <a href="" class="keyxprd-link">
-                            <div class="keyxprd-i4">
-                                <img src="https://th.bing.com/th/id/OIP.txO6sgnb4lLBCvPKSS9c8QHaF7?w=231&h=185&c=7&o=5&dpr=1.25&pid=1.7" class="keyxprd-i4__img" ></img> 
-                                <div class="keyxprd-i4__love">
-                                    <span class="keyxprd-i4__love-desc">
-                                        Lưu yêu thích
-                                        <i class="keyxprd-i4__love__icon far fa-heart"></i>
-                                        <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="keyxprd-desc">
-                                <div class="keyxprd-star">
-                                    <i class="fas fa-star keyxprd-star__icon keyxprd-star__item"></i>
-                                    <p class="keyxprd-star-number keyxprd-star__item">5.0 </p>
-                                    <p class="keyxprd-star-desc keyxprd-star__item">(123 đánh giá)</p>
-                                </div>  
-                                <h3 class="keyxprd-title">Lợn lòi lăn nhiều món</h3>      
-                                <div class="keyxprd-shop">
-                                    <div class="keyxprd-shop-i4">
-                                        <span class="keyxprd-shop-i4-name">Quán Hải Béo</span>
-                                        <i class="fas fa-circle keyxprd-shop-i4-icon"></i>
-                                    </div>
-                                    <div class="keyxprd-shop-i4-place">
-                                        Số 2 đường 26/3 .  Tp Hà Tĩnh
-                                    </div>
-                                </div>  
-                            </div>                                  
-                        </a>
-                    </div>
-                    <div class="col-3 search__details-item">
-                        <a href="" class="keyxprd-link">
-                            <div class="keyxprd-i4">
-                                <img src="https://th.bing.com/th/id/OIP.txO6sgnb4lLBCvPKSS9c8QHaF7?w=231&h=185&c=7&o=5&dpr=1.25&pid=1.7" class="keyxprd-i4__img" ></img> 
-                                <div class="keyxprd-i4__love">
-                                    <span class="keyxprd-i4__love-desc">
-                                        Lưu yêu thích
-                                        <i class="keyxprd-i4__love__icon far fa-heart"></i>
-                                        <i class="keyxprd-i4__love__icon--love fas fa-heart"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="keyxprd-desc">
-                                <div class="keyxprd-star">
-                                    <i class="fas fa-star keyxprd-star__icon keyxprd-star__item"></i>
-                                    <p class="keyxprd-star-number keyxprd-star__item">5.0 </p>
-                                    <p class="keyxprd-star-desc keyxprd-star__item">(123 đánh giá)</p>
-                                </div>  
-                                <h3 class="keyxprd-title">Lợn lòi lăn nhiều món</h3>      
-                                <div class="keyxprd-shop">
-                                    <div class="keyxprd-shop-i4">
-                                        <span class="keyxprd-shop-i4-name">Quán Hải Béo</span>
-                                        <i class="fas fa-circle keyxprd-shop-i4-icon"></i>
-                                    </div>
-                                    <div class="keyxprd-shop-i4-place">
-                                        Số 2 đường 26/3 .  Tp Hà Tĩnh
-                                    </div>
-                                </div>  
-                            </div>                                  
-                        </a>
-                    </div>
-                    <div class="col-3 search__details-item">
-                        <a href="" class="keyxprd-link">
-                            <div class="keyxprd-stt">
-                                <span class="keyxprd-stt__desc">07/07/7777</span>
-                                <!-- <i class="keyxprd-stt__desc"></i> -->
-                            </div>
-                            <div class="keyxprd-i4">
-                                <img src="https://th.bing.com/th/id/OIP.txO6sgnb4lLBCvPKSS9c8QHaF7?w=231&h=185&c=7&o=5&dpr=1.25&pid=1.7" class="keyxprd-i4__img" ></img> 
-                            </div>
-                            <div class="keyxprd-desc">
-                                <p class="keyxprd-desc__content">
-                                    Bún chả nướng tại Hà Tĩnh, quán mới mở đông khách nhất Miền Trung là đây  Bún chả nướng tại Hà Tĩnh, 
-                                </p>
-                                <h3 class="keyxprd-title keyxprd-title--primary">Lợn lòi lăn nhiều món</h3>      
-                            </div>                                  
-                        </a>
-                    </div>                                                         
-                </div>
-                <div class="search__details-page">
-                    <div class="pagination">
-                        <div class="pagination__list">
-                            <a href="#" class="pagination__item pagination__item--disable">
-                                <i class="far fa-chevron-left pagination__item-icon"></i> Trang trước
-                            </a>
-                            <a href="#" class="pagination__item pagination__item--active">
-                                1
-                            </a>
-                            <a href="#" class="pagination__item">
-                                2
-                            </a>
-                            <a href="#" class="pagination__item">
-                                3
-                            </a>
-                            <a href="javascript:void(0)" class="pagination__item pagination__item--disable-hover">
-                                ...
-                            </a>
-                            <a href="#" class="pagination__item">
-                                10
-                            </a>
-                            <a href="#" class="pagination__item">
-                                 Trang sau <i class="pagination__item-icon far fa-chevron-right"></i>
-                            </a>
-                        </div>
-                        <div class="jumpxpage">
-                            <span class="jumpxpage__title">
-                                Tới trang
-                            </span>
-                            <div class="jumpxpage__page">
-                                <input class="jumpxpage__page-input" type="number" min="1" value="1" size="100">
-                                <!-- <span class="jumpxpage__page-up">
-                                    <i class="jumpxpage__page-up-icon fas fa-caret-up"></i>
+                            <div class="jumpxpage none-mb">
+                                <span class="jumpxpage__title">
+                                    Tới trang
                                 </span>
-                                <span class="jumpxpage__page-down">
-                                    <i class="jumpxpage__page-up-icon fas fa-caret-down"></i>
-                                </span> -->
+                                <div class="jumpxpage__page">
+                                    <input class="jumpxpage__page-input" type="number" min="1" value="1" size="100">
+                                </div>
+                                <button class="jumpxpage__page-btn">Nhảy trang</button>
                             </div>
-                            <button class="jumpxpage__page-btn">Nhảy trang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="search__details-pannel">
+                    <div class="row search__details-list">
+                        <div class="place__content-full-list">
+                            <div class="place__content-full-item">
+                                <a href="" class="horizontal__link">
+                                    <div class="horizontal__i4">
+                                        <img src="https://ss-images.saostar.vn/w800/pc/1619097502672/saostar-cjf8qj70tx9asjbj.jpg" alt="" class="horizontal__i4-avt">
+                                        <div class="horizontal__i4-love">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="horizontal__desc">
+                                        <div class="horizontal__desc-top">
+                                            <h3 class="horizontal__desc-title">
+                                                Cơm trứng bảy món ngon tuyệt
+                                            </h3>
+                                            <div class="horizontal__desc-star">
+                                                <i class="horizontal__desc-star-icon fas fa-star"></i>
+                                                <span class="horizontal__desc-star-number">5.0</span>
+                                                <span class="horizontal__desc-star-text">(123 đánh giá)</span>
+                                            </div>
+                                        </div>
+                                        <div class="horizontal__desc-bot">
+                                            <div class="horizontal__desc-shop">
+                                                <div class="horizontal__desc-shop-i4">
+                                                    <span class="horizontal__desc-shop-i4-name">Quán nhậu bảy món</span>
+                                                    <i class="horizontal__desc-shop-i4-icon fas fa-circle"></i>
+                                                </div>
+                                                <div class="horizontal__desc-shop-place">
+                                                    Không số Ngã Ba Mặt Đường. Hà Tĩnh
+                                                </div>
+                                            </div>
+                                            <button class="horizontal__desc-bot-btn btn btn--primary">
+                                                Chi tiết
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="place__content-full-item">
+                                <a href="" class="horizontal__link">
+                                    <div class="horizontal__i4">
+                                        <img src="https://newsmd1fr.keeng.net/tiin/archive/images/20201102/223846_batch_007butbyly1gkatwo3cbjj30pk0pkb29.jpg" alt="" class="horizontal__i4-avt">
+                                        <div class="horizontal__i4-love">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="horizontal__desc">
+                                        <div class="horizontal__desc-top">
+                                            <h3 class="horizontal__desc-title">
+                                                Cơm trứng bảy món ngon tuyệt
+                                            </h3>
+                                            <div class="horizontal__desc-star">
+                                                <i class="horizontal__desc-star-icon fas fa-star"></i>
+                                                <span class="horizontal__desc-star-number">5.0</span>
+                                                <span class="horizontal__desc-star-text">(123 đánh giá)</span>
+                                            </div>
+                                        </div>
+                                        <div class="horizontal__desc-bot">
+                                            <div class="horizontal__desc-shop">
+                                                <div class="horizontal__desc-shop-i4">
+                                                    <span class="horizontal__desc-shop-i4-name">Quán nhậu bảy món</span>
+                                                    <i class="horizontal__desc-shop-i4-icon fas fa-circle"></i>
+                                                </div>
+                                                <div class="horizontal__desc-shop-place">
+                                                    Không số Ngã Ba Mặt Đường. Hà Tĩnh
+                                                </div>
+                                            </div>
+                                            <button class="horizontal__desc-bot-btn btn btn--primary">
+                                                Chi tiết
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="place__content-full-item">
+                                <a href="" class="horizontal__link">
+                                    <div class="horizontal__i4">
+                                        <img src="https://image.thanhnien.vn/1024/uploaded/trucdl/2020_10_31/trieulotutieuchientotinh3_lxmm.jpg" alt="" class="horizontal__i4-avt">
+                                        <div class="horizontal__i4-love">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="horizontal__desc">
+                                        <div class="horizontal__desc-top">
+                                            <h3 class="horizontal__desc-title">
+                                                Cơm trứng bảy món ngon tuyệt
+                                            </h3>
+                                            <div class="horizontal__desc-star">
+                                                <i class="horizontal__desc-star-icon fas fa-star"></i>
+                                                <span class="horizontal__desc-star-number">5.0</span>
+                                                <span class="horizontal__desc-star-text">(123 đánh giá)</span>
+                                            </div>
+                                        </div>
+                                        <div class="horizontal__desc-bot">
+                                            <div class="horizontal__desc-shop">
+                                                <div class="horizontal__desc-shop-i4">
+                                                    <span class="horizontal__desc-shop-i4-name">Quán nhậu bảy món</span>
+                                                    <i class="horizontal__desc-shop-i4-icon fas fa-circle"></i>
+                                                </div>
+                                                <div class="horizontal__desc-shop-place">
+                                                    Không số Ngã Ba Mặt Đường. Hà Tĩnh
+                                                </div>
+                                            </div>
+                                            <button class="horizontal__desc-bot-btn btn btn--primary">
+                                                Chi tiết
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>                                                       
+                    </div>
+                    <div class="search__details-page">
+                        <div class="pagination">
+                            <div class="pagination__list">
+                                <a href="#" class="pagination__item pagination__item--disable">
+                                    <i class="far fa-chevron-left pagination__item-icon"></i> Trang trước
+                                </a>
+                                <a href="#" class="pagination__item pagination__item--active">
+                                    1
+                                </a>
+                                <a href="#" class="pagination__item">
+                                    2
+                                </a>
+                                <a href="#" class="pagination__item">
+                                    3
+                                </a>
+                                <a href="javascript:void(0)" class="pagination__item pagination__item--disable-hover">
+                                    ...
+                                </a>
+                                <a href="#" class="pagination__item">
+                                    10
+                                </a>
+                                <a href="#" class="pagination__item">
+                                     Trang sau <i class="pagination__item-icon far fa-chevron-right"></i>
+                                </a>
+                            </div>
+                            <div class="jumpxpage">
+                                <span class="jumpxpage__title">
+                                    Tới trang
+                                </span>
+                                <div class="jumpxpage__page">
+                                    <input class="jumpxpage__page-input" type="number" min="1" value="1" size="100">
+                                    <!-- <span class="jumpxpage__page-up">
+                                        <i class="jumpxpage__page-up-icon fas fa-caret-up"></i>
+                                    </span>
+                                    <span class="jumpxpage__page-down">
+                                        <i class="jumpxpage__page-up-icon fas fa-caret-down"></i>
+                                    </span> -->
+                                </div>
+                                <button class="jumpxpage__page-btn">Nhảy trang</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -904,7 +1230,7 @@
                         </a>
                     </div>
                     <div class="row suggest__details">
-                        <div class="col-3 suggest__details-item">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 suggest__details-item">
                             <a href="" class="keyxprd-link">
                                 <div class="keyxprd-i4">
                                     <img src="https://th.bing.com/th/id/OIP.txO6sgnb4lLBCvPKSS9c8QHaF7?w=231&h=185&c=7&o=5&dpr=1.25&pid=1.7" class="keyxprd-i4__img" ></img> 
@@ -948,7 +1274,7 @@
                                 </div>                                  
                             </a>
                         </div>
-                        <div class="col-3 suggest__details-item">
+                        <div class="col-3 col-md-4 col-sm-6 col-12 suggest__details-item">
                             <a href="" class="keyxprd-link">
                                 <div class="keyxprd-i4">
                                     <img src="https://th.bing.com/th/id/OIP.txO6sgnb4lLBCvPKSS9c8QHaF7?w=231&h=185&c=7&o=5&dpr=1.25&pid=1.7" class="keyxprd-i4__img" ></img> 
@@ -992,7 +1318,7 @@
                                 </div>                                  
                             </a>
                         </div>
-                        <div class="col-3 suggest__details-item">
+                        <div class="col-3 col-md-4 col-sm-6 col-12 suggest__details-item">
                             <a href="" class="keyxprd-link">
                                 <div class="keyxprd-i4">
                                     <img src="https://th.bing.com/th/id/OIP.txO6sgnb4lLBCvPKSS9c8QHaF7?w=231&h=185&c=7&o=5&dpr=1.25&pid=1.7" class="keyxprd-i4__img" ></img> 
@@ -1036,7 +1362,7 @@
                                 </div>                                  
                             </a>
                         </div>
-                        <div class="col-3 suggest__details-item">
+                        <div class="col-3 col-md-4 col-sm-6 col-12 suggest__details-item">
                             <a href="" class="keyxprd-link">
                                 <div class="keyxprd-i4">
                                     <img src="https://th.bing.com/th/id/OIP.txO6sgnb4lLBCvPKSS9c8QHaF7?w=231&h=185&c=7&o=5&dpr=1.25&pid=1.7" class="keyxprd-i4__img" ></img> 
@@ -1083,8 +1409,6 @@
                     </div>
                 </div>
             </div>
-
-            
         </div>
       
         <div class="footer">
@@ -1291,4 +1615,5 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 <script src="../js/base.js"></script>
+<script src="../js/search.js"></script>
 </html>
