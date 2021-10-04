@@ -702,6 +702,7 @@
 /* shop details time list  */
 .shop__details-time-details {
     position: absolute;
+    z-index: 1;
     bottom: calc(100% + 6px);
     /* left: calc(100% - 44px); */
     left: 0;
