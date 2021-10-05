@@ -34,7 +34,7 @@
 
 .productDetail__tag {
     width: 30%;
-    height: var( --show-height);
+    height: var(--show-height);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -305,10 +305,10 @@
     margin-bottom: 20px;
     border-radius: 3px;
 }
-/* 
+
 .productDetail__tag-box:last-child {
     margin-bottom: 0;
-} */
+}
 
 .productDetail__tag-title {
     font-size: 1.6rem;
@@ -423,6 +423,10 @@
 
     .productDetail__tag-box:first-child {
         margin-right: 20px;
+    }
+
+    .productDetail__tag-box.tb {
+        margin-bottom: 20px;
     }
 
     .productDetail__content {
