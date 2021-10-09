@@ -62,27 +62,30 @@ cancel__avt.onclick = evt => {
 }
 
 
-const tab__ifmto$ = document.querySelector.bind(document);
-const tab__ifmto$$ = document.querySelectorAll.bind(document);
+const tab__ifson$ = document.querySelector.bind(document);
+const tab__ifson$$ = document.querySelectorAll.bind(document);
 
-const tab__ifmtos = tab__ifmto$$(".imformation__details-exten-item");
-const panel__ifmtos = tab__ifmto$$(".imformation__details-content-panel");
+const tab__ifsons = tab__ifson$$(".imformation__details-exten-item");
+const panel__jfsons = tab__ifson$$(".imformation__details-content-panel");
  
-const tab__ifmtoActive = tab__ifmto$(".imformation__details-exten-item.active");
+const tab__ifsonActive = tab__ifson$(".imformation__details-exten-item.active");
 
+const nav = document.getElementById('imformation__nav');
+const input = document.getElementById('imformation__nav__input');
 
-tab__ifmtos.forEach((tab__ifmto, index__tab__ifmto) => {
-  const panel__ifmto = panel__ifmtos[index__tab__ifmto];
+tab__ifsons.forEach((tab__ifson, index__tab__ifson) => {
+  const panel__jfson = panel__jfsons[index__tab__ifson];
 
-  tab__ifmto.onclick = function () {
-    tab__ifmto$(".imformation__details-exten-item.active").classList.remove("active");
-    tab__ifmto$(".imformation__details-content-panel.active").classList.remove("active");
+  tab__ifson.onclick = function () {
+    tab__ifson$(".imformation__details-exten-item.active").classList.remove("active");
+    tab__ifson$(".imformation__details-content-panel.active").classList.remove("active");
 
     this.classList.add("active");
-    panel__ifmto.classList.add("active");
+    panel__jfson.classList.add("active");
+    nav.classList.add('none__tl');
+    panel__jfson.classList.add("active");
+    input.checked = false
   };
-
-
 });
 
 //update table 
@@ -245,12 +248,10 @@ function ac__btn(e) {
   var get = document.getElementById(e.id);
   var id = e.id;
   var id__sp = id.split('__');
-  var show = document.getElementById(`${id__sp[0]}__${id__sp[1]}__show`);
-  console.log(show)
+
   if(!get.classList.contains('active')) {
     ac__reset();
     get.classList.add('active');
-    show.classList.add('active');
   }
 
 } 
@@ -260,10 +261,61 @@ function ac__reset() {
   for(var i = 0; i < list.length; i++) {
     list[i].classList.remove('active')
   }
+}
 
-  var list2 = document.getElementsByClassName('imformation__place-detail-item-td-btn');
+//fillter
+function fillter__all() {
+  var list = document.getElementsByClassName('info__nav-pane-active-fillter-box-item-input');
+  var id = document.getElementById('active__fill');
+  id.onclick =  function() {
+    if(id.checked == true) {
+      for(var i = 0; i < list.length; i++) {
+        list[i].checked = true;
+      }
+    } else {
+      for(var i = 0; i < list.length; i++) {
+        list[i].checked = false;
+      }
+    }
+  }
+}
+fillter__all();
 
-  for(var i = 0; i < list2.length; i++ ) {
-    list2[i].classList.remove('active');
+function imformation__nav() {
+  var input = document.getElementById('imformation__nav__input');
+  var nav = document.getElementById('imformation__nav');
+  var w = screen.availWidth;
+  if (w > 1024) {
+    if( input.checked == 0) {
+      nav.classList.add('none__tl');
+      nav.classList.add('none');
+    } else {
+      nav.classList.remove('none__tl');
+      nav.classList.remove('none');
+    };
+  }
+
+  if (w < 1024) {
+    if( input.checked == true) {
+      nav.classList.add('none__tl');
+      nav.classList.add('none');
+    } else {
+      nav.classList.remove('none__tl');
+      nav.classList.remove('none');
+    };
+  }
+};
+
+//love shop
+function shop__love(e) {
+  var get = document.getElementById(e.id);
+  var id = e.id;
+  var id__sp = id.split('__');
+  var ip = document.getElementById(`${id__sp[0]}__${id__sp[1]}__ip`);
+  
+  if(ip.checked == false) {
+    get.classList.add('love')
+  } else {
+    get.classList.remove('love')
   }
 }

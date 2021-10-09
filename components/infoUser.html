@@ -686,7 +686,7 @@
                                     <td class="info__i4-desc-table-td">Thạch Mỹ, Lộc Hà, Hà Tĩnh</td>
                                 </tr>
                                 <tr class="info__i4-desc-table-tr">
-                                    <th class="info__i4-desc-table-th">Số điện thoại</th>
+                                    <th class="info__i4-desc-table-th"><i class="fas fa-phone-alt"></i> <span>Số Điện Thoại</span></th>
                                     <td class="info__i4-desc-table-td">&#10022;&#10022;&#10022;&#10022;&#10022;</td>
                                 </tr>
                                 <tr class="info__i4-desc-table-tr">
@@ -739,7 +739,7 @@
                         <div class="active__tab-pane info__nav-pane">
                             <div class="info__nav-pane-post">
                                 <div class="row info__nav-pane-post-list">
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 info__nav-pane-post-list-item">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 info__nav-pane-post-list-item">
                                         <a href="" class="keyxprd-link">
                                             <div class="keyxprd__overlay"></div>
                                             <div class="keyxprd-view">
@@ -759,7 +759,7 @@
                                             </div>                                  
                                         </a>
                                     </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 info__nav-pane-post-list-item">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 info__nav-pane-post-list-item">
                                         <a href="" class="keyxprd-link">
                                             <div class="keyxprd__overlay"></div>
                                             <div class="keyxprd-view">
@@ -779,7 +779,7 @@
                                             </div>                                  
                                         </a>
                                     </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 info__nav-pane-post-list-item">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 info__nav-pane-post-list-item">
                                         <a href="" class="keyxprd-link">
                                             <div class="keyxprd__overlay"></div>
                                             <div class="keyxprd-view">
@@ -799,7 +799,7 @@
                                             </div>                                  
                                         </a>
                                     </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 info__nav-pane-post-list-item">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 info__nav-pane-post-list-item">
                                         <a href="" class="keyxprd-link">
                                             <div class="keyxprd__overlay"></div>
                                             <div class="keyxprd-view">
@@ -819,7 +819,7 @@
                                             </div>                                  
                                         </a>
                                     </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 info__nav-pane-post-list-item">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 info__nav-pane-post-list-item">
                                         <a href="" class="keyxprd-link">
                                             <div class="keyxprd__overlay"></div>
                                             <div class="keyxprd-view">
@@ -839,7 +839,7 @@
                                             </div>                                  
                                         </a>
                                     </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 info__nav-pane-post-list-item">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 info__nav-pane-post-list-item">
                                         <a href="" class="keyxprd-link">
                                             <div class="keyxprd__overlay"></div>
                                             <div class="keyxprd-view">
@@ -859,7 +859,7 @@
                                             </div>                                  
                                         </a>
                                     </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 info__nav-pane-post-list-item">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 info__nav-pane-post-list-item">
                                         <a href="" class="keyxprd-link">
                                             <div class="keyxprd__overlay"></div>
                                             <div class="keyxprd-view">
@@ -879,7 +879,7 @@
                                             </div>                                  
                                         </a>
                                     </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 info__nav-pane-post-list-item">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 info__nav-pane-post-list-item">
                                         <a href="" class="keyxprd-link">
                                             <div class="keyxprd__overlay"></div>
                                             <div class="keyxprd-view">
@@ -904,9 +904,14 @@
                         </div>
                         <div class="active__tab-pane info__nav-pane active">
                         <!-- //kem  -->
-                        <div class="container imformation__details-block">
-                            <div class="row imformation__details">
-                                <div class="col-lg-3 imformation__details-exten-block">
+                        <div class="imformation__details-block">
+                            <input type="checkbox" name="" id="imformation__nav__input" hidden>
+                            <div class="imformation__details-header">
+                                <label onclick="imformation__nav()" for="imformation__nav__input" id="imformation__nav__control" class="imformation__details-header-control"><i class="fas fa-bars"></i></label>
+                                <div class="imformation__details-header-title">Quản lý tài khoản</div>
+                            </div>
+                            <div class="imformation__details">
+                                <div id="imformation__nav" class="imformation__details-exten-block none__tl">
                                     <div class="imformation__details-exten">
                                         <div class="imformation__details-exten-i4">
                                             <img src="https://i.pinimg.com/originals/42/b8/61/42b861529a3aba4b8610309a25b205db.png" alt="" class="imformation__details-exten-i4-img">
@@ -923,14 +928,17 @@
                                             <li class="imformation__details-exten-item">
                                                 <i class="fal fa-history"></i> Đổi mật khẩu
                                             </li>                                     
-                                            <li class="imformation__details-exten-item active">
+                                            <li class="imformation__details-exten-item">
                                                 <i class="fal fa-map-marked-alt"></i> Quản lý địa chỉ
+                                            </li>                                     
+                                            <li class="imformation__details-exten-item active">
+                                                <i class="fal fa-store-alt"></i> Cửa hàng
                                             </li>                                     
                                         </ul>
             
                                     </div>
                                 </div>
-                                <div class="col-lg-9 imformation__details-content-block">
+                                <div class="imformation__details-content-block">
                                     <div class="imformation__details-content">
                                         <div class="imformation__details-content-panel">
                                             <div class="imformation__account">
@@ -1012,7 +1020,7 @@
                                                                                                                      
                                                             </tr>
                                                             <tr class="imformation__account-details-item">
-                                                                <th class="imformation__account-details-item-name">Số điện thoại</th>
+                                                                <th class="imformation__account-details-item-name"><span>Số Điện Thoại</span></th>
                                                                 <td id="td7" class="imformation__account-details-item-desc">
                                                                     +84.555.666.7777  
                                                                 </td>    
@@ -1121,10 +1129,10 @@
                                                     </div>
                                                 </div>
                                                 <label for="imformation__tabput" class="imformation__account-btn btn btn--red">
-                                                    <i class="fas fa-edit"></i> Sửa thông tin
+                                                    <i class="fas fa-edit"></i> <span>Sửa thông tin</span>
                                                 </label>
                                                 <label for="imformation__tabput" class="imformation__account-btn imformation__account-btn--close btn btn--red">
-                                                    <i class="fas fa-edit"></i> Đóng
+                                                    <i class="fas fa-edit"></i> <span>Đóng</span>
                                                 </label>
                                             </div>
                                         </div>
@@ -1169,134 +1177,124 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="imformation__details-content-panel active">
+                                        <div class="imformation__details-content-panel">
                                             <div class="imformation__account">
                                                 <div class="imformation__place">
                                                     <input type="checkbox" name="" id="info__create" class="info__create" hidden>
                                                     <div class="imformation__place-header">
                                                         <h2 class="imformation__place-title">Quản lý địa chỉ của bạn</h2>
-                                                        <label for="info__create" class="imformation__place-header-ac btn btn--primary">Thêm địa chỉ</label>
+                                                        <label for="info__create" class="imformation__place-header-ac"><i class="fas fa-plus-circle"></i> <span>Thêm địa chỉ</span></label>
                                                     </div>
                                                     <div class="imformation__place-detail">
                                                         <div class="imformation__place-detail-item">
-                                                            <table class="imformation__place-detail-item-table">
-                                                                <tr class="imformation__place-detail-item-tr">
-                                                                    <td class="imformation__place-detail-item-td name">Họ Và Tên</td>
-                                                                    <td class="imformation__place-detail-item-td">Không Không Một</td>
-                                                                    <td class="imformation__place-detail-item-td">
-                                                                        <button id="ac__btn1__show" class="imformation__place-detail-item-td-btn active btn btn--primary">
-                                                                            Mặc định
-                                                                        </button>
-                                                                    </td>
-                                                                    <td class="imformation__place-detail-item-td">
-                                                                        <button class="imformation__place-detail-item-td-tag">
-                                                                            Địa chỉ lấy hàng
-                                                                        </button>
-                                                                    </td>
-                                                                    <td class="imformation__place-detail-item-td">
-                                                                        <button class="imformation__place-detail-item-td-tag">
-                                                                            Địa chỉ trả hàng
-                                                                        </button>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="imformation__place-detail-item-tr">
-                                                                    <td class="imformation__place-detail-item-td name">Số Điện Thoại</td>
-                                                                    <td class="imformation__place-detail-item-td">(+84) 987254746</td>
-                                                                </tr>
-                                                                <tr class="imformation__place-detail-item-tr">
-                                                                    <td class="imformation__place-detail-item-td name">Địa Chỉ</td>
-                                                                    <td class="imformation__place-detail-item-td">Nhà mặt phố bố làm to Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatibus ut et neque accusantium excepturi, voluptatem qui aliquid placeat? Ab harum quaerat dolorum, maiores odit modi suscipit eveniet iusto aliquam!</td>
-                                                                </tr>
-                                                            </table>
+                                                            <div class="imformation__place-detail-item-table">
+                                                                <div class="imformation__place-detail-item-tr-block">
+                                                                    <div class="imformation__place-detail-item-tr">
+                                                                        <div class="imformation__place-detail-item-td name">
+                                                                            <i class="fas fa-user-tag"></i>
+                                                                            <div class="imformation__place-detail-item-td-ttip">Họ và tên</div>
+                                                                        </div>
+                                                                        <div class="imformation__place-detail-item-td bold">Không Không Một</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="imformation__place-detail-item-tr-block">
+                                                                    <div class="imformation__place-detail-item-tr">
+                                                                        <div class="imformation__place-detail-item-td name">
+                                                                            <i class="fas fa-phone-alt"></i>
+                                                                            <div class="imformation__place-detail-item-td-ttip">Số điện thoại</div>
+                                                                        </div>
+                                                                        <div class="imformation__place-detail-item-td">(+84) 987254746</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="imformation__place-detail-item-tr-block">
+                                                                    <div class="imformation__place-detail-item-tr">
+                                                                        <div class="imformation__place-detail-item-td name">
+                                                                            <i class="fas fa-map-marked-alt"></i>
+                                                                            <div class="imformation__place-detail-item-td-ttip">Địa chỉ</div>
+                                                                        </div>
+                                                                        <div class="imformation__place-detail-item-td">Nhà mặt phố bố làm to </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                             <div class="imformation__place-detail-item-ac-block">
                                                                 <div class="imformation__place-detail-item-ac">
                                                                     <label for="info__create" class="imformation__place-detail-item-ac-btn btn">Sửa</label>
                                                                 </div>
-                                                                <button onclick="ac__btn(this)" id="ac__btn1" class="imformation__place-detail-item-ac-set active btn">Thiết lập mặc định</button>
+                                                                <button onclick="ac__btn(this)" id="ac__btn1" class="imformation__place-detail-item-ac-set active btn"><i class="fal fa-star-half-alt"></i> <span>Mặc định</span> </button>
                                                             </div>
                                                         </div>
                                                         <div class="imformation__place-detail-item">
-                                                            <table class="imformation__place-detail-item-table">
-                                                                <tr class="imformation__place-detail-item-tr">
-                                                                    <td class="imformation__place-detail-item-td name">Họ Và Tên</td>
-                                                                    <td class="imformation__place-detail-item-td">Không Không Một</td>
-                                                                    <td class="imformation__place-detail-item-td">
-                                                                        <button id="ac__btn2__show" class="imformation__place-detail-item-td-btn btn btn--primary">
-                                                                            Mặc định
-                                                                        </button>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="imformation__place-detail-item-tr">
-                                                                    <td class="imformation__place-detail-item-td name">Số Điện Thoại</td>
-                                                                    <td class="imformation__place-detail-item-td">(+84) 987254746</td>
-                                                                </tr>
-                                                                <tr class="imformation__place-detail-item-tr">
-                                                                    <td class="imformation__place-detail-item-td name">Địa Chỉ</td>
-                                                                    <td class="imformation__place-detail-item-td">Nhà mặt phố bố làm to Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatibus ut et neque accusantium excepturi, voluptatem qui aliquid placeat? Ab harum quaerat dolorum, maiores odit modi suscipit eveniet iusto aliquam!</td>
-                                                                </tr>
-                                                            </table>
+                                                            <div class="imformation__place-detail-item-table">
+                                                                <div class="imformation__place-detail-item-tr-block">
+                                                                    <div class="imformation__place-detail-item-tr">
+                                                                        <div class="imformation__place-detail-item-td name">
+                                                                            <i class="fas fa-user-tag"></i>
+                                                                            <div class="imformation__place-detail-item-td-ttip">Họ và tên</div>
+                                                                        </div>
+                                                                        <div class="imformation__place-detail-item-td bold">Không Không Một</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="imformation__place-detail-item-tr-block">
+                                                                    <div class="imformation__place-detail-item-tr">
+                                                                        <div class="imformation__place-detail-item-td name">
+                                                                            <i class="fas fa-phone-alt"></i>
+                                                                            <div class="imformation__place-detail-item-td-ttip">Số điện thoại</div>
+                                                                        </div>
+                                                                        <div class="imformation__place-detail-item-td">(+84) 987254746</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="imformation__place-detail-item-tr-block">
+                                                                    <div class="imformation__place-detail-item-tr">
+                                                                        <div class="imformation__place-detail-item-td name">
+                                                                            <i class="fas fa-map-marked-alt"></i>
+                                                                            <div class="imformation__place-detail-item-td-ttip">Địa chỉ</div>
+                                                                        </div>
+                                                                        <div class="imformation__place-detail-item-td">Nhà mặt phố bố làm to </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                             <div class="imformation__place-detail-item-ac-block">
                                                                 <div class="imformation__place-detail-item-ac">
                                                                     <label for="info__create" class="imformation__place-detail-item-ac-btn btn">Sửa</label>
-                                                                    <button class="imformation__place-detail-item-ac-btn btn">Xóa</button>
                                                                 </div>
-                                                                <button onclick="ac__btn(this)" id="ac__btn2" class="imformation__place-detail-item-ac-set btn">Thiết lập mặc định</button>
+                                                                <button onclick="ac__btn(this)" id="ac__btn2" class="imformation__place-detail-item-ac-set btn"><i class="fal fa-star-half-alt"></i> <span>Mặc định</span> </button>
                                                             </div>
                                                         </div>
                                                         <div class="imformation__place-detail-item">
-                                                            <table class="imformation__place-detail-item-table">
-                                                                <tr class="imformation__place-detail-item-tr">
-                                                                    <td class="imformation__place-detail-item-td name">Họ Và Tên</td>
-                                                                    <td class="imformation__place-detail-item-td">Không Không Một</td>
-                                                                    <td class="imformation__place-detail-item-td">
-                                                                        <button id="ac__btn3__show" class="imformation__place-detail-item-td-btn btn btn--primary">
-                                                                            Mặc định
-                                                                        </button>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="imformation__place-detail-item-tr">
-                                                                    <td class="imformation__place-detail-item-td name">Số Điện Thoại</td>
-                                                                    <td class="imformation__place-detail-item-td">(+84) 987254746</td>
-                                                                </tr>
-                                                                <tr class="imformation__place-detail-item-tr">
-                                                                    <td class="imformation__place-detail-item-td name">Địa Chỉ</td>
-                                                                    <td class="imformation__place-detail-item-td">Nhà mặt phố bố làm to Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatibus ut et neque accusantium excepturi, voluptatem qui aliquid placeat? Ab harum quaerat dolorum, maiores odit modi suscipit eveniet iusto aliquam!</td>
-                                                                </tr>
-                                                            </table>
-                                                            <div class="imformation__place-detail-item-ac-block">
-                                                                <div class="imformation__place-detail-item-ac">
-                                                                    <label for="info__create" class="imformation__place-detail-item-ac-btn btn">Sửa</label>
-                                                                    <button class="imformation__place-detail-item-ac-btn btn">Xóa</button>
+                                                            <div class="imformation__place-detail-item-table">
+                                                                <div class="imformation__place-detail-item-tr-block">
+                                                                    <div class="imformation__place-detail-item-tr">
+                                                                        <div class="imformation__place-detail-item-td name">
+                                                                            <i class="fas fa-user-tag"></i>
+                                                                            <div class="imformation__place-detail-item-td-ttip">Họ và tên</div>
+                                                                        </div>
+                                                                        <div class="imformation__place-detail-item-td bold">Không Không Một</div>
+                                                                    </div>
                                                                 </div>
-                                                                <button onclick="ac__btn(this)" id="ac__btn3" class="imformation__place-detail-item-ac-set btn">Thiết lập mặc định</button>
+                                                                <div class="imformation__place-detail-item-tr-block">
+                                                                    <div class="imformation__place-detail-item-tr">
+                                                                        <div class="imformation__place-detail-item-td name">
+                                                                            <i class="fas fa-phone-alt"></i>
+                                                                            <div class="imformation__place-detail-item-td-ttip">Số điện thoại</div>
+                                                                        </div>
+                                                                        <div class="imformation__place-detail-item-td">(+84) 987254746</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="imformation__place-detail-item-tr-block">
+                                                                    <div class="imformation__place-detail-item-tr">
+                                                                        <div class="imformation__place-detail-item-td name">
+                                                                            <i class="fas fa-map-marked-alt"></i>
+                                                                            <div class="imformation__place-detail-item-td-ttip">Địa chỉ</div>
+                                                                        </div>
+                                                                        <div class="imformation__place-detail-item-td">Nhà mặt phố bố làm to </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="imformation__place-detail-item">
-                                                            <table class="imformation__place-detail-item-table">
-                                                                <tr class="imformation__place-detail-item-tr">
-                                                                    <td class="imformation__place-detail-item-td name">Họ Và Tên</td>
-                                                                    <td class="imformation__place-detail-item-td">Không Không Một</td>
-                                                                    <td class="imformation__place-detail-item-td">
-                                                                        <button id="ac__btn4__show" class="imformation__place-detail-item-td-btn btn btn--primary">
-                                                                            Mặc định
-                                                                        </button>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="imformation__place-detail-item-tr">
-                                                                    <td class="imformation__place-detail-item-td name">Số Điện Thoại</td>
-                                                                    <td class="imformation__place-detail-item-td">(+84) 987254746</td>
-                                                                </tr>
-                                                                <tr class="imformation__place-detail-item-tr">
-                                                                    <td class="imformation__place-detail-item-td name">Địa Chỉ</td>
-                                                                    <td class="imformation__place-detail-item-td">Nhà mặt phố bố làm to Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatibus ut et neque accusantium excepturi, voluptatem qui aliquid placeat? Ab harum quaerat dolorum, maiores odit modi suscipit eveniet iusto aliquam!</td>
-                                                                </tr>
-                                                            </table>
                                                             <div class="imformation__place-detail-item-ac-block">
                                                                 <div class="imformation__place-detail-item-ac">
                                                                     <label for="info__create" class="imformation__place-detail-item-ac-btn btn">Sửa</label>
-                                                                    <button class="imformation__place-detail-item-ac-btn btn">Xóa</button>
                                                                 </div>
-                                                                <button onclick="ac__btn(this)" id="ac__btn4" class="imformation__place-detail-item-ac-set btn">Thiết lập mặc định</button>
+                                                                <button onclick="ac__btn(this)" id="ac__btn3" class="imformation__place-detail-item-ac-set btn"><i class="fal fa-star-half-alt"></i> <span>Mặc định</span> </button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1304,16 +1302,16 @@
                                                         <label for="info__create" class="modal__overlay"></label>
                                                         <div class="modal__body container">
                                                             <div class="imformation__place-edit-block row">
-                                                                <div class="imformation__place-edit col-lg-6 offset-lg-3">
+                                                                <div class="imformation__place-edit col-lg-6 offset-lg-3 col-12">
                                                                     <div class="imformation__place-edit-title">Địa chỉ mới</div>
                                                                     <form id="info__form__create" action="" method="post" class="imformation__place-edit-form">
                                                                         <div class="imformation__place-edit-box">
                                                                             <div class="imformation__place-edit-box-item imformation__place-edit-group form-group">
-                                                                                <input id="info__create__name" type="text" class="imformation__place-edit-input form-control" placeholder="Họ và tên">
+                                                                                <input id="info__create__name" type="text" class="imformation__place-edit-input form-control" placeholder="Họ Và Tên">
                                                                                 <div class="form-message"></div>
                                                                             </div>
                                                                             <div class="imformation__place-edit-box-item imformation__place-edit-group form-group">
-                                                                                <input id="info__create__phone" type="text" class="imformation__place-edit-input form-control" placeholder="Số điện thoại">
+                                                                                <input id="info__create__phone" type="text" class="imformation__place-edit-input form-control" placeholder="Số Điện Thoại">
                                                                                 <div class="form-message"></div>
                                                                             </div>
                                                                         </div>
@@ -1374,7 +1372,7 @@
                                                                             <div class="form-message"></div>
                                                                         </div>
                                                                         <div class="imformation__place-edit-map">
-                                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15149.435470560124!2d105.9112428!3d18.33090535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1633421357491!5m2!1svi!2s" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15149.435470560124!2d105.9112428!3d18.33090535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1633421357491!5m2!1svi!2s" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                                                         </div>
                                                                         <div class="imformation__place-edit-stt">
                                                                             <div class="imformation__place-edit-stt-title">Loại địa chỉ: </div>
@@ -1409,19 +1407,213 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="imformation__details-content-panel active">
+                                            <div class="imformation__shop-block">
+                                                <div class="imformation__shop">
+                                                    <div class="imformation__shop-img-block">
+                                                        <img src="https://i.pinimg.com/564x/32/72/d5/3272d52a30c792a73a194b2b844a6663.jpg" alt="" class="imformation__shop-img">
+                                                    </div>
+                                                    <div class="imformation__shop-content">
+                                                        <div class="imformation__shop-detail">
+                                                            <div class="imformation__shop-detail-title">
+                                                                <div class="imformation__shop-detail-title-name">Quán Ô Ô Bốc Phét</div>
+                                                                <div class="imformation__shop-detail-title-stt oke">Đã xác nhận</div>
+                                                            </div>
+                                                            <div class="imformation__shop-detail-link-block">
+                                                                <a class="imformation__shop-detail-link">
+                                                                    <span>Email: </span>vansong2204@gmail.com
+                                                                </a>
+                                                                <a href="" class="imformation__shop-detail-link a">
+                                                                    <span>Website: </span> 
+                                                                    <span class="imformation__shop-link-hot">BIPM1MED.com</span>
+                                                                </a>
+                                                                <a href="" class="imformation__shop-detail-link a">
+                                                                    <span>Facebook: </span>
+                                                                    <span class="imformation__shop-link-hot">Nguyễn Bá Tương</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="imformation__shop-detail-place">
+                                                                Số 02 ngõ 23 đường Lý Tự Trọng . Tp.Hà Tĩnh
+                                                            </div>
+                                                        </div>
+                                                        <div class="imformation__shop-top">
+                                                            <div class="imformation__shop-top-star modal__lib-exten-vote-star">
+                                                                <div class="shop__vote-i4-avt-star-block">
+                                                                    <i class="shop__vote-i4-avt-star-icon fas fa-star"></i>
+                                                                </div>
+                                                                <div class="shop__vote-i4-avt-star-block">
+                                                                    <i class="shop__vote-i4-avt-star-icon fas fa-star"></i>
+                                                                </div>
+                                                                <div class="shop__vote-i4-avt-star-block">
+                                                                    <i class="shop__vote-i4-avt-star-icon fas fa-star"></i>
+                                                                </div>
+                                                                <div class="shop__vote-i4-avt-star-block">
+                                                                    <i class="shop__vote-i4-avt-star-icon fas fa-star"></i>
+                                                                </div>
+                                                                <div class="shop__vote-i4-avt-star-block shop__vote-i4-avt-star-block--diss">
+                                                                    <i class="shop__vote-i4-avt-star-icon fas fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="imformation__shop-top-box">
+                                                                <div class="imformation__shop-top-box-it">853 lượt thích</div>
+                                                            </div>
+                                                            <div class="imformation__shop-top-ac">
+                                                                <button class="imformation__shop-top-ac-btn btn">Chi tiết</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="imformation__shop-block">
+                                                <div class="imformation__shop">
+                                                    <div class="imformation__shop-img-block">
+                                                        <img src="https://i.pinimg.com/564x/b2/e4/98/b2e4988673755acc6d7c03ae18338f7f.jpg" alt="" class="imformation__shop-img">
+                                                    </div>
+                                                    <div class="imformation__shop-content">
+                                                        <div class="imformation__shop-detail">
+                                                            <div class="imformation__shop-detail-title">
+                                                                <div class="imformation__shop-detail-title-name">Quán Ô Ô Bốc Phét</div>
+                                                                <div class="imformation__shop-detail-title-stt oke">Đã xác nhận</div>
+                                                            </div>
+                                                            <div class="imformation__shop-detail-link-block">
+                                                                <a class="imformation__shop-detail-link">
+                                                                    <span>Email: </span>vansong2204@gmail.com
+                                                                </a>
+                                                                <a href="" class="imformation__shop-detail-link a">
+                                                                    <span>Website: </span> 
+                                                                    <span class="imformation__shop-link-hot">BIPM1MED.com</span>
+                                                                </a>
+                                                                <a href="" class="imformation__shop-detail-link a">
+                                                                    <span>Facebook: </span>
+                                                                    <span class="imformation__shop-link-hot">Nguyễn Bá Tương</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="imformation__shop-detail-place">
+                                                                Số 02 ngõ 23 đường Lý Tự Trọng . Tp.Hà Tĩnh
+                                                            </div>
+                                                        </div>
+                                                        <div class="imformation__shop-top">
+                                                            <div class="imformation__shop-top-star modal__lib-exten-vote-star">
+                                                                <div class="shop__vote-i4-avt-star-block">
+                                                                    <i class="shop__vote-i4-avt-star-icon fas fa-star"></i>
+                                                                </div>
+                                                                <div class="shop__vote-i4-avt-star-block">
+                                                                    <i class="shop__vote-i4-avt-star-icon fas fa-star"></i>
+                                                                </div>
+                                                                <div class="shop__vote-i4-avt-star-block">
+                                                                    <i class="shop__vote-i4-avt-star-icon fas fa-star"></i>
+                                                                </div>
+                                                                <div class="shop__vote-i4-avt-star-block">
+                                                                    <i class="shop__vote-i4-avt-star-icon fas fa-star"></i>
+                                                                </div>
+                                                                <div class="shop__vote-i4-avt-star-block shop__vote-i4-avt-star-block--diss">
+                                                                    <i class="shop__vote-i4-avt-star-icon fas fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="imformation__shop-top-box">
+                                                                <div class="imformation__shop-top-box-it">853 lượt thích</div>
+                                                            </div>
+                                                            <div class="imformation__shop-top-ac">
+                                                                <button class="imformation__shop-top-ac-btn btn">Chi tiết</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="imformation__shop-block">
+                                                <div class="imformation__shop">
+                                                    <div class="imformation__shop-img-block">
+                                                        <img src="https://i.pinimg.com/564x/7d/9e/b1/7d9eb1bed84cf6ec7286410bbdd121ce.jpg" alt="" class="imformation__shop-img">
+                                                    </div>
+                                                    <div class="imformation__shop-content">
+                                                        <div class="imformation__shop-detail">
+                                                            <div class="imformation__shop-detail-title">
+                                                                <div class="imformation__shop-detail-title-name">Quán Ô Ô Bốc Phét</div>
+                                                                <div class="imformation__shop-detail-title-stt oke">Đã xác nhận</div>
+                                                            </div>
+                                                            <div class="imformation__shop-detail-link-block">
+                                                                <a class="imformation__shop-detail-link">
+                                                                    <span>Email: </span>vansong2204@gmail.com
+                                                                </a>
+                                                                <a href="" class="imformation__shop-detail-link a">
+                                                                    <span>Website: </span> 
+                                                                    <span class="imformation__shop-link-hot">BIPM1MED.com</span>
+                                                                </a>
+                                                                <a href="" class="imformation__shop-detail-link a">
+                                                                    <span>Facebook: </span>
+                                                                    <span class="imformation__shop-link-hot">Nguyễn Bá Tương</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="imformation__shop-detail-place">
+                                                                Số 02 ngõ 23 đường Lý Tự Trọng . Tp.Hà Tĩnh
+                                                            </div>
+                                                        </div>
+                                                        <div class="imformation__shop-top">
+                                                            <div class="imformation__shop-top-star modal__lib-exten-vote-star">
+                                                                <div class="shop__vote-i4-avt-star-block">
+                                                                    <i class="shop__vote-i4-avt-star-icon fas fa-star"></i>
+                                                                </div>
+                                                                <div class="shop__vote-i4-avt-star-block">
+                                                                    <i class="shop__vote-i4-avt-star-icon fas fa-star"></i>
+                                                                </div>
+                                                                <div class="shop__vote-i4-avt-star-block">
+                                                                    <i class="shop__vote-i4-avt-star-icon fas fa-star"></i>
+                                                                </div>
+                                                                <div class="shop__vote-i4-avt-star-block">
+                                                                    <i class="shop__vote-i4-avt-star-icon fas fa-star"></i>
+                                                                </div>
+                                                                <div class="shop__vote-i4-avt-star-block shop__vote-i4-avt-star-block--diss">
+                                                                    <i class="shop__vote-i4-avt-star-icon fas fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="imformation__shop-top-box">
+                                                                <div class="imformation__shop-top-box-it">853 lượt thích</div>
+                                                            </div>
+                                                            <div class="imformation__shop-top-ac">
+                                                                <button class="imformation__shop-top-ac-btn btn">Chi tiết</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- //kem  -->
-    
-    
                         </div>
                         <div class="active__tab-pane info__nav-pane">
-                            <div class="info__nav-pane-active">
+                            <div class="info__nav-pane-active">                                
                                 <div class="info__nav-pane-active-title">
                                     <h2 class="info__nav-pane-active-title-name">Lịch sử hoạt động</h2>
                                     <h4 class="info__nav-pane-active-title-other">Xóa lịch sử hoạt động</h4>
+                                </div>
+                                <div class="info__nav-pane-active-fillter">
+                                    <div class="info__nav-pane-active-fillter-title">Lọc hoạt động theo:</div>
+                                    <div class="info__nav-pane-active-fillter-box">
+                                        <div class="info__nav-pane-active-fillter-box-item">
+                                            <input type="checkbox" name="" id="active__fill" class="info__nav-pane-active-fillter-box-item-input">
+                                            <label for="active__fill" class="info__nav-pane-active-fillter-box-item-label">Tất cả</label>
+                                        </div>
+                                        <div class="info__nav-pane-active-fillter-box-item">
+                                            <input type="checkbox" name="" id="active__fill1" class="info__nav-pane-active-fillter-box-item-input">
+                                            <label for="active__fill1" class="info__nav-pane-active-fillter-box-item-label">Shop đã like</label>
+                                        </div>
+                                        <div class="info__nav-pane-active-fillter-box-item">
+                                            <input type="checkbox" name="" id="active__fill2" class="info__nav-pane-active-fillter-box-item-input">
+                                            <label for="active__fill2" class="info__nav-pane-active-fillter-box-item-label">Sản phẩm đã mua</label>
+                                        </div>
+                                        <div class="info__nav-pane-active-fillter-box-item">
+                                            <input type="checkbox" name="" id="active__fill3" class="info__nav-pane-active-fillter-box-item-input">
+                                            <label for="active__fill3" class="info__nav-pane-active-fillter-box-item-label">Sản phẩm đã thích</label>
+                                        </div>
+                                        <div class="info__nav-pane-active-fillter-box-item">
+                                            <input type="checkbox" name="" id="active__fill4" class="info__nav-pane-active-fillter-box-item-input">
+                                            <label for="active__fill4" class="info__nav-pane-active-fillter-box-item-label">Bình luận</label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="info__nav-pane-active-list">
                                     <h2 class="info__nav-pane-active-list-title">Tháng 8</h2>

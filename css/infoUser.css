@@ -1,5 +1,5 @@
 .info {
-    padding: 30px;
+    padding: 30px 0;
     color: var(--text-pink-color);
 }
 
@@ -153,11 +153,6 @@
     color: #FFFFFF;
 }
 
-.info__i4-main-avt-btn-icon {
-
-}
-
-
 .info__i4-main-desc {
     padding: 0 40px;
     flex: 1;
@@ -215,15 +210,6 @@
     font-weight: 500;
 }
 
-.info__i4-main-desc-top-item-desc {
-
-}
-
-
-.info__i4-desc {
-    
-}
-
 .info__i4-desc-table {
     display: flex;
     justify-content: flex-end;
@@ -272,13 +258,6 @@
     color: #FF0000;
 }
 
-
-
-
-.info__nav {
-    
-}
-
 .info__nav-list {
     justify-content: center;
     margin-bottom: 30px;
@@ -286,18 +265,6 @@
 
 .info__nav-list-item {
     font-size: 1.8rem;
-}
-
-.info__nav-list-item-link {
-
-}
-
-.info__nav-pane {
-
-}
-
-.info__nav-pane-post-list {
-
 }
 
 .info__nav-pane-post-list-item {
@@ -512,10 +479,6 @@ h2.imformation__place-title {
     margin-bottom: 20px;
 }
 
-.imformation__place-detail {
-
-}
-
 .imformation__place-detail-item {
     display: flex;
     justify-content: space-between;
@@ -527,10 +490,15 @@ h2.imformation__place-title {
     flex: 1;
 }
 
+.imformation__place-detail-item-tr-block {
+    display: flex;
+}
+
 .imformation__place-detail-item-tr {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .imformation__place-detail-item-tr:first-child {
@@ -539,13 +507,53 @@ h2.imformation__place-title {
 
 .imformation__place-detail-item-td {
     font-size: 1.6rem;
-    min-width: 90px;
     margin-right: 10px;
     font-weight: 400;
 }
 
 .imformation__place-detail-item-td.name{
     font-size: 1.4rem;
+    width: 24px;
+    display: flex;
+}
+
+.imformation__place-detail-item-td.name i {
+    color: #7C7C7C;
+    margin: auto;
+}
+
+.imformation__place-detail-item-td-ttip {
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: 12px;
+    transform: translateX(-50%);
+    width: 100px;
+    line-height: 2.4rem; 
+    height: 24px;
+    border-radius: 4px;
+    background-color: var(--text-pink-color);
+    color: #FFF;
+    text-align: center;
+    display: none;
+}
+
+.imformation__place-detail-item-tr:hover .imformation__place-detail-item-td-ttip {
+    display: block;
+}
+
+.imformation__place-detail-item-td-ttip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--text-pink-color);
+}
+
+.imformation__place-detail-item-td.bold{
+    font-weight: bold;
 }
 
 .imformation__place-detail-item-td.stt {
@@ -592,19 +600,36 @@ h2.imformation__place-title {
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 3%);
 }
 
-.imformation__place-detail-item-ac-set.active {
-    cursor: no-drop;
+.imformation__place-detail-item-ac-set i {
+    margin-right: 10px;
 }
 
-.imformation__place-detail-item-ac-set:hover {
-    background: rgba(0,0,0,.02);
+.imformation__place-detail-item-ac-set.active {
+    color: #FFF;
+    background-color: var(--primary-color);
+}
+
+.imformation__place-detail-item-ac-set.active:hover {
+    opacity: 0.8;
 }
 
 .imformation__place-header {
     display: flex;
     justify-content: space-between;
+    font-size: 1.6rem;
 }
 
+.imformation__place-header-ac span{
+    text-decoration: underline;
+}
+
+.imformation__place-header-ac i {
+    margin-right: 3px;
+}
+
+.imformation__place-header-ac:hover {
+    color: var(--primary-color);
+}
 /* modal create */
 
 .info__create:checked ~ .modal {
@@ -631,10 +656,6 @@ h2.imformation__place-title {
 .imformation__place-edit-title {
     font-size: 2rem;
     margin-bottom: 20px;
-}
-
-.imformation__place-edit-form {
-
 }
 
 .imformation__place-edit-box {
@@ -834,10 +855,6 @@ h2.imformation__place-title {
     display: none;
 }
 
-.imformation__place-edit-stt-add {
-    /* display: none ; */
-}
-
 .imformation__place-edit-stt-add-input {
     margin: 5px 0 10px 0;
 }
@@ -865,6 +882,716 @@ h2.imformation__place-title {
     display: block;
 }
 
+/* fillter  */
+.info__nav-pane-active-fillter {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.info__nav-pane-active-fillter-title {
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.info__nav-pane-active-fillter-box {
+    display: flex;
+    align-items: center;
+}
+
+.info__nav-pane-active-fillter-box-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.info__nav-pane-active-fillter-box-item-input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.info__nav-pane-active-fillter-box-item-label {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.imformation__path {
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.imformation__path-block {
+    height: 30px;
+    background-color: var(--bgr-color);
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 10px 0;
+}
+
+.imformation__path-fa {
+    padding-right: 10px;
+    color: #9B9B9B;
+}
+
+.imformation__path-details {
+    color: #8E8E8E;
+}
+
+.imformation__path-details-title {
+    font-weight: bold;
+    color: #000;
+}
+
+.imformation__details {
+    display: flex;
+    position: relative;
+}
+
+.imformation__details-exten-block {
+   width: 300px;
+   margin-right: 20px;
+}
+
+.imformation__details-exten-block.none {
+   display: none;
+}
+
+.imformation__details-content-block {
+    flex: 1;
+}
+
+.imformation__details-exten {
+    background-color: #FFF;
+}
+
+.imformation__details-exten-i4 {
+    background-color: #FFEFEF;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.imformation__details-exten-i4-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.imformation__details-exten-i4-desc {
+    color: var(--text-pink-color);
+}
+
+.imformation__details-exten-i4-desc-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.imformation__details-exten-i4-desc-type {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.imformation__details-exten-list {
+    padding: 10px;
+}
+
+.imformation__details-exten-item {
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: var(--text-pink-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.imformation__details-exten-item.active {
+    background-color: #FFEFEF;
+    border: 1px solid #FDD8E1;
+    color: var(--primary-color);
+}
+
+.imformation__details-content-panel {
+    display: none;
+}
+
+.imformation__details-content-panel.active {
+    display: block;
+}
+
+.imformation__account {
+    background-color: var(--bgr-color);
+    border-radius: 4px;
+    border: 1px solid #F3F3F3;
+    position: relative;
+}
+
+.imformation__account-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.imformation__account-header-i4 {
+    display: flex;
+    align-items: center;
+}
+
+.imformation__account-header-i4-avt {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.imformation__account-header-i4-desc {
+    color: var(--text-pink-color);
+}
+
+.imformation__account-header-i4-desc-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.imformation__account-header-i4-desc-type {
+    font-size: 1.5rem;
+    font-weight: 40;
+    margin-top: 5px;
+}
+
+.imformation__account-details-block {
+    padding: 0 20px;
+}
+
+.imformation__account-details {
+    color: var(--text-pink-color);
+}
+
+.imformation__account-details-item {
+    display: block;
+    font-size: 1.5rem;
+    padding: 14px 0;
+}
+
+.imformation__account-details-item-name {
+    font-weight: bold;
+    min-width: 104px;
+}
+
+.imformation__account-details-item-desc {
+    font-weight: 400;
+    padding: 0 20px;
+}
+
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}
+
+.imformation__account-details-item-desc-btn {
+    font-size: 1.5rem;
+}
+
+.imformation__account-details-item-desc i{
+    font-size: 1rem;
+    color: #8B8B8B;
+}
+
+.imformation__account-details-item-update-btn {
+    font-weight: 400;
+    cursor: pointer;
+    display: none;
+}
+
+.imformation__account-details-item:hover .imformation__account-details-item-update-btn {
+    display: block;
+}
+
+.imformation__account-btn {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+}
+
+.imformation__account-btn.imformation__account-btn--close {
+    display: none;
+}
+
+.imformation__tabput:checked ~ .imformation__account-tabput1 {
+    display: none;
+}
+
+.imformation__account-tabput2 {
+    width: 100%;
+    display: none;
+    padding: 10px 20px;
+}
+
+.imformation__tabput:checked ~ .imformation__account-tabput2 {
+    display: block;
+}
+
+.imformation__tabput:checked ~ .imformation__account-btn {
+    display: none;
+}
+
+.imformation__tabput:checked ~ .imformation__account-btn.imformation__account-btn--close {
+    display: block;
+}
+
+.imformation__account-update-avt {
+    display: flex;
+    align-items: center;
+}
+
+.imformation__account-update-avt-img {
+    height: 106px;
+    width: 106px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.imformation__account-update-avt-acti {
+    color: var(--text-pink-color);
+}
+
+.imformation__account-update-avt-acti-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.imformation__account-update-avt-acti-type {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.imformation__account-update-avt-acti-up {
+    font-size: 1.6rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    border: 1px solid #F3F3F3;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.imformation__account-update-avt-acti-up-input {
+    outline: none;
+    border: none;
+    color: #B9B9B9;
+    padding: 5px 10px;
+    height: 40px;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    flex: 1;
+}
+
+.imformation__account-update-avt-acti-up-name {
+    color: #FFFFFF;
+    height: 40px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.imformation__account-update-form {
+    padding: 20px 0;
+}
+
+.imformation__account-update-form-item {
+    color: var(--text-pink-color);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.imformation__account-update-form-item--email {
+    display: none;
+}
+
+.imformation__account-update-form-item-btn--min {
+    display: none;
+}
+
+.add__email:checked ~ .imformation__account-update-form-item--email {
+    display: flex;
+}
+
+.add__email:checked ~ .imformation__account-update-form-item .imformation__account-update-form-item-btn i.imformation__account-update-form-item-btn--add {
+    display: none;
+}
+
+.add__email:checked ~ .imformation__account-update-form-item .imformation__account-update-form-item-btn i.imformation__account-update-form-item-btn--min {
+    display: block;
+}
+
+.imformation__account-update-form-item--phone {
+    display: none;
+}
+
+.add__phone:checked ~ .imformation__account-update-form-item--phone {
+    display: flex;
+}
+
+.add__phone:checked ~ .imformation__account-update-form-item .imformation__account-update-form-item-btn i.imformation__account-update-form-item-btn--add {
+    display: none;
+}
+
+.add__phone:checked ~ .imformation__account-update-form-item .imformation__account-update-form-item-btn i.imformation__account-update-form-item-btn--min {
+    display: block;
+}
+
+.imformation__account-update-form-item-half {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imformation__account-update-form-item-input:focus {
+    box-shadow: none;
+    border: 1px solid var(--primary-color);
+}
+
+.imformation__account-update-form-item-input--mr {
+    margin-right: 20px;
+    color: red;
+}
+
+.imformation__account-update-form-item-input--half {
+    flex: 1;
+}
+
+.imformation__account-update-form-item-title {
+    min-width: 106px;
+    font-size: 1.5rem;
+    font-weight: 1.5rem;
+    margin-right: 8px;
+}
+
+.imformation__account-update-form-item-input {
+    font-size: 1.5rem; 
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #F3F3F3;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.imformation__account-update-form-btn {
+    color: var(--text-pink-color);
+    box-shadow: 0px 1px 1px #00000029;
+    border: 1px solid #F3F3F3;
+}
+
+.imformation__account-update-form-btn-icon {
+    margin-right: 5px;
+}
+
+.imformation__account-update-form-item-hafl-block {
+    display: flex;
+    width: 100%;
+}
+
+.imformation__account-update-form-item-hafl-block-input {
+    font-size: 1.5rem; 
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #F3F3F3;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.imformation__account-update-form-item-hafl-block-input:focus {
+    box-shadow: none;
+    border: 1px solid var(--primary-color);
+}
+
+.imformation__account-update-form-item-hafl-block-input--small {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.imformation__account-update-form-item-hafl-block-input--full {
+    flex: 1;
+}
+
+.imformation__account-update-form-btn-block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imformation__account-update-form-item-btn {
+    padding: 0 10px;
+    color: #CECECE;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.imformation__account-update-form-item-btn--green {
+    color: #1EC434;
+}
+
+.imformation__account-update-form-item-btn--green:hover {
+    color: #1EC434;
+    opacity: 0.8;
+}
+
+.imformation__account-update-form-item-btn:hover {
+    color: var(--primary-color);
+}
+
+.imformation__account-pass {
+    padding: 20px;
+}
+
+h2.imformation__account-pass-title {
+    color: var(--text-pink-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.imformation__account-pass-form {
+    width: 500px;
+}
+
+.input-group.imformation__account-pass-form-group-box {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    padding-right: 5px;
+    border-radius: 4px;
+    height: 40px;
+}
+
+.imformation__account-pass-form-input.form-control {
+    border: none;
+}
+
+.imformation__account-pass-form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.imformation__account-pass-form-input {
+    color: var(--text-pink-color);
+    font-size: 1.6rem;
+    margin-right: 5px;
+    height: 100%;
+}
+
+.imformation__account-pass-form-show {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #949494;
+    margin-left: 5px;
+    line-height: 40px;
+}
+
+.imformation__account-pass-form-show:hover {
+    color: var(--text-pink-color);
+}
+
+.imformation__account-pass-form-acti {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imformation__account-pass-form-acti-btn {
+    margin-left: 10px;
+}
+
+/* header control  */
+.imformation__details-header {
+    border-radius: 8px;
+    background-color: var(--bgr-color);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.imformation__details-header-control {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.imformation__details-header-title {
+    font-size: 1.6rem;
+}
+
+ /* shop list  */
+.imformation__shop-block {
+    border-radius: 8px;
+}
+
+.imformation__shop {
+    display: flex;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--bgr-color);
+    box-shadow: 0 0.1rem 1rem rgb(0 0 0 / 10%);
+    margin-bottom: 20px;
+}
+
+.imformation__shop-img-block {
+    height: 200px;
+    width: 380px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.imformation__shop-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform ease-in 0.3s;
+}
+
+.imformation__shop:hover .imformation__shop-img {
+    transform: scale(1.05);
+}
+
+.imformation__shop-content {
+    flex: 1;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.imformation__shop-detail {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.imformation__shop-detail-title {
+    margin-bottom: 20px;
+}
+
+.imformation__shop-detail-title-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.imformation__shop-detail-title-stt {
+    font-size: 1.4rem;
+}
+
+.imformation__shop-detail-title-stt.oke {
+    color: rgb(9, 223, 80);
+    font-weight: 600;
+}
+
+.imformation__shop-detail-place {
+    font-size: 1.4rem;
+}   
+
+.imformation__shop-top-ac-btn {
+    border: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.imformation__shop-top-ac-btn:hover {
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+
+.imformation__shop-detail-link-block {
+    margin-bottom: 20px;
+}
+
+.imformation__shop-detail-link {
+    display: block;
+    color: var(--text-pink-color);
+    font-size: 1.4rem;
+}
+
+.imformation__shop-detail-link:hover {
+    color: var(--text-pink-color);
+}
+
+.imformation__shop-detail-link span {
+    font-weight: 500;
+}
+
+.imformation__shop-detail-link .imformation__shop-link-hot {
+    font-weight: normal;
+    text-decoration: underline;
+    word-wrap: break-word;
+}
+
+.imformation__shop-detail-link .imformation__shop-link-hot:hover {
+    color: var(--primary-color);
+}
+
+.imformation__shop-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.imformation__shop-top-love {
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imformation__shop-top-love i {
+    color: #808080;
+}
+
+.imformation__shop-top-love.love i {
+    color: var(--primary-color);
+}
+
+.imformation__shop-top-box-it {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 64em){
+    .imformation__details-exten-block.none {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 64em){
+    .imformation__shop-img-block {
+        height: 200px;
+        width: 200px;
+    }
+
+    .imformation__shop-content {
+        flex-direction: column;
+    }
+
+    .imformation__shop-detail {
+        flex: unset;
+    }
+
+    .imformation__shop-detail-title {
+        margin-bottom: 0;
+    }
+
+    .imformation__shop-detail-link-block {
+        margin-bottom: 0;
+    }
+
+    .imformation__shop-top {
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .imformation__shop-top-box-it {
+        margin: 0 10px 0 10px;
+    }
+}
 /* mobile  & tablet*/
 @media (max-width: 63.9375em) {
     
@@ -888,7 +1615,35 @@ h2.imformation__place-title {
     .info__nav-pane-table-tr {
         font-size: 1.4rem;
     }
-    
+
+    .info__nav-pane-active-fillter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info__nav-pane-active-fillter-box {
+        flex-wrap: wrap;
+    }
+
+    .imformation__place-detail-item-tr:first-child {
+        height: unset;
+    }
+
+    .imformation__details-exten-block {
+        position: absolute;
+        z-index: 99999999;
+        top: -20px;
+        left: 0;        
+        margin-right: 0;
+    }
+
+    .imformation__details-exten-block.none__tl {
+        display: none;
+    }
+
+    .imformation__shop-img-block {
+        flex: 1;
+    }
 }
 
 /* tablet  */
@@ -1020,519 +1775,107 @@ h2.imformation__place-title {
     }
 
     .info__nav-list-item {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        flex: 1;
     }
 
     .info__nav-pane-active-item-desc-time {
         font-size: 1.2rem;
     }
-}
-
-.imformation {
-    /* display: flex; */
-}
-
-.imformation__path {
-    border-bottom: 1px solid #F2F2F2;
-}
-
-.imformation__path-block {
-    height: 30px;
-    background-color: var(--bgr-color);
-    display: flex;
-    align-items: center;
-    font-size: 1.6rem;
-    padding: 10px 0;
-}
-
-.imformation__path-fa {
-    padding-right: 10px;
-    color: #9B9B9B;
-}
-
-.imformation__path-details {
-    color: #8E8E8E;
-}
-
-.imformation__path-details-title {
-    font-weight: bold;
-    color: #000;
-}
-
-
-.imformation__details-block {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.imformation__details-exten {
-    border: 1px solid #F3F3F3;
-    border-radius: 4px;
-    background-color: var(--bgr-color);
-}
-
-.imformation__details-exten-i4 {
-    background-color: #FFEFEF;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-}
-
-.imformation__details-exten-i4-img {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    margin-right: 10px;
-    object-fit: cover;
-}
-
-.imformation__details-exten-i4-desc {
-    color: var(--text-pink-color);
-}
-
-.imformation__details-exten-i4-desc-name {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.imformation__details-exten-i4-desc-type {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-.imformation__details-exten-list {
-    padding: 10px;
-}
-
-.imformation__details-exten-item {
-    padding: 10px 20px;
-    border-radius: 4px;
-    color: var(--text-pink-color);
-    font-size: 1.5rem;
-    font-weight: 400;
-    cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0);
-}
-
-.imformation__details-exten-item.active {
-    background-color: #FFEFEF;
-    border: 1px solid #FDD8E1;
-    color: var(--primary-color);
-}
-
-.imformation__details-content {
-
-}
-
-.imformation__details-content-panel {
-    display: none;
-}
-
-.imformation__details-content-panel.active {
-    display: block;
-}
-
-.imformation__account {
-    background-color: var(--bgr-color);
-    border-radius: 4px;
-    border: 1px solid #F3F3F3;
-    position: relative;
-}
-
-.imformation__account-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 20px;
-}
-
-.imformation__account-header-i4 {
-    display: flex;
-    align-items: center;
-}
-
-.imformation__account-header-i4-avt {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-.imformation__account-header-i4-desc {
-    color: var(--text-pink-color);
-}
-
-.imformation__account-header-i4-desc-name {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.imformation__account-header-i4-desc-type {
-    font-size: 1.5rem;
-    font-weight: 40;
-    margin-top: 5px;
-}
-
-.imformation__account-details-block {
-    padding: 0 20px;
-}
-
-.imformation__account-details {
-    color: var(--text-pink-color);
-}
-
-.imformation__account-details-item {
-    display: block;
-    font-size: 1.5rem;
-    padding: 14px 0;
-}
-
-.imformation__account-details-item-name {
-    font-weight: bold;
-    min-width: 104px;
-}
-
-.imformation__account-details-item-desc {
-    font-weight: 400;
-    padding: 0 20px;
-}
-
-[contenteditable]:focus {
-    outline: 0px solid transparent;
-}
-
-.imformation__account-details-item-desc-btn {
-    font-size: 1.5rem;
-}
-
-.imformation__account-details-item-desc i{
-    font-size: 1rem;
-    color: #8B8B8B;
-}
-
-.imformation__account-details-item-update {
-
-}
-
-.imformation__account-details-item-update-btn {
-    font-weight: 400;
-    cursor: pointer;
-    display: none;
-}
-
-.imformation__account-details-item:hover .imformation__account-details-item-update-btn {
-    display: block;
-}
-
-.imformation__account-details-item-update-btn-icon {
-
-}
-
-
-.imformation__account-btn {
-    position: absolute;
-    z-index: 1;
-    top: 10px;
-    right: 10px;
-}
-
-.imformation__account-btn.imformation__account-btn--close {
-    display: none;
-}
-
-.imformation__tabput:checked ~ .imformation__account-tabput1 {
-    display: none;
-}
-
-.imformation__account-tabput2 {
-    display: none;
-    padding: 10px 20px;
-}
-
-.imformation__tabput:checked ~ .imformation__account-tabput2 {
-    display: block;
-}
-
-.imformation__tabput:checked ~ .imformation__account-btn {
-    display: none;
-}
-
-.imformation__tabput:checked ~ .imformation__account-btn.imformation__account-btn--close {
-    display: block;
-}
-
-.imformation__account-update {
-
-}
-
-.imformation__account-update-avt {
-    display: flex;
-    align-items: center;
-    width: 934px;
-}
-
-.imformation__account-update-avt-img {
-    height: 106px;
-    width: 106px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-.imformation__account-update-avt-acti {
-    color: var(--text-pink-color);
-}
-
-.imformation__account-update-avt-acti-title {
-    font-size: 1.8rem;
-    font-weight: 400;
-}
-
-.imformation__account-update-avt-acti-type {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-
-.imformation__account-update-avt-acti-up {
-    font-size: 1.6rem;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    border: 1px solid #F3F3F3;
-    border-radius: 4px;
-    width: 400px;
-}
-
-.imformation__account-update-avt-acti-up-input {
-    outline: none;
-    border: none;
-    color: #B9B9B9;
-    padding: 5px 10px;
-    height: 40px;
-    border-radius: 4px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    flex: 1;
-}
-
-.imformation__account-update-avt-acti-up-name {
-    color: #FFFFFF;
-    height: 40px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.imformation__account-update-form {
-    padding: 20px 0;
-}
-
-.imformation__account-update-form-item {
-    color: var(--text-pink-color);
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.imformation__account-update-form-item--email {
-    display: none;
-}
-
-.imformation__account-update-form-item-btn--min {
-    display: none;
-}
-
-.add__email:checked ~ .imformation__account-update-form-item--email {
-    display: flex;
-}
-
-.add__email:checked ~ .imformation__account-update-form-item .imformation__account-update-form-item-btn i.imformation__account-update-form-item-btn--add {
-    display: none;
-}
-
-.add__email:checked ~ .imformation__account-update-form-item .imformation__account-update-form-item-btn i.imformation__account-update-form-item-btn--min {
-    display: block;
-}
-
-.imformation__account-update-form-item--phone {
-    display: none;
-}
-
-.add__phone:checked ~ .imformation__account-update-form-item--phone {
-    display: flex;
-}
-
-.add__phone:checked ~ .imformation__account-update-form-item .imformation__account-update-form-item-btn i.imformation__account-update-form-item-btn--add {
-    display: none;
-}
-
-.add__phone:checked ~ .imformation__account-update-form-item .imformation__account-update-form-item-btn i.imformation__account-update-form-item-btn--min {
-    display: block;
-}
-
-.imformation__account-update-form-item-half {
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-}
-
-.imformation__account-update-form-item-input:focus {
-    box-shadow: none;
-    border: 1px solid var(--primary-color);
-}
-
-.imformation__account-update-form-item-input--mr {
-    margin-right: 20px;
-    color: red;
-}
-
-.imformation__account-update-form-item-input--half {
-    flex: 1;
-}
-
-.imformation__account-update-form-item-title {
-    min-width: 106px;
-    font-size: 1.5rem;
-    font-weight: 1.5rem;
-    margin-right: 8px;
-}
-
-.imformation__account-update-form-item-input {
-    font-size: 1.5rem; 
-    font-weight: 400;
-    outline: none;
-    border: 1px solid #F3F3F3;
-    border-radius: 4px;
-    padding: 5px 10px;
-    width: 400px;
-}
-
-.imformation__account-update-form-btn {
-    color: var(--text-pink-color);
-    box-shadow: 0px 1px 1px #00000029;
-    border: 1px solid #F3F3F3;
-}
-
-.imformation__account-update-form-btn-icon {
-    margin-right: 5px;
-}
-
-.imformation__account-update-form-item-hafl-block {
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.imformation__account-update-form-item-hafl-block-input {
-    font-size: 1.5rem; 
-    font-weight: 400;
-    outline: none;
-    border: 1px solid #F3F3F3;
-    border-radius: 4px;
-    padding: 5px 10px;
-}
-
-.imformation__account-update-form-item-hafl-block-input:focus {
-    box-shadow: none;
-    border: 1px solid var(--primary-color);
-}
-
-.imformation__account-update-form-item-hafl-block-input--small {
-    width: 120px;
-    margin-right: 10px;
-}
-
-.imformation__account-update-form-item-hafl-block-input--full {
-    flex: 1;
-}
-
-.imformation__account-update-form-btn-block {
-    display: flex;
-    justify-content: flex-end;
-    width: 514px;
-}
-
-.imformation__account-update-form-item-btn {
-    padding: 0 10px;
-    color: #CECECE;
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-.imformation__account-update-form-item-btn--green {
-    color: #1EC434;
-}
-
-.imformation__account-update-form-item-btn--green:hover {
-    color: #1EC434;
-    opacity: 0.8;
-}
-
-.imformation__account-update-form-item-btn:hover {
-    color: var(--primary-color);
-}
-
-.imformation__account-pass {
-    padding: 20px;
-}
-
-h2.imformation__account-pass-title {
-    color: var(--text-pink-color);
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.imformation__account-pass-form {
-    width: 500px;
-}
-
-.input-group.imformation__account-pass-form-group-box {
-    background-color: #FFFFFF;
-    border: 1px solid #E2E2E2;
-    padding-right: 5px;
-    border-radius: 4px;
-    height: 40px;
-}
-
-/* .input-group.imformation__account-pass-form-group-box {
-    border: 1px solid red;
-} */
-
-.imformation__account-pass-form-input.form-control {
-    border: none;
-}
-
-.imformation__account-pass-form-group {
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.imformation__account-pass-form-input {
-    color: var(--text-pink-color);
-    font-size: 1.6rem;
-    margin-right: 5px;
-    height: 100%;
-}
-
-.imformation__account-pass-form-show {
-    font-size: 2rem;
-    cursor: pointer;
-    color: #949494;
-    margin-left: 5px;
-    line-height: 40px;
-}
-
-.imformation__account-pass-form-show:hover {
-    color: var(--text-pink-color);
-}
-
-.imformation__account-pass-form-acti {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.imformation__account-pass-form-acti-btn {
-    margin-left: 10px;
+
+    .imformation__place-header {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    h2.imformation__place-title {
+        font-size: 1.6rem;
+        margin-bottom: 0;
+    }
+
+    .imformation__place-header-ac {
+        height: 30px;
+    }
+
+    .imformation__place-detail-item-ac-set {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imformation__place-detail-item-ac-set.active.btn {
+        margin-right: 0;
+    }
+
+    .imformation__place-detail-item-ac-set span {
+        display: none;
+    }
+
+    .imformation__place-detail-item-ac-set i {
+        margin-right: 0;
+    }
+
+    .imformation__place-edit-stt {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .imformation__account-btn span{
+        display: none;
+    }
+
+    .imformation__account-update-avt-img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .imformation__shop {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .imformation__shop-img-block {
+        flex: unset;
+        height: 200px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .imformation__shop-detail {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .imformation__shop-top {
+        flex-direction: row;
+        align-items: flex-start;
+        align-items: center;
+        padding: 0;
+    }
+
+    .imformation__shop-top-ac {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .imformation__shop-top-box {
+        display: flex;
+    }
+
+    .imformation__shop-detail-title,
+    .imformation__shop-detail-link-block,
+    .imformation__shop-top-box-it {
+        margin-bottom: 0;
+    }
+
+    .imformation__shop-detail-title {
+        display: flex;
+        align-items: center;
+    }
+
+    .imformation__shop-detail-title-name {
+        margin-right: 10px;
+    }
 }
