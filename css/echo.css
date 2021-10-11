@@ -1,0 +1,25 @@
+.echo__noti {
+    margin-top: 20px;
+    height: 200px;
+    width: 400px;
+    /* background-color: rgb(228, 179, 179); */
+    background-color: var(--bgr-color);
+    box-shadow: 0px 6px 18px #00000029;
+    border-radius: 4px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.echo__noti-desc {
+    font-size: 1.6rem;
+}
+
+.echo__noti-ac {
+    display: flex;
+}
+
+.echo__noti-ac-btn {
+    margin: auto;
+}

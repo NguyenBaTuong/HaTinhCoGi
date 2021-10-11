@@ -960,13 +960,15 @@ h2.imformation__place-title {
 }
 
 .imformation__details-exten {
-    background-color: #FFF;
+    background-color: #FFF; 
+    border-radius: 8px;
+    border: 1px solid rgb(240, 163, 163);
 }
 
 .imformation__details-exten-i4 {
     background-color: #FFEFEF;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -996,6 +998,7 @@ h2.imformation__place-title {
 
 .imformation__details-exten-list {
     padding: 10px;
+    border-radius: 8px;
 }
 
 .imformation__details-exten-item {

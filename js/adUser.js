@@ -91,7 +91,7 @@ function shop__tab() {
     shop__add.style.display = 'none';
   }
 }
-shop__tab();
+// shop__tab();
 
 function shop__list() {
   var shop__tab__list = document.getElementById('shop__tab__list');
@@ -103,7 +103,7 @@ function shop__list() {
     shop__add.style.display = 'block';
   }
 }
-shop__list();
+// shop__list();
 
 function post__list() {
   var post__tab__list = document.getElementById('post__tab__list');
@@ -134,7 +134,66 @@ function shop__input() {
   }
 };
  
+//10/09/2021
+function step__ad() {
+  var silder = document.querySelector('.adUser__addxshop-page');
+  var next = document.querySelector('.ad__next');
+  var prev = document.querySelector('.ac__prev1');
+  var next1 = document.querySelector('.ac__next1');
+  var prev1 = document.querySelector('.ac__prev2');
+  var next2 = document.querySelector('.ac__next2');
+  var prev2 = document.querySelector('.ac__prev3');
+  var submit = document.querySelector('.ac__submit');
+  var check = document.querySelectorAll('.adUser__addxshop-bar-step-check');
+  var con = document.querySelectorAll('.adUser__addxshop-bar-step');
+  var border = document.querySelectorAll('adUser__addxshop-bar-step-stt');
+  let max = 4;
+  let cur = 1;
 
 
+  next.addEventListener('click', function(){
+      silder.style.marginLeft = '-25%';
+      con[cur - 1].classList.add('active');
+      cur += 1;
+  }); 
+
+  next1.addEventListener('click', function(){
+      silder.style.marginLeft = '-50%';
+      con[cur - 1].classList.add('active');
+      cur += 1;
+  }); 
+
+  next2.addEventListener('click', function(){
+      silder.style.marginLeft = '-75%';
+      con[cur - 1].classList.add('active');
+      cur += 1;
+  }); 
+
+  submit.addEventListener('click', function(){
+      con[cur - 1].classList.add('active');
+      cur += 1;
+      // location.reload();
+  }); 
+
+  prev.addEventListener('click', function(){
+      silder.style.marginLeft = '0%';
+       con[cur - 2].classList.remove('active');
+      cur -= 1;
+
+  }); 
+
+  prev1.addEventListener('click', function(){
+      silder.style.marginLeft = '-25%';
+       con[cur - 2].classList.remove('active');
+      cur -= 1;
+  }); 
+
+  prev2.addEventListener('click', function(){
+      silder.style.marginLeft = '-50%';
+       con[cur - 2].classList.remove('active');
+      cur -= 1;
+  }); 
+}
+step__ad();
 
 
