@@ -609,497 +609,225 @@
                 </div>
             </div>
         </div>
-        
-        <div class="adUser-block container">
-            <input type="checkbox" name="" id="adUser__input" class="adUser__input" hidden>
-            <div class="adUser__control">
-                <div class="adUser__control-nav">
-                    <label for="adUser__input" onclick="show__nav()"  id="show__control__btn" class="adUser__control-nav-btn btn btn--primary"><i class="fas fa-bars"></i></label>
+        <div class="updateShop container">
+            <div class="adUser__post">
+                <div class="adUser__post-title">
+                    <div class="adUser__post-title-name">Thêm cửa hàng</div>
+                    <div id="shop__tab__add" class="adUser__post-title-other">Danh sách</div>
                 </div>
-                <div class="adUser__control-title">
-                    <div class="adUser__control-title-name">Quản lý</div>
-                </div>
+                <form class="adUser__form">
+                    <div class="adUser__form-content">
+                        <div class="adUser__form-left">
+                            <div class="adUser__form-group form-group">
+                                <label class="adUser__form-label" for="my-input">Tên cửa hàng</label>
+                                <input onkeyup="return convertslug(this)" class="adUser__form-input form-control" id="shop__name" type="text" name="" placeholder="Tên cửa hàng">
+                                <div class="form-message"></div>
+                            </div>
+                            <div class="adUser__form-street">
+                                <label class="adUser__form-label" for="my-input">Đường dẫn:</label>
+                                <div id="slug__an" class="adUser__form-street-link">updateShop.html</div>
+                                <div onclick="update__link()" class="adUser__form-street-btn btn btn--green">Sửa</div>
+                            </div>
+                            <div id="place__box" class="adUser__form-group form-group">
+                                <input type="hidden" name="checkaddress" id="checkaddress" value="1">
+                                <div class="adUser__form-title">
+                                    <label class="adUser__form-label" for="my-input">Địa chỉ</label> 
+                                    <span onclick="return addaddress()" id="add__place" class="adUser__form-add">Thêm địa chỉ</span>
+                                </div>
+                                <input class="adUser__form-input form-control" id="shop__place1" type="text" name="" placeholder="Địa chỉ">
+                                <div class="form-message"></div>
+                            </div>
+                            <div class="adUser__form-group form-group">
+                                <input type="hidden" name="checktime" id="checktime" value="1">
+                                <div class="adUser__form-title">
+                                    <label class="adUser__form-label" for="my-input">Thông tin khác</label> 
+                                </div>
+                                <div class="adUser__form-box">
+                                    <div class="custom-select adUser__form-box-select">
+                                        <select>
+                                          <option value="0">Thông tin!</option>
+                                          <option value="1">Số điện thoại</option>
+                                          <option value="2">Facebook</option>
+                                          <option value="3">Website</option>
+                                        </select>
+                                    </div>
+                                    <input class="adUser__form-box-input" type="text" name="" id="">
+                                    <button class="adUser__form-box-btn btn btn--primary">Thêm</button>
+                                </div>
+                            </div>
+                            <div id="time__box" class="adUser__form-group form-group">
+                                <input type="hidden" name="checktime" id="checktime" value="1">
+                                <div class="adUser__form-title">
+                                    <label class="adUser__form-label" for="my-input">Giờ mở cửa</label> 
+                                </div>
+                                <div class="adUser__form-box">
+                                    <div class="custom-select adUser__form-box-select">
+                                        <select>
+                                          <option value="0">Chọn thứ!</option>
+                                          <option value="1">Thứ hai</option>
+                                          <option value="2">Thứ ba</option>
+                                          <option value="3">Thứ tư</option>
+                                          <option value="4">Thứ năm</option>
+                                          <option value="4">Thứ sáu</option>
+                                          <option value="4">Thứ bảy</option>
+                                          <option value="4">Chủ nhật</option>
+                                        </select>
+                                    </div>
+                                    <input class="adUser__form-box-input" type="time" name="" id="">
+                                    <input class="adUser__form-box-input" type="time" name="" id="">
+                                    <button class="adUser__form-box-btn btn btn--primary">Thêm</button>
+                                </div>
+                            </div>
+                            <div class="adUser__form-group form-group">
+                                <label class="adUser__form-label" for="my-input">Ảnh giới thiệu</label>
+                                <input class="adUser__form-file" id="shop__img" type="file" name="">
+                                <div class="form-message"></div>
+                            </div>
+                            <div class="adUser__form-group-lib">
+                                <div class="adUser__form-group-lib-img-block">
+                                    <img src="http://media.tinthethao.com.vn/files/bongda/2020/01/07/mesut-ozil-dang-cap-chua-bao-gio-mat-110411jpg.jpg" alt="" class="adUser__form-group-lib-img">
+                                </div>
+                                <div class="adUser__form-group-lib-img-block">
+                                    <img src="https://cdnmedia.thethaovanhoa.vn/Upload/B0g2ZnIe48e9au7dkcAV3w/files/000039/0000000000000000000211/00000262/00026/0019/001/009/0005/Mesut%20Ozil%20roi%20Arsenal.jpg" alt="" class="adUser__form-group-lib-img">
+                                </div>
+                                <div class="adUser__form-group-lib-img-block">
+                                    <img src="https://vcdn-ngoisao.vnecdn.net/2016/11/13/ozil1-7768-1479049037.jpg" alt="" class="adUser__form-group-lib-img">
+                                </div>
+                            </div>
+                            <div class="adUser__form-group form-group">
+                                <label class="adUser__form-label" for="my-input">Thẻ tag</label>
+                                <input class="adUser__form-input form-control" id="shop__link" type="text" name="" placeholder="Thẻ tag">
+                                <div class="form-message"></div>
+                            </div>
+                            <div class="adUser__form-group form-group">
+                                <label class="adUser__form-label" for="my-input">Giới thiệu</label>
+                                <textarea class="adUser__form-textarea form-control" id="shop__desc" name="" id="" cols="30" rows="10" placeholder="Giới thiệu"></textarea>
+                                <div class="form-message"></div>
+                            </div>
+                            <div class="adUser__form-ac">
+                                <button class="adUser__form-ac-btn btn btn--primary">Cập nhật</button>
+                            </div>
+                        </div>
+                        <div class="adUser__form-right">
+                            <div class="adUser__form-group form-group">
+                                <label class="adUser__form-label" for="my-input">Trạng thái</label>
+                                <div class="custom-select">
+                                    <select>
+                                      <option value="0">Chọn kiểu sắp xếp!</option>
+                                      <option value="1">Mới nhất</option>
+                                      <option value="2">Gần nhất</option>
+                                      <option value="3">Nhiều sao</option>
+                                      <option value="4">Uy tín</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="adUser__form-group form-group">
+                                <label class="adUser__form-label" for="my-input">Danh mục</label>
+                                <div class="adUser__form-cate">
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate1" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate1">Thịt chó</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate2" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate2">Tiết canh</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate3" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate3">Dê nướng</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate1" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate1">Thịt chó</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate2" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate2">Tiết canh</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate3" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate3">Dê nướng</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate1" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate1">Thịt chó</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate2" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate2">Tiết canh</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate3" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate3">Dê nướng</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="adUser__form-group form-group">
+                                <label class="adUser__form-label" for="my-input">Dịch vụ</label>
+                                <div class="adUser__form-cate">
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate1" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate1">Giao hàng</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate2" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate2">Trả hàng</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate3" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate3">Boom hàng</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate1" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate1">Hủy đơn</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate2" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate2">Bốc phốt</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate3" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate3">Miễn phí</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate1" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate1">Có phí</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate2" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate2">Bờ lóc</label>
+                                    </div>
+                                    <div class="adUser__form-cate-item">
+                                        <input id="cate3" type="checkbox" class="adUser__form-cate-item-check"> 
+                                        <label for="cate3">Uy tín</label>
+                                    </div>
+                                </div>
+                                <div class="adUser__form-service-block">
+                                    <div class="adUser__form-service form-group">
+                                        <input type="checkbox" id="show__add__sv" class="show__add__sv" hidden>
+                                        <label onclick="add__service()" id="add__sv__label" for="show__add__sv" class="adUser__form-service-add form-label">Thêm dịch vụ</label>
+                                        <div id="add__sv__group" class="adUser__form-service-input-block">
+                                            <input id="form__add__name" type="text" class="adUser__form-service-input form-control">
+                                            <div class="adUser__form-service-ac">
+                                                <button type="button" id="add__sv__btn" class="adUser__form-service-ac-btn btn btn--primary">Thêm</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-message"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="adUser__form-group form-group">
+                                <label class="adUser__form-label" for="my-input">Ảnh tiêu đề</label>
+                                <input class="adUser__form-file" id="post__img" type="file" name="">
+                                <div class="form-message"></div>
+                            </div>
+                            <div class="adUser__form-group-show">
+                                <img src="https://sm.imgix.net/19/52/mesut-ozil.jpg?w=1200&h=1200&auto=compress,format&fit=clip" alt="" class="adUser__form-group-show-img">
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="adUser">
-                <div  id="adUser__navson" class="adUser__sliderbar-block none__tl">
-                    <div class="adUser__sliderbar">
-                        <ul class="adUser__sliderbar-list">
-                            <li class="adUser__sliderbar-i4">
-                                <img src="https://scontent.fhph1-2.fna.fbcdn.net/v/t1.6435-9/240426547_1651217145077797_167800081898759962_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=LH8MU0GW4g8AX8qgSG_&_nc_ht=scontent.fhph1-2.fna&oh=4c938443330a6e3659d84fbad10d27fd&oe=6172203D" alt="" class="adUser__sliderbar-i4-avt">
-                                <div class="adUser__sliderbar-i4-desc">
-                                    <div class="adUser__sliderbar-i4-desc-title">Nguyễn Bá Tương</div>
-                                    <div class="adUser__sliderbar-i4-desc-type">Chủ cửa hàng</div>
-                                </div>
-                            </li>
-                            <li id="li__shop" class="adUser__sliderbar-item active">
-                                Cửa hàng
-                            </li>
-                            <li id="li__post" class="adUser__sliderbar-item">
-                                Bài viết
-                            </li>
-                            <li id="li__user" class="adUser__sliderbar-item">
-                                Khách hàng
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="adUser__content">
-                    <div class="adUser__content-panel active">
-                        <div id="shop__list" class="adUser__list">
-                            <div class="adUser__list-header">
-                                <div class="adUser__list-header-title">Danh sách cửa hàng</div>
-                                <div id="shop__tab__list" class="adUser__list-header-add">
-                                    <i class="fas fa-plus-circle"></i> 
-                                    <span>Thêm cửa hàng</span> 
-                                </div>
-                            </div>
-                            <table class="adUser__list-content">
-                               <tr class="adUser__list-content-tr">
-                                    <td class="adUser__list-content-td input">
-                                        <input onchange="shop__input()" class="adUser__list-content-td-input--shop" id="shop__input1" type="checkbox" name="">
-                                    </td>
-                                    <td class="adUser__list-content-td bold vip">Tên cửa hàng</td>
-                                    <td class="adUser__list-content-td bold">Ảnh bìa</td>
-                                    <td class="adUser__list-content-td bold">Danh mục</td>
-                                    <td class="adUser__list-content-td bold">Trạng thái</td>
-                                    <td class="adUser__list-content-td bold">Địa chỉ</td>
-                                    <td class="adUser__list-content-td bold">Hoạt động</td>
-                               </tr>
-                               <tr class="adUser__list-content-tr">
-                                    <td class="adUser__list-content-td input">
-                                        <input class="adUser__list-content-td-input--shop" id="shop__input2" type="checkbox" name="">
-                                    </td>
-                                    <td class="adUser__list-content-td vip">Quản lẩu khá ngon</td>
-                                    <td class="adUser__list-content-td">
-                                        <img class="adUser__list-content-td-img" src="https://i.pinimg.com/236x/2e/77/d2/2e77d28e503f813cad9fe94761b203ed.jpg" alt="">
-                                    </td>
-                                    <td class="adUser__list-content-td">Quán ăn</td>
-                                    <td class="adUser__list-content-td">Chưa xác nhận</td>
-                                    <td class="adUser__list-content-td">Số 1 gần mặt đường</td>
-                                    <td class="adUser__list-content-td btn">
-                                        <button class="adUser__list-content-td-btn btn btn--diss">Xóa</button>
-                                        <button class="adUser__list-content-td-btn btn btn--primary">Sửa</button>
-                                    </td>
-                               </tr>
-                               <tr class="adUser__list-content-tr">
-                                    <td class="adUser__list-content-td input">
-                                        <input class="adUser__list-content-td-input--shop" id="shop__input3" type="checkbox" name="">
-                                    </td>
-                                    <td class="adUser__list-content-td vip">Quán thịt chó bảy món</td>
-                                    <td class="adUser__list-content-td">
-                                        <img class="adUser__list-content-td-img" src="https://image.thanhnien.vn/1024/uploaded/ngocthanh/2020_06_09/trieu-lo-tu-gia-san-giau-co2_mgap.jpg" alt="">
-                                    </td>
-                                    <td class="adUser__list-content-td">Quán ăn</td>
-                                    <td class="adUser__list-content-td">Đã xác nhận</td>
-                                    <td class="adUser__list-content-td">Số 2 đường mặt phố, Quận Làm To</td>
-                                    <td class="adUser__list-content-td btn">
-                                        <button class="adUser__list-content-td-btn btn btn--diss">Xóa</button>
-                                        <button class="adUser__list-content-td-btn btn btn--primary">Sửa</button>
-                                    </td>
-                               </tr>
-                               <tr class="adUser__list-content-tr">
-                                    <td class="adUser__list-content-td input">
-                                        <input class="adUser__list-content-td-input--shop" id="shop__input4" type="checkbox" name="">
-                                    </td>
-                                    <td class="adUser__list-content-td vip">Áo Không Rách</td>
-                                    <td class="adUser__list-content-td">
-                                        <img class="adUser__list-content-td-img" src="https://i.pinimg.com/236x/33/69/ba/3369ba7c588f5371b76a5084e0df6cf7.jpg" alt="">
-                                    </td>
-                                    <td class="adUser__list-content-td">Quần áo</td>
-                                    <td class="adUser__list-content-td">Đã xác nhận</td>
-                                    <td class="adUser__list-content-td">x13 Lộc Hà, Hà Tĩnh</td>
-                                    <td class="adUser__list-content-td btn">
-                                        <button class="adUser__list-content-td-btn btn btn--diss">Xóa</button>
-                                        <button class="adUser__list-content-td-btn btn btn--primary">Sửa</button>
-                                    </td>    
-                               </tr>
-                               <tr class="adUser__list-content-tr">
-                                    <td class="adUser__list-content-td input">
-                                        <input class="adUser__list-content-td-input--shop" id="shop__input5" type="checkbox" name="">
-                                    </td>
-                                    <td class="adUser__list-content-td vip">Quán khá uy tín</td>
-                                    <td class="adUser__list-content-td">
-                                        <img class="adUser__list-content-td-img" src="https://i.pinimg.com/236x/6f/64/44/6f6444b6116bdbe00ad646e845787af5.jpg" alt="">
-                                    </td>
-                                    <td class="adUser__list-content-td">Uy tín</td>
-                                    <td class="adUser__list-content-td">Đã xác nhận</td>
-                                    <td class="adUser__list-content-td">86 Nguyễn Sinh Sắc, Hòa Minh, Liên Chiểu</td>
-                                    <td class="adUser__list-content-td btn">
-                                        <button class="adUser__list-content-td-btn btn btn--diss">Xóa</button>
-                                        <button class="adUser__list-content-td-btn btn btn--primary">Sửa</button>
-                                    </td>
-                               </tr>
-                            </table>
-                        </div>
-                        <div class="adUser__addxshop-block">
-                            <div class="adUser__addxshop ">
-                                <div class="adUser__addxshop-title">Thêm mới cửa hàng</div>
-                                <div class="adUser__addxshop-bar">
-                                    <div class="adUser__addxshop-bar-step">
-                                        <div class="adUser__addxshop-bar-step-stt">
-                                            <span>1</span>
-                                        </div>
-                                        <div class="adUser__addxshop-bar-step-check fas fa-check"></div> 
-                                    </div>
-                                    <div class="adUser__addxshop-bar-step">
-                                        <div class="adUser__addxshop-bar-step-stt">
-                                            <span>2</span>
-                                        </div>
-                                        <div class="adUser__addxshop-bar-step-check fas fa-check"></div> 
-                                    </div>
-                                    <div class="adUser__addxshop-bar-step">
-                                        <div class="adUser__addxshop-bar-step-stt">
-                                            <span>3</span>
-                                        </div>
-                                        <div class="adUser__addxshop-bar-step-check fas fa-check"></div> 
-                                    </div>
-                                    <div class="adUser__addxshop-bar-step">
-                                        <div class="adUser__addxshop-bar-step-stt">
-                                            <span>4</span>
-                                        </div>
-                                        <div class="adUser__addxshop-bar-step-check fas fa-check"></div> 
-                                    </div>
-                                </div>
-                                <div class="adUser__addxshop-form-block">
-                                    <form action="" class="adUser__addxshop-form">
-                                        <div id="shop__add" class="adUser__addxshop-page active">
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Tên cửa hàng: </div>
-                                                <input id="shop__add__name" type="text" class="adUser__addxshop-group-input form-control">
-                                            </div>
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Danh mục: </div>
-                                                <div class="adUser__addxshop-form-select">
-                                                    <select id="choices-multiple-remove-button" placeholder="Chọn danh mục" multiple>
-                                                        <option value="Cửa hàng">Cửa hàng1</option>
-                                                        <option value="Quán nhậu">Quán nhậu2</option>
-                                                        <option value="Quán ăn">Quán ăn3</option>
-                                                        <option value="Quần áo">Quần áo4</option>
-                                                        <option value="Tạp hóa">Tạp hóa5</option>
-                                                        <option value="Cửa hàng">Cửa hàng6</option>
-                                                        <option value="Quán nhậu">Quán nhậu7</option>
-                                                        <option value="Quán ăn">Quán ăn8</option>
-                                                        <option value="Quần áo">Quần áo9</option>
-                                                        <option value="Tạp hóa">Tạp hóa0</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Địa chỉ: </div>
-                                                <input type="text" class="adUser__addxshop-group-input form-control">
-                                            </div>
-                                            <div class="adUser__addxshop-ac-block one">
-                                                <div class="adUser__addxshop-ac one ad__next">
-                                                    <div class="adUser__addxshop-ac-btn btn btn--primary">Tiếp theo</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="adUser__addxshop-page">
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Dịch vụ: </div>
-                                                <div class="adUser__addxshop-form-select">
-                                                    <select id="choices-multiple-remove-button2" placeholder="Chọn dịch vụ" multiple>
-                                                        <option value="Cửa hàng">Cửa hàng1</option>
-                                                        <option value="Quán nhậu">Quán nhậu2</option>
-                                                        <option value="Quán ăn">Quán ăn3</option>
-                                                        <option value="Quần áo">Quần áo4</option>
-                                                        <option value="Tạp hóa">Tạp hóa5</option>
-                                                        <option value="Cửa hàng">Cửa hàng6</option>
-                                                        <option value="Quán nhậu">Quán nhậu7</option>
-                                                        <option value="Quán ăn">Quán ăn8</option>
-                                                        <option value="Quần áo">Quần áo9</option>
-                                                        <option value="Tạp hóa">Tạp hóa0</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Đường dẫn:</div>
-                                                <input type="text" class="adUser__addxshop-group-input form-control">
-                                            </div>
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Ảnh cửa hàng: </div>
-                                                <input type="file" class="adUser__addxshop-group-input file form-control">
-                                                <div class="adUser__addxshop-group-img-block primary">
-                                                    <img src="https://kenh14cdn.com/2017/ozilgg-1512011812118.jpg" alt="" class="adUser__addxshop-group-img">
-                                                </div>
-                                            </div>
-                                            <div class="adUser__addxshop-ac-block">
-                                                <div class="adUser__addxshop-ac">
-                                                    <div class="adUser__addxshop-ac-btn ac__prev1 btn btn--bd">Trở lại</div>
-                                                    <div class="adUser__addxshop-ac-btn ac__next1 btn btn--primary">Tiếp theo</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="adUser__addxshop-page">
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Số điện thoại: </div>
-                                                <input type="text" class="adUser__addxshop-group-input form-control">
-                                            </div>
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Facebook: </div>
-                                                <input type="text" class="adUser__addxshop-group-input form-control">
-                                            </div>
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Website: </div>
-                                                <input type="text" class="adUser__addxshop-group-input form-control">
-                                            </div>
-                                            <div class="adUser__addxshop-group form-group">
-                                                <input type="hidden" name="checktime" id="" value="1">
-                                                <div class="adUser__form-title">
-                                                    <label class="adUser__form-label" for="my-input">Giờ mở cửa</label> 
-                                                </div>
-                                                <div class="adUser__form-box">
-                                                    <div class="custom-select adUser__form-box-select">
-                                                        <select>
-                                                            <option value="0">Chọn thứ!</option>
-                                                            <option value="1">Thứ hai</option>
-                                                            <option value="2">Thứ ba</option>
-                                                            <option value="3">Thứ tư</option>
-                                                            <option value="4">Thứ năm</option>
-                                                            <option value="4">Thứ sáu</option>
-                                                            <option value="4">Thứ bảy</option>
-                                                            <option value="4">Chủ nhật</option>
-                                                        </select>
-                                                    </div>
-                                                    <input class="adUser__form-box-input" type="time" name="" id="">
-                                                    <input class="adUser__form-box-input" type="time" name="" id="">
-                                                    <button class="adUser__form-box-btn btn btn--bd">Thêm</button>
-                                                </div>
-                                            </div>
-                                            <div class="adUser__addxshop-ac-block">
-                                                <div class="adUser__addxshop-ac">
-                                                    <div class="adUser__addxshop-ac-btn ac__prev2 btn btn--bd">Trở lại</div>
-                                                    <div class="adUser__addxshop-ac-btn ac__next2 btn btn--primary">Tiếp theo</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="adUser__addxshop-page">
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Ảnh giới thiệu: </div>
-                                                <input type="file" class="adUser__addxshop-group-input file form-control">
-                                                <div class="adUser__addxshop-group-img-list">
-                                                    <div class="adUser__addxshop-group-img-block">
-                                                        <img src="https://kenh14cdn.com/2017/ozilgg-1512011812118.jpg" alt="" class="adUser__addxshop-group-img">
-                                                    </div>
-                                                    <div class="adUser__addxshop-group-img-block">
-                                                        <img src="https://kenh14cdn.com/2017/ozilgg-1512011812118.jpg" alt="" class="adUser__addxshop-group-img">
-                                                    </div>
-                                                    <div class="adUser__addxshop-group-img-block">
-                                                        <img src="https://kenh14cdn.com/2017/ozilgg-1512011812118.jpg" alt="" class="adUser__addxshop-group-img">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Thẻ tag: </div>
-                                                <input type="text" class="adUser__addxshop-group-input form-control">
-                                            </div>
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Giới thiệu: </div>
-                                                <textarea class="adUser__form-textarea form-control" id="" name="" cols="30" rows="10" placeholder="Giới thiệu"></textarea>                                             
-                                            </div>
-                                            <div class="adUser__addxshop-ac-block">
-                                                <div class="adUser__addxshop-ac">
-                                                    <div class="adUser__addxshop-ac-btn ac__prev3 btn btn--bd">Trở lại</div>
-                                                    <button class="adUser__addxshop-ac-btn ac__submit btn btn--primary">Hoàn tất</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="adUser__content-panel">
-                        <div id="post__list" class="adUser__list">
-                            <div class="adUser__list-header">
-                                <div class="adUser__list-header-title">Danh sách bài viết</div>
-                                <button id="post__tab__list" class="adUser__list-header-add btn btn--primary">Thêm bài viết</button>
-                            </div>
-                            <table class="adUser__list-content">
-                               <tr class="adUser__list-content-tr">
-                                    <td class="adUser__list-content-td input">
-                                        <input onchange="post__input()" class="adUser__list-content-td-input" id="td__input1" type="checkbox" name="">
-                                    </td>
-                                    <td class="adUser__list-content-td bold vip">Tiêu đề</td>
-                                    <td class="adUser__list-content-td bold">Ảnh tiêu đề</td>
-                                    <td class="adUser__list-content-td bold">Danh mục</td>
-                                    <td class="adUser__list-content-td bold">Trạng thái</td>
-                                    <td class="adUser__list-content-td bold">Bài viết</td>
-                                    <td class="adUser__list-content-td bold">Hoạt động</td>
-                               </tr>
-                               <tr class="adUser__list-content-tr">
-                                    <td class="adUser__list-content-td input">
-                                        <input class="adUser__list-content-td-input" id="td__input2" type="checkbox" name="">
-                                    </td>
-                                    <td class="adUser__list-content-td vip">Tên bài viết Tên bài viết Tên bài viết Tên bài viết Tên bài viết</td>
-                                    <td class="adUser__list-content-td">
-                                        <img class="adUser__list-content-td-img" src="https://image.thanhnien.vn/1024/uploaded/ngocthanh/2020_06_09/trieu-lo-tu-gia-san-giau-co2_mgap.jpg" alt="">
-                                    </td>
-                                    <td class="adUser__list-content-td">Danh mục</td>
-                                    <td class="adUser__list-content-td">Trạng thái</td>
-                                    <td class="adUser__list-content-td">Bài viết</td>
-                                    <td class="adUser__list-content-td btn">
-                                        <button class="adUser__list-content-td-btn btn btn--diss">Xóa</button>
-                                        <button class="adUser__list-content-td-btn btn btn--primary">Sửa</button>
-                                    </td>
-                               </tr>
-                               <tr class="adUser__list-content-tr">
-                                    <td class="adUser__list-content-td input">
-                                        <input class="adUser__list-content-td-input" id="td__input3" type="checkbox" name="">
-                                    </td>
-                                    <td class="adUser__list-content-td vip">Tên bài viết Tên bài viết Tên bài viết Tên bài viết Tên bài viết</td>
-                                    <td class="adUser__list-content-td">
-                                        <img class="adUser__list-content-td-img" src="https://image.thanhnien.vn/1024/uploaded/ngocthanh/2020_06_09/trieu-lo-tu-gia-san-giau-co2_mgap.jpg" alt="">
-                                    </td>
-                                    <td class="adUser__list-content-td">Danh mục</td>
-                                    <td class="adUser__list-content-td">Trạng thái</td>
-                                    <td class="adUser__list-content-td">Bài viết</td>
-                                    <td class="adUser__list-content-td btn">
-                                        <button class="adUser__list-content-td-btn btn btn--diss">Xóa</button>
-                                        <button class="adUser__list-content-td-btn btn btn--primary">Sửa</button>
-                                    </td>
-                               </tr>
-                               <tr class="adUser__list-content-tr">
-                                    <td class="adUser__list-content-td input">
-                                        <input class="adUser__list-content-td-input" id="td__input4" type="checkbox" name="">
-                                    </td>
-                                    <td class="adUser__list-content-td vip">Tên bài viết Tên bài viết Tên bài viết Tên bài viết Tên bài viết</td>
-                                    <td class="adUser__list-content-td">
-                                        <img class="adUser__list-content-td-img" src="https://image.thanhnien.vn/1024/uploaded/ngocthanh/2020_06_09/trieu-lo-tu-gia-san-giau-co2_mgap.jpg" alt="">
-                                    </td>
-                                    <td class="adUser__list-content-td">Danh mục</td>
-                                    <td class="adUser__list-content-td">Trạng thái</td>
-                                    <td class="adUser__list-content-td">Bài viết</td>
-                                    <td class="adUser__list-content-td btn">
-                                        <button class="adUser__list-content-td-btn btn btn--diss">Xóa</button>
-                                        <button class="adUser__list-content-td-btn btn btn--primary">Sửa</button>
-                                    </td>    
-                               </tr>
-                               <tr class="adUser__list-content-tr">
-                                    <td class="adUser__list-content-td input">
-                                        <input class="adUser__list-content-td-input" id="td__input5" type="checkbox" name="">
-                                    </td>
-                                    <td class="adUser__list-content-td vip">Tên bài viết Tên bài viết Tên bài viết Tên bài viết Tên bài viết</td>
-                                    <td class="adUser__list-content-td">
-                                        <img class="adUser__list-content-td-img" src="https://image.thanhnien.vn/1024/uploaded/ngocthanh/2020_06_09/trieu-lo-tu-gia-san-giau-co2_mgap.jpg" alt="">
-                                    </td>
-                                    <td class="adUser__list-content-td">Danh mục</td>
-                                    <td class="adUser__list-content-td">Trạng thái</td>
-                                    <td class="adUser__list-content-td">Bài viết</td>
-                                    <td class="adUser__list-content-td btn">
-                                        <button class="adUser__list-content-td-btn btn btn--diss">Xóa</button>
-                                        <button class="adUser__list-content-td-btn btn btn--primary">Sửa</button>
-                                    </td>
-                               </tr>
-                            </table>
-                        </div>
-                        <div class="adUser__addxshop-block">
-                            <div class="adUser__addxshop">
-                                <div class="adUser__addxshop-title">Thêm bài viết</div>
-                                <div class="adUser__addxshop-bar">
-                                    <div class="adUser__addxshop-bar-step post">
-                                        <div class="adUser__addxshop-bar-step-stt">
-                                            <span>1</span>
-                                        </div>
-                                        <div class="adUser__addxshop-bar-step-check fas fa-check"></div> 
-                                    </div>
-                                    <div class="adUser__addxshop-bar-step post">
-                                        <div class="adUser__addxshop-bar-step-stt">
-                                            <span>2</span>
-                                        </div>
-                                        <div class="adUser__addxshop-bar-step-check fas fa-check"></div> 
-                                    </div>
-                                    <div class="adUser__addxshop-bar-step post">
-                                        <div class="adUser__addxshop-bar-step-stt">
-                                            <span>3</span>
-                                        </div>
-                                        <div class="adUser__addxshop-bar-step-check fas fa-check"></div> 
-                                    </div>
-                                    <div class="adUser__addxshop-bar-step post">
-                                        <div class="adUser__addxshop-bar-step-stt">
-                                            <span>4</span>
-                                        </div>
-                                        <div class="adUser__addxshop-bar-step-check fas fa-check"></div> 
-                                    </div>
-                                </div>
-                                <div class="adUser__addxshop-form-block">
-                                    <form action="" class="adUser__addxshop-form">
-                                        <div class="adUser__addxshop-page post active">
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Tiêu đề: </div>
-                                                <input type="text" class="adUser__addxshop-group-input form-control">
-                                            </div>
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Danh mục: </div>
-                                                <div class="adUser__addxshop-form-select">
-                                                    <select id="choices-multiple-remove-button" placeholder="Chọn danh mục" multiple>
-                                                        <option value="Cửa hàng">Đánh giá</option>
-                                                        <option value="Quán nhậu">Bốc phốt</option>
-                                                        <option value="Quán ăn">Tố cáo</option>
-                                                        <option value="Quần áo">Quảng cáo</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="adUser__addxshop-ac-block one">
-                                                <div class="adUser__addxshop-ac one post__ad__next">
-                                                    <div class="adUser__addxshop-ac-btn btn btn--primary">Tiếp theo</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="adUser__addxshop-page post">
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Thẻ tag:</div>
-                                                <input type="text" class="adUser__addxshop-group-input form-control">
-                                            </div>
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Đường dẫn:</div>
-                                                <input type="text" class="adUser__addxshop-group-input form-control">
-                                            </div>
-                                          
-                                            <div class="adUser__addxshop-ac-block">
-                                                <div class="adUser__addxshop-ac">
-                                                    <div class="adUser__addxshop-ac-btn post__ac__prev1 btn btn--bd">Trở lại</div>
-                                                    <div class="adUser__addxshop-ac-btn post__ac__next1 btn btn--primary">Tiếp theo</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="adUser__addxshop-page post">
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Ảnh cửa hàng: </div>
-                                                <input type="file" class="adUser__addxshop-group-input file form-control">
-                                                <div class="adUser__addxshop-group-img-block primary">
-                                                    <img src="https://kenh14cdn.com/2017/ozilgg-1512011812118.jpg" alt="" class="adUser__addxshop-group-img">
-                                                </div>
-                                            </div>
-                                            <div class="adUser__addxshop-ac-block">
-                                                <div class="adUser__addxshop-ac">
-                                                    <div class="adUser__addxshop-ac-btn post__ac__prev2 btn btn--bd">Trở lại</div>
-                                                    <div class="adUser__addxshop-ac-btn post__ac__next2 btn btn--primary">Tiếp theo</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="adUser__addxshop-page post">
-                                            <div class="adUser__addxshop-group form-group">
-                                                <div class="adUser__addxshop-group-label">Giới thiệu: </div>
-                                                <textarea class="adUser__form-textarea form-control" id="" name="" cols="30" rows="10" placeholder="Giới thiệu"></textarea>                                             
-                                            </div>
-                                            <div class="adUser__addxshop-ac-block">
-                                                <div class="adUser__addxshop-ac">
-                                                    <div class="adUser__addxshop-ac-btn post__ac__prev3 btn btn--bd">Trở lại</div>
-                                                    <button class="adUser__addxshop-ac-btn post__ac__submit btn btn--primary">Hoàn tất</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="adUser__content-panel">
-                    </div>
-                </div>
-            </div>
-
         </div>
       
         <div class="footer">
@@ -1305,39 +1033,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="../js/base.js"></script>
 <script src="../js/adUser.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
-<script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
-<script>
-    $(document).ready(function(){
-        var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
-        removeItemButton: true,
-        maxItemCount:3,
-        // searchResultLimit:5,
-        // renderChoiceLimit:5,
-        itemSelectText: 'Danh mục',
-        maxItemText: (maxItemCount) => {
-        return `Chỉ chọn tối đa ${maxItemCount} danh mục`;
-        },
-        });
-    });
-    $(document).ready(function(){
-        var multipleCancelButton = new Choices('#choices-multiple-remove-button2', {
-        removeItemButton: true,
-        maxItemCount:3,
-        // searchResultLimit:5,
-        // renderChoiceLimit:5,
-        itemSelectText: 'Dịch vụ',
-        maxItemText: (maxItemCount) => {
-        return `Chỉ chọn tối đa ${maxItemCount} dịch vụ`;
-        },
-        });
-    });
-</script>
-<script>
-    
-
-</script>
 </html>

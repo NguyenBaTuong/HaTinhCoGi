@@ -79,7 +79,7 @@ function post__tab() {
     post__add.style.display = 'none';
   }
 }
-post__tab();
+// post__tab();
 
 function shop__tab() {
   var shop__tab__add = document.getElementById('shop__tab__add');
@@ -137,6 +137,7 @@ function shop__input() {
 //10/09/2021
 function step__ad() {
   var silder = document.querySelector('.adUser__addxshop-page');
+  var alls = document.querySelectorAll('.adUser__addxshop-page');
   var next = document.querySelector('.ad__next');
   var prev = document.querySelector('.ac__prev1');
   var next1 = document.querySelector('.ac__next1');
@@ -155,45 +156,189 @@ function step__ad() {
       silder.style.marginLeft = '-25%';
       con[cur - 1].classList.add('active');
       cur += 1;
+      alls[cur - 2].classList.remove('active');
+      alls[cur -1].classList.add('active');
   }); 
 
   next1.addEventListener('click', function(){
       silder.style.marginLeft = '-50%';
       con[cur - 1].classList.add('active');
       cur += 1;
+      alls[cur - 2].classList.remove('active');
+      alls[cur -1].classList.add('active');
   }); 
 
   next2.addEventListener('click', function(){
       silder.style.marginLeft = '-75%';
       con[cur - 1].classList.add('active');
       cur += 1;
+      alls[cur - 2].classList.remove('active');
+      alls[cur -1].classList.add('active');
   }); 
 
   submit.addEventListener('click', function(){
       con[cur - 1].classList.add('active');
       cur += 1;
-      // location.reload();
   }); 
 
   prev.addEventListener('click', function(){
       silder.style.marginLeft = '0%';
-       con[cur - 2].classList.remove('active');
+      con[cur - 2].classList.remove('active');
       cur -= 1;
-
+      alls[cur].classList.remove('active');
+      alls[cur - 1].classList.add('active');
   }); 
 
   prev1.addEventListener('click', function(){
       silder.style.marginLeft = '-25%';
-       con[cur - 2].classList.remove('active');
+      con[cur - 2].classList.remove('active');
       cur -= 1;
+      alls[cur].classList.remove('active');
+      alls[cur - 1].classList.add('active');
   }); 
 
   prev2.addEventListener('click', function(){
       silder.style.marginLeft = '-50%';
-       con[cur - 2].classList.remove('active');
+      con[cur - 2].classList.remove('active');
       cur -= 1;
+      alls[cur].classList.remove('active');
+      alls[cur - 1].classList.add('active');
   }); 
 }
 step__ad();
 
+function step__ad__post() {
+  var silder = document.querySelector('.adUser__addxshop-page.post');
+  var alls = document.querySelectorAll('.adUser__addxshop-page.post');
+  var next = document.querySelector('.post__ad__next');
+  var prev = document.querySelector('.post__ac__prev1');
+  var next1 = document.querySelector('.post__ac__next1');
+  var prev1 = document.querySelector('.post__ac__prev2');
+  var next2 = document.querySelector('.post__ac__next2');
+  var prev2 = document.querySelector('.post__ac__prev3');
+  var submit = document.querySelector('.post__ac__submit');
+  var con = document.querySelectorAll('.adUser__addxshop-bar-step.post');
+  let cur = 1;
 
+
+  next.addEventListener('click', function(){
+      silder.style.marginLeft = '-25%';
+      con[cur - 1].classList.add('active');
+      cur += 1;
+      console.log(cur)
+      alls[cur - 2].classList.remove('active');
+      alls[cur -1].classList.add('active');
+  }); 
+
+  next1.addEventListener('click', function(){
+      silder.style.marginLeft = '-50%';
+      con[cur - 1].classList.add('active');
+      cur += 1;
+      alls[cur - 2].classList.remove('active');
+      alls[cur -1].classList.add('active');
+  }); 
+
+  next2.addEventListener('click', function(){
+      silder.style.marginLeft = '-75%';
+      con[cur - 1].classList.add('active');
+      cur += 1;
+      alls[cur - 2].classList.remove('active');
+      alls[cur -1].classList.add('active');
+  }); 
+
+  submit.addEventListener('click', function(){
+      con[cur - 1].classList.add('active');
+      cur += 1;
+  }); 
+
+  prev.addEventListener('click', function(){
+      silder.style.marginLeft = '0%';
+      con[cur - 2].classList.remove('active');
+      cur -= 1;
+      alls[cur].classList.remove('active');
+      alls[cur - 1].classList.add('active');
+  }); 
+
+  prev1.addEventListener('click', function(){
+      silder.style.marginLeft = '-25%';
+      con[cur - 2].classList.remove('active');
+      cur -= 1;
+      alls[cur].classList.remove('active');
+      alls[cur - 1].classList.add('active');
+  }); 
+
+  prev2.addEventListener('click', function(){
+      silder.style.marginLeft = '-50%';
+      con[cur - 2].classList.remove('active');
+      cur -= 1;
+      alls[cur].classList.remove('active');
+      alls[cur - 1].classList.add('active');
+  }); 
+}
+step__ad__post();
+
+// 10/12
+function convertslug(e){
+  var id = e.id;
+  var Text = document.getElementById(id).value;
+  //Đổi chữ hoa thành chữ thường
+  slug = Text.toLowerCase();
+
+  //Đổi ký tự có dấu thành không dấu
+  slug = slug.replace(/á|à|ả|ạ|ã|ă|ắ|ằ|ẳ|ẵ|ặ|â|ấ|ầ|ẩ|ẫ|ậ/gi, 'a');
+  slug = slug.replace(/é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ/gi, 'e');
+  slug = slug.replace(/i|í|ì|ỉ|ĩ|ị/gi, 'i');
+  slug = slug.replace(/ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ/gi, 'o');
+  slug = slug.replace(/ú|ù|ủ|ũ|ụ|ư|ứ|ừ|ử|ữ|ự/gi, 'u');
+  slug = slug.replace(/ý|ỳ|ỷ|ỹ|ỵ/gi, 'y');
+  slug = slug.replace(/đ/gi, 'd');
+  //Xóa các ký tự đặt biệt
+  slug = slug.replace(/\`|\~|\!|\@|\#|\||\$|\%|\^|\&|\*|\(|\)|\+|\=|\,|\.|\/|\?|\>|\<|\'|\"|\:|\;|_/gi, '');
+  //Đổi khoảng trắng thành ký tự gạch ngang
+  slug = slug.replace(/ /gi, "-");
+  //Đổi nhiều ký tự gạch ngang liên tiếp thành 1 ký tự gạch ngang
+  //Phòng trường hợp người nhập vào quá nhiều ký tự trắng
+  slug = slug.replace(/\-\-\-\-\-/gi, '-');
+  slug = slug.replace(/\-\-\-\-/gi, '-');
+  slug = slug.replace(/\-\-\-/gi, '-');
+  slug = slug.replace(/\-\-/gi, '-');
+  //Xóa các ký tự gạch ngang ở đầu và cuối
+  slug = '@' + slug + '@';
+  slug = slug.replace(/\@\-|\-\@|\@/gi, '');
+
+  document.getElementById('slug__an').innerHTML = slug;
+}
+
+function update__link(){
+  var element = document.getElementById('slug__an');
+  // var id = e.id;
+  // var idtd = id.split('__');
+  // var element = document.getElementById(idtd[1])
+  var OriginalContent = element.innerHTML.trim();
+
+  element.innerHTML= '<input class="input__mt" type="text" value="'+OriginalContent+'"/>';
+  var childinput = element.getElementsByClassName('input__mt')[0];
+  childinput.focus();
+
+  childinput.onkeydown = function (e) {
+      if (e.keyCode == 13) {
+          var newContent = childinput.value;
+          element.innerHTML= newContent;
+      } 
+  }
+  
+  childinput.onblur = function(){
+      var newContent = childinput.value;
+      element.innerHTML= newContent;
+  }                       
+}
+
+function add__new__shop() {
+  var control = document.getElementById('shop__tab__list');
+  var input = document.getElementById('shop__add__name');
+
+  control.onclick = function() {
+    input.focus();
+  }
+}
+add__new__shop();

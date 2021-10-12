@@ -1040,11 +1040,12 @@ h3.keyxprd-title--rest {
     display: flex;
     flex-direction: column;
     color: var(--text-pink-color);
-    width: 180px;
+    width: 220px;
     padding: 10px;
 }
 
-.header__love-item {
+.header__love-item,
+.header__love-i4 {
     position: relative;
     font-size: 1.4rem;
     display: block;
@@ -1052,11 +1053,13 @@ h3.keyxprd-title--rest {
     border-radius: 6px;
 }
 
-.header__love-item:hover {
+.header__love-item:hover,
+.header__love-i4 {
     background-color: rgb(43, 39, 60, 0.05);
 }
 
-.header__love-item:first-child::after {
+.header__love-item:first-child::after,
+.header__love-i4:first-child::after {
     content: "";
     position: absolute;
     width: 100px;
@@ -1064,6 +1067,29 @@ h3.keyxprd-title--rest {
     right: 0;
     height: 20px;
     background-color: transparent;
+}
+
+.header__love-i4 {
+    display: flex;
+    align-items: center;
+}
+
+.header__love-i4-avt-block {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.header__love-i4-avt {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.header__love-i4-name {
+    font-size: 1.4rem;
 }
 
 

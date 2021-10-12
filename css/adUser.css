@@ -25,7 +25,8 @@
 }
 
 .adUser__content {
-    flex: 1;
+    /* flex: 1; */
+    width: calc(100% - 302px);
 }
 
 /* sliderbar  */
@@ -532,16 +533,22 @@
     border-left: 1px solid #FFF !important;
 }
 
+.adUser__addxshop-block {
+   width: 100%;
+}
+
 .adUser__addxshop {
-   width: 900px;
-   /* background-color: var(--bgr-color);
-   box-shadow: 0 0.1rem 1rem rgb(0 0 0 / 10%); */
+   /* width: 800px; */
+   width: 100%;
+   background-color: var(--bgr-color);
+   box-shadow: 0 0.1rem 1rem rgb(0 0 0 / 10%);
    border-radius: 8px;
    padding: 20px;
    margin-top: 30px;
 }
 
 .adUser__addxshop-title {
+    width: 100%;    
     font-size: 2rem;
     font-weight: 600;
 }
@@ -553,6 +560,11 @@
 
 .adUser__addxshop-ac-block {
     display: flex;
+    margin-top: 50px;
+}
+
+.adUser__addxshop-ac-block.one {
+    justify-content: flex-end;
 }
 
 .adUser__addxshop-ac {
@@ -584,8 +596,21 @@
 .adUser__addxshop-page {
     width: 25%;
     height: auto;
-    transition: margin-left 0.3s ease-in-out;
     padding: 20px;
+    display: none;
+}
+
+.adUser__addxshop-page.post {
+    display: none;
+}
+
+.adUser__addxshop-page.active {
+    display: block;
+}
+
+
+.adUser__addxshop-page.post.active {
+    display: block;
 }
 
 .adUser__addxshop-page-title {
@@ -713,6 +738,39 @@
     color: #FFF;
 }
 
+.updateShop {
+    margin-top: 30px;
+}
+
+.adUser__form-street {
+    display: flex;
+    align-items: center;
+}
+
+.adUser__form-street-link {
+    margin: 0 20px;
+    font-size: 1.4rem;
+}
+
+.adUser__form-street-btn {
+
+}
+
+.adUser__list-header-add {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.adUser__list-header-add:hover i {
+    color: var(--primary-color);
+}
+
+.adUser__list-header-add:hover span {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+
 @media screen and (min-width: 64em){
     .adUser__sliderbar-block.none {
         display: none;
@@ -725,7 +783,7 @@
     }
 
     .adUser__content {
-
+        width: 100%;
     }
 
     .adUser__form-group-show {
@@ -777,6 +835,11 @@
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
     }
+
+    .adUser__addxshop-group-img-block.primary {
+        width: 100%;
+        height: 200px;
+    }
 }
 
 @media screen and (min-width: 46.250em) and (max-width: 63.938em){
@@ -810,5 +873,13 @@
 
     .adUser__post-title-name {
         font-size: 1.8rem;
+    }
+
+    .adUser__addxshop-page {
+        padding: 0;
+    }
+    
+    .adUser__addxshop-group-img-block {
+        height: 100px;
     }
 }
